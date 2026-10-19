@@ -44,7 +44,7 @@ J = I + α HΦ ,   det(DX/Dq) = L³ det J
 | I | Expand / collapse field readout |
 | On-screen dock | Pause / resume, 0.25× / 1× / 2× time rate, reset simulation, reset camera, Perf / Bal / Cine rendering quality |
 
-Loading takes roughly 10–15 s while terrain is generated; the veil lifts when the scene is ready. Suggested route: [docs/DIMENSION_FINAL_DEMO.md](docs/DIMENSION_FINAL_DEMO.md).
+Terrain generation takes roughly 10–15 s. On a first visit, downloading and decoding the ~125 MB model/texture asset set can extend startup; the loading veil lifts after the scene is ready. Suggested route: [docs/DIMENSION_FINAL_DEMO.md](docs/DIMENSION_FINAL_DEMO.md).
 
 URL options: `?quality=performance|balanced|cinematic`, `?hud=0`, `?clouds=legacy`.
 

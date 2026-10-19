@@ -96,10 +96,31 @@ function releaseTextures(keys: Iterable<string>): void {
 }
 
 // ---------- levels and assets ----------
+// Keep cold-start downloads below browser/CDN HTTP/2 stream pressure. This only
+// limits asset transfer and parsing concurrency; simulation state and timing are unchanged.
+const MAX_CONCURRENT_GLTF_LOADS = 8;
+let activeGltfLoads = 0;
+const gltfLoadQueue: Array<() => void> = [];
+async function loadGLTFWithSlot(loader: GLTFLoader, url: string) {
+  if (activeGltfLoads >= MAX_CONCURRENT_GLTF_LOADS) {
+    await new Promise<void>((resolve) => gltfLoadQueue.push(resolve));
+  } else {
+    activeGltfLoads += 1;
+  }
+  try {
+    return await loader.loadAsync(url);
+  } finally {
+    const next = gltfLoadQueue.shift();
+    if (next) next();
+    else activeGltfLoads -= 1;
+  }
+}
+
 async function loadLevel(file: string, skipTextures: boolean, cap: number, keys: Set<string>): Promise<AssetLevel> {
   const loader = new GLTFLoader();
   loader.register((parser) => texturePlugin(parser, { skip: skipTextures, cap, keys }));
-  const gltf = await loader.loadAsync(import.meta.env.BASE_URL + file.replace(/^\//, ''));
+  const url = import.meta.env.BASE_URL + file.replace(/^\//, '');
+  const gltf = await loadGLTFWithSlot(loader, url);
   const parts: AssetPart[] = [];
   gltf.scene.updateMatrixWorld(true);
   gltf.scene.traverse((object) => {
