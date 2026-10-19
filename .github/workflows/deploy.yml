@@ -25,6 +25,7 @@ jobs:
       - run: npm run build
         env:
           VITE_BASE: /big-hero-6-fractured-dimension/
+          VITE_DEFAULT_QUALITY: cinematic
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist

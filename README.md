@@ -1,6 +1,6 @@
 # Big Hero 6: Fractured Dimension
 
-**[▶ Open the live Dimension (Chrome or Edge, desktop)](https://aadit-issar.github.io/big-hero-6-fractured-dimension/)** — nothing to install. Add `?quality=performance` for smoother frame rates on integrated GPUs.
+**[▶ Play Online — explore the live Dimension (Chrome or Edge, desktop)](https://aadit-issar.github.io/big-hero-6-fractured-dimension/)** — nothing to install. Add `?quality=performance` for smoother frame rates on integrated GPUs.
 
 A browser-based, equation-governed fictional dimension inspired by the *Big Hero 6* portal realm. Fourteen floating islands drift through a gaseous violet–cobalt void around a golden vortex, among concrete, steel, capsule and armor wreckage. Everything that moves is driven by one seeded nonlinear scalar field, and the temporary "folds" you can fly into are real consequences of that mathematics.
 
@@ -38,15 +38,17 @@ J = I + α HΦ ,   det(DX/Dq) = L³ det J
 | E | Traverse the fold you are next to (a prompt appears) |
 | R | Reset view to the opening pose |
 | 1–9 | Camera viewpoints (overview, geology, fracture corridor, mirror chamber, vortex, turbulent wide, fracture region, spire, rift) |
-| Shift + 1–9 | Object views (microbots, formation, debris, beams, capsule, fold shear, strain shear, vortex inflow, material) |
+| Shift + 1–9 | Object views (microbot swarm, formation, debris cluster, beams, landmark, fold shear, strain shear, vortex inflow, material) |
 | H | Hide / show HUD |
 | P | Pause / resume simulation |
 | I | Expand / collapse field readout |
-| On-screen dock | Pause, 0.25× / 1× / 2×, simulation reset, Perf / Bal / Cine quality |
+| On-screen dock | Pause / resume, 0.25× / 1× / 2× time rate, reset simulation, reset camera, Perf / Bal / Cine rendering quality |
 
 Loading takes roughly 10–15 s while terrain is generated; the veil lifts when the scene is ready. Suggested route: [docs/DIMENSION_FINAL_DEMO.md](docs/DIMENSION_FINAL_DEMO.md).
 
 URL options: `?quality=performance|balanced|cinematic`, `?hud=0`, `?clouds=legacy`.
+
+The GitHub Pages build starts new visits at **Cinematic** quality. An explicit `?quality=` option or a quality choice already saved in the browser takes precedence; use `?quality=performance` on slower GPUs.
 
 ## Run locally
 
