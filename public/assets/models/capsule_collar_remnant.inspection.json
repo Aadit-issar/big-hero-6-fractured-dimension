@@ -1,0 +1,123 @@
+{
+  "file": "public/assets/models/capsule_collar_remnant.glb",
+  "bytes": 500784,
+  "meshes": 1,
+  "materials": [
+    "alloy_machined",
+    "mechanism_grey",
+    "capsule_composite",
+    "capsule_heatshield",
+    "cable_insulation"
+  ],
+  "primitives": [
+    {
+      "material": "alloy_machined",
+      "triangles": 2120,
+      "vertices": 3762,
+      "signedVolume": 0.06293866431638037,
+      "windingDisagreesWithNormal": 0,
+      "min": [
+        -1.019972801208496,
+        -0.05999999865889549,
+        -1.019972801208496
+      ],
+      "max": [
+        0.9383623003959656,
+        0.8306691646575928,
+        1.0203514099121094
+      ]
+    },
+    {
+      "material": "mechanism_grey",
+      "triangles": 5644,
+      "vertices": 4424,
+      "signedVolume": -0.42283495994479875,
+      "windingDisagreesWithNormal": 0,
+      "min": [
+        -1.060083031654358,
+        -0.12351725995540619,
+        -1.0513020753860474
+      ],
+      "max": [
+        0.9490081667900085,
+        0.8371802568435669,
+        1.0646803379058838
+      ]
+    },
+    {
+      "material": "capsule_composite",
+      "triangles": 3360,
+      "vertices": 1772,
+      "signedVolume": 0.3956232420928142,
+      "windingDisagreesWithNormal": 0,
+      "min": [
+        -0.776710033416748,
+        0.27328598499298096,
+        0.1996014267206192
+      ],
+      "max": [
+        0.7501448392868042,
+        0.8371802568435669,
+        1.0333631038665771
+      ]
+    },
+    {
+      "material": "capsule_heatshield",
+      "triangles": 1628,
+      "vertices": 914,
+      "signedVolume": 0.08292836179289471,
+      "windingDisagreesWithNormal": 0,
+      "min": [
+        -0.6733930706977844,
+        -0.11909999698400497,
+        0.5704435706138611
+      ],
+      "max": [
+        0.6274113655090332,
+        0.7996377348899841,
+        1.0296772718429565
+      ]
+    },
+    {
+      "material": "cable_insulation",
+      "triangles": 464,
+      "vertices": 288,
+      "signedVolume": 0.0007356924123552347,
+      "windingDisagreesWithNormal": 0,
+      "min": [
+        0.38572782278060913,
+        -0.17961442470550537,
+        0.2691115140914917
+      ],
+      "max": [
+        0.8832064270973206,
+        0.07210178673267365,
+        0.4765577018260956
+      ]
+    }
+  ],
+  "totalSignedVolume": 0.11939100066964572,
+  "triangles": 13216,
+  "vertices": 11160,
+  "nonFiniteValues": 0,
+  "nonUnitNormals": 0,
+  "degenerateTriangles": 0,
+  "edges": 19824,
+  "boundaryEdges": 0,
+  "nonManifoldEdges": 0,
+  "boundsMin": [
+    -1.060083031654358,
+    -0.17961442470550537,
+    -1.0513020753860474
+  ],
+  "boundsMax": [
+    0.9490081667900085,
+    0.8371802568435669,
+    1.0646803379058838
+  ],
+  "sizeMetres": [
+    2.0090911984443665,
+    1.0167946815490723,
+    2.115982413291931
+  ]
+}

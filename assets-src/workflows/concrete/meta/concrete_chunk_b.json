@@ -1,0 +1,16 @@
+{
+ "file": "/assets/models/candidates/concrete/concrete_chunk_b.glb",
+ "replaces": "concrete_chunk_b",
+ "category": "concrete",
+ "label": "Slab-edge strip fragment with two bars",
+ "state": "Review candidate. Parameterised concrete family; shared textures.",
+ "source": "assets-src/workflows/concrete/build.py",
+ "triangles": 8824,
+ "bytes": 2594944,
+ "bounds_m": [
+  1.912,
+  0.552,
+  0.243
+ ],
+ "lods": {}
+}

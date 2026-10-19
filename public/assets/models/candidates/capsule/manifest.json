@@ -1,0 +1,218 @@
+{
+ "capsule_shell_remnant": {
+  "file": "/assets/models/candidates/capsule/capsule_shell_remnant.glb",
+  "replaces": "capsule_collar_remnant",
+  "category": "landmark",
+  "label": "Capsule shell remnant (hero)",
+  "state": "Textured PBR review candidate (v2)",
+  "source": "assets-src/workflows/capsule/",
+  "triangles": 101999,
+  "bytes": 6399388,
+  "bounds_m": [
+   3.949,
+   4.237,
+   2.852
+  ],
+  "lods": {
+   "lod1": {
+    "file": "/assets/models/candidates/capsule/capsule_shell_remnant_lod1.glb",
+    "triangles": 18000,
+    "bytes": 1793540
+   },
+   "lod2": {
+    "file": "/assets/models/candidates/capsule/capsule_shell_remnant_lod2.glb",
+    "triangles": 4499,
+    "bytes": 521792
+   }
+  }
+ },
+ "capsule_collar_ring": {
+  "file": "/assets/models/candidates/capsule/capsule_collar_ring.glb",
+  "replaces": "capsule_collar_remnant",
+  "category": "landmark",
+  "label": "Docking collar, separation damage",
+  "state": "Textured PBR review candidate (v2)",
+  "source": "assets-src/workflows/capsule/",
+  "triangles": 9204,
+  "bytes": 551776,
+  "bounds_m": [
+   1.693,
+   1.722,
+   0.383
+  ],
+  "lods": {
+   "lod1": {
+    "file": "/assets/models/candidates/capsule/capsule_collar_ring_lod1.glb",
+    "triangles": 4000,
+    "bytes": 267068
+   },
+   "lod2": {
+    "file": "/assets/models/candidates/capsule/capsule_collar_ring_lod2.glb",
+    "triangles": 1199,
+    "bytes": 110088
+   }
+  }
+ },
+ "capsule_heatshield_panel": {
+  "file": "/assets/models/candidates/capsule/capsule_heatshield_panel.glb",
+  "replaces": null,
+  "category": "landmark",
+  "label": "Heat-shield panel, charred ablator on ribbed carrier",
+  "state": "Textured PBR review candidate (v2)",
+  "source": "assets-src/workflows/capsule/",
+  "triangles": 18272,
+  "bytes": 1017896,
+  "bounds_m": [
+   1.231,
+   0.89,
+   0.314
+  ],
+  "lods": {
+   "lod1": {
+    "file": "/assets/models/candidates/capsule/capsule_heatshield_panel_lod1.glb",
+    "triangles": 4000,
+    "bytes": 285792
+   },
+   "lod2": {
+    "file": "/assets/models/candidates/capsule/capsule_heatshield_panel_lod2.glb",
+    "triangles": 1200,
+    "bytes": 95396
+   }
+  }
+ },
+ "capsule_upper_shell_fragment": {
+  "file": "/assets/models/candidates/capsule/capsule_upper_shell_fragment.glb",
+  "replaces": null,
+  "category": "landmark",
+  "label": "Upper shell fragment with RE-01 stencil and camera port",
+  "state": "Textured PBR review candidate (v2)",
+  "source": "assets-src/workflows/capsule/",
+  "triangles": 16566,
+  "bytes": 797948,
+  "bounds_m": [
+   1.177,
+   1.058,
+   0.366
+  ],
+  "lods": {
+   "lod1": {
+    "file": "/assets/models/candidates/capsule/capsule_upper_shell_fragment_lod1.glb",
+    "triangles": 3999,
+    "bytes": 256232
+   },
+   "lod2": {
+    "file": "/assets/models/candidates/capsule/capsule_upper_shell_fragment_lod2.glb",
+    "triangles": 1199,
+    "bytes": 104028
+   }
+  }
+ },
+ "capsule_impact_fragment": {
+  "file": "/assets/models/candidates/capsule/capsule_impact_fragment.glb",
+  "replaces": null,
+  "category": "landmark",
+  "label": "Impact fragment: folded skin, layers and torn loom",
+  "state": "Textured PBR review candidate (v2)",
+  "source": "assets-src/workflows/capsule/",
+  "triangles": 20652,
+  "bytes": 951984,
+  "bounds_m": [
+   1.162,
+   1.054,
+   0.672
+  ],
+  "lods": {
+   "lod1": {
+    "file": "/assets/models/candidates/capsule/capsule_impact_fragment_lod1.glb",
+    "triangles": 4000,
+    "bytes": 279080
+   },
+   "lod2": {
+    "file": "/assets/models/candidates/capsule/capsule_impact_fragment_lod2.glb",
+    "triangles": 1200,
+    "bytes": 106276
+   }
+  }
+ },
+ "capsule_rcs_thruster": {
+  "file": "/assets/models/candidates/capsule/capsule_rcs_thruster.glb",
+  "replaces": null,
+  "category": "landmark",
+  "label": "RCS thruster module, damaged",
+  "state": "Textured PBR review candidate",
+  "triangles": 6780,
+  "bytes": 568416,
+  "bounds_m": [
+   0.712,
+   0.53,
+   0.431
+  ],
+  "lods": {
+   "lod1": {
+    "file": "/assets/models/candidates/capsule/capsule_rcs_thruster_lod1.glb",
+    "triangles": 4999,
+    "bytes": 522660
+   },
+   "lod2": {
+    "file": "/assets/models/candidates/capsule/capsule_rcs_thruster_lod2.glb",
+    "triangles": 1200,
+    "bytes": 404624
+   }
+  },
+  "source": "assets-src/workflows/capsule/"
+ },
+ "capsule_antenna_broken": {
+  "file": "/assets/models/candidates/capsule/capsule_antenna_broken.glb",
+  "replaces": null,
+  "category": "landmark",
+  "label": "Communications antenna, broken",
+  "state": "Textured PBR review candidate",
+  "triangles": 1332,
+  "bytes": 242872,
+  "bounds_m": [
+   0.478,
+   0.202,
+   0.629
+  ],
+  "lods": {
+   "lod1": {
+    "file": "/assets/models/candidates/capsule/capsule_antenna_broken_lod1.glb",
+    "triangles": 1332,
+    "bytes": 242872
+   },
+   "lod2": {
+    "file": "/assets/models/candidates/capsule/capsule_antenna_broken_lod2.glb",
+    "triangles": 600,
+    "bytes": 213856
+   }
+  },
+  "source": "assets-src/workflows/capsule/"
+ },
+ "capsule_instrument_unit": {
+  "file": "/assets/models/candidates/capsule/capsule_instrument_unit.glb",
+  "replaces": null,
+  "category": "landmark",
+  "label": "Scientific instrument unit, recovered",
+  "state": "Textured PBR review candidate",
+  "triangles": 2768,
+  "bytes": 666832,
+  "bounds_m": [
+   0.6,
+   0.803,
+   0.756
+  ],
+  "lods": {
+   "lod1": {
+    "file": "/assets/models/candidates/capsule/capsule_instrument_unit_lod1.glb",
+    "triangles": 2768,
+    "bytes": 666832
+   },
+   "lod2": {
+    "file": "/assets/models/candidates/capsule/capsule_instrument_unit_lod2.glb",
+    "triangles": 1200,
+    "bytes": 585172
+   }
+  },
+  "source": "assets-src/workflows/capsule/"
+ }
+}

@@ -1,0 +1,69 @@
+{
+  "file": "public/assets/models/baymax_forearm_fragment.glb",
+  "bytes": 213352,
+  "meshes": 1,
+  "materials": [
+    "baymax_armour_red",
+    "mechanism_grey"
+  ],
+  "primitives": [
+    {
+      "material": "baymax_armour_red",
+      "triangles": 2984,
+      "vertices": 1573,
+      "signedVolume": 0.038480341329664255,
+      "windingDisagreesWithNormal": 0,
+      "min": [
+        -0.23068957030773163,
+        -0.3465000092983246,
+        -0.14094209671020508
+      ],
+      "max": [
+        0.22979344427585602,
+        0.3465000092983246,
+        0.20069460570812225
+      ]
+    },
+    {
+      "material": "mechanism_grey",
+      "triangles": 3700,
+      "vertices": 3105,
+      "signedVolume": -0.028788670787230644,
+      "windingDisagreesWithNormal": 0,
+      "min": [
+        -0.22977426648139954,
+        -0.3465000092983246,
+        -0.14094209671020508
+      ],
+      "max": [
+        0.22979344427585602,
+        0.3465000092983246,
+        0.19989392161369324
+      ]
+    }
+  ],
+  "totalSignedVolume": 0.009691670542433611,
+  "triangles": 6684,
+  "vertices": 4678,
+  "nonFiniteValues": 0,
+  "nonUnitNormals": 0,
+  "degenerateTriangles": 0,
+  "edges": 10026,
+  "boundaryEdges": 0,
+  "nonManifoldEdges": 0,
+  "boundsMin": [
+    -0.23068957030773163,
+    -0.3465000092983246,
+    -0.14094209671020508
+  ],
+  "boundsMax": [
+    0.22979344427585602,
+    0.3465000092983246,
+    0.20069460570812225
+  ],
+  "sizeMetres": [
+    0.46048301458358765,
+    0.6930000185966492,
+    0.34163670241832733
+  ]
+}

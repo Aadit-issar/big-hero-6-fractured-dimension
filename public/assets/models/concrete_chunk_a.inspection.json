@@ -1,0 +1,69 @@
+{
+  "file": "public/assets/models/concrete_chunk_a.glb",
+  "bytes": 19548,
+  "meshes": 1,
+  "materials": [
+    "concrete",
+    "rebar_rusted"
+  ],
+  "primitives": [
+    {
+      "material": "concrete",
+      "triangles": 184,
+      "vertices": 288,
+      "signedVolume": 0.3836495343110033,
+      "windingDisagreesWithNormal": 0,
+      "min": [
+        -0.6559706926345825,
+        -0.29107537865638733,
+        -0.555938720703125
+      ],
+      "max": [
+        0.7208777666091919,
+        0.18045984208583832,
+        0.6187013387680054
+      ]
+    },
+    {
+      "material": "rebar_rusted",
+      "triangles": 168,
+      "vertices": 126,
+      "signedVolume": 0.0005280734076846852,
+      "windingDisagreesWithNormal": 0,
+      "min": [
+        -0.3700000047683716,
+        -0.01950000785291195,
+        -0.7293009757995605
+      ],
+      "max": [
+        0.5306491851806641,
+        0.06232459098100662,
+        0.3050000071525574
+      ]
+    }
+  ],
+  "totalSignedVolume": 0.384177607718688,
+  "triangles": 352,
+  "vertices": 414,
+  "nonFiniteValues": 0,
+  "nonUnitNormals": 0,
+  "degenerateTriangles": 0,
+  "edges": 528,
+  "boundaryEdges": 0,
+  "nonManifoldEdges": 0,
+  "boundsMin": [
+    -0.6559706926345825,
+    -0.29107537865638733,
+    -0.7293009757995605
+  ],
+  "boundsMax": [
+    0.7208777666091919,
+    0.18045984208583832,
+    0.6187013387680054
+  ],
+  "sizeMetres": [
+    1.3768484592437744,
+    0.47153522074222565,
+    1.348002314567566
+  ]
+}

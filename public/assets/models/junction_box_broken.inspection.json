@@ -1,0 +1,87 @@
+{
+  "file": "public/assets/models/junction_box_broken.glb",
+  "bytes": 16488,
+  "meshes": 1,
+  "materials": [
+    "panel_white",
+    "mechanism_grey",
+    "steel_bare"
+  ],
+  "primitives": [
+    {
+      "material": "panel_white",
+      "triangles": 72,
+      "vertices": 144,
+      "signedVolume": 0.015926723449010093,
+      "windingDisagreesWithNormal": 0,
+      "min": [
+        -0.2693752944469452,
+        -0.30000001192092896,
+        -0.12999999523162842
+      ],
+      "max": [
+        0.25,
+        0.30000001192092896,
+        0.5990544557571411
+      ]
+    },
+    {
+      "material": "mechanism_grey",
+      "triangles": 60,
+      "vertices": 120,
+      "signedVolume": 0.0018767999201441147,
+      "windingDisagreesWithNormal": 0,
+      "min": [
+        -0.20000000298023224,
+        0.07500000298023224,
+        -0.10999999940395355
+      ],
+      "max": [
+        0.20000000298023224,
+        0.16500000655651093,
+        0.004999999888241291
+      ]
+    },
+    {
+      "material": "steel_bare",
+      "triangles": 108,
+      "vertices": 120,
+      "signedVolume": 0.00009028379899628063,
+      "windingDisagreesWithNormal": 0,
+      "min": [
+        -0.13521690666675568,
+        -0.3400000035762787,
+        -0.01600000075995922
+      ],
+      "max": [
+        0.13521690666675568,
+        -0.30000001192092896,
+        0.01600000075995922
+      ]
+    }
+  ],
+  "totalSignedVolume": 0.01789380716815049,
+  "triangles": 240,
+  "vertices": 384,
+  "nonFiniteValues": 0,
+  "nonUnitNormals": 0,
+  "degenerateTriangles": 0,
+  "edges": 360,
+  "boundaryEdges": 0,
+  "nonManifoldEdges": 0,
+  "boundsMin": [
+    -0.2693752944469452,
+    -0.3400000035762787,
+    -0.12999999523162842
+  ],
+  "boundsMax": [
+    0.25,
+    0.30000001192092896,
+    0.5990544557571411
+  ],
+  "sizeMetres": [
+    0.5193752944469452,
+    0.6400000154972076,
+    0.7290544509887695
+  ]
+}

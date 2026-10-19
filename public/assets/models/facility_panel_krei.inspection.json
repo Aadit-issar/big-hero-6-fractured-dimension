@@ -1,0 +1,87 @@
+{
+  "file": "public/assets/models/facility_panel_krei.glb",
+  "bytes": 21728,
+  "meshes": 1,
+  "materials": [
+    "panel_white",
+    "steel_painted",
+    "paint_krei_red"
+  ],
+  "primitives": [
+    {
+      "material": "panel_white",
+      "triangles": 196,
+      "vertices": 304,
+      "signedVolume": 0.13453375641347415,
+      "windingDisagreesWithNormal": 0,
+      "min": [
+        -1.2000000476837158,
+        -0.6000000238418579,
+        -0.28627297282218933
+      ],
+      "max": [
+        1.1765326261520386,
+        0.6000000238418579,
+        0.02500000037252903
+      ]
+    },
+    {
+      "material": "steel_painted",
+      "triangles": 72,
+      "vertices": 144,
+      "signedVolume": 0.021600001262990685,
+      "windingDisagreesWithNormal": 0,
+      "min": [
+        -1.149999976158142,
+        -0.4300000071525574,
+        -0.2902694344520569
+      ],
+      "max": [
+        0.9216468334197998,
+        0.4300000071525574,
+        -0.02500000037252903
+      ]
+    },
+    {
+      "material": "paint_krei_red",
+      "triangles": 24,
+      "vertices": 48,
+      "signedVolume": 0.000612000195839288,
+      "windingDisagreesWithNormal": 0,
+      "min": [
+        -1.1399999856948853,
+        0.23999999463558197,
+        -0.11799125373363495
+      ],
+      "max": [
+        0.6382737755775452,
+        0.36000001430511475,
+        0.027000000700354576
+      ]
+    }
+  ],
+  "totalSignedVolume": 0.15674575787230413,
+  "triangles": 292,
+  "vertices": 496,
+  "nonFiniteValues": 0,
+  "nonUnitNormals": 0,
+  "degenerateTriangles": 0,
+  "edges": 438,
+  "boundaryEdges": 0,
+  "nonManifoldEdges": 0,
+  "boundsMin": [
+    -1.2000000476837158,
+    -0.6000000238418579,
+    -0.2902694344520569
+  ],
+  "boundsMax": [
+    1.1765326261520386,
+    0.6000000238418579,
+    0.027000000700354576
+  ],
+  "sizeMetres": [
+    2.3765326738357544,
+    1.2000000476837158,
+    0.31726943515241146
+  ]
+}

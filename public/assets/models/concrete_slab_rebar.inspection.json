@@ -1,0 +1,69 @@
+{
+  "file": "public/assets/models/concrete_slab_rebar.glb",
+  "bytes": 81756,
+  "meshes": 1,
+  "materials": [
+    "concrete",
+    "rebar_rusted"
+  ],
+  "primitives": [
+    {
+      "material": "concrete",
+      "triangles": 312,
+      "vertices": 480,
+      "signedVolume": 1.6699862964779197,
+      "windingDisagreesWithNormal": 0,
+      "min": [
+        -1.600000023841858,
+        -0.125,
+        -1.0499999523162842
+      ],
+      "max": [
+        1.600000023841858,
+        0.1550000011920929,
+        1.0499999523162842
+      ]
+    },
+    {
+      "material": "rebar_rusted",
+      "triangles": 1960,
+      "vertices": 1470,
+      "signedVolume": 0.01895378538172151,
+      "windingDisagreesWithNormal": 0,
+      "min": [
+        -1.5800000429153442,
+        -0.16342920064926147,
+        -1.5705312490463257
+      ],
+      "max": [
+        2.058716058731079,
+        0.3389132022857666,
+        1.0299999713897705
+      ]
+    }
+  ],
+  "totalSignedVolume": 1.6889400818596412,
+  "triangles": 2272,
+  "vertices": 1950,
+  "nonFiniteValues": 0,
+  "nonUnitNormals": 0,
+  "degenerateTriangles": 0,
+  "edges": 3408,
+  "boundaryEdges": 0,
+  "nonManifoldEdges": 0,
+  "boundsMin": [
+    -1.600000023841858,
+    -0.16342920064926147,
+    -1.5705312490463257
+  ],
+  "boundsMax": [
+    2.058716058731079,
+    0.3389132022857666,
+    1.0499999523162842
+  ],
+  "sizeMetres": [
+    3.658716082572937,
+    0.5023424029350281,
+    2.62053120136261
+  ]
+}

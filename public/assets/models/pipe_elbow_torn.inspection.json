@@ -1,0 +1,51 @@
+{
+  "file": "public/assets/models/pipe_elbow_torn.glb",
+  "bytes": 109124,
+  "meshes": 1,
+  "materials": [
+    "pipe_steel"
+  ],
+  "primitives": [
+    {
+      "material": "pipe_steel",
+      "triangles": 3040,
+      "vertices": 1984,
+      "signedVolume": 0.02981453116183529,
+      "windingDisagreesWithNormal": 0,
+      "min": [
+        -1.0199999809265137,
+        -0.23999999463558197,
+        -0.23999999463558197
+      ],
+      "max": [
+        0.41999998688697815,
+        1.3167717456817627,
+        0.23999999463558197
+      ]
+    }
+  ],
+  "totalSignedVolume": 0.02981453116183529,
+  "triangles": 3040,
+  "vertices": 1984,
+  "nonFiniteValues": 0,
+  "nonUnitNormals": 0,
+  "degenerateTriangles": 0,
+  "edges": 4560,
+  "boundaryEdges": 0,
+  "nonManifoldEdges": 0,
+  "boundsMin": [
+    -1.0199999809265137,
+    -0.23999999463558197,
+    -0.23999999463558197
+  ],
+  "boundsMax": [
+    0.41999998688697815,
+    1.3167717456817627,
+    0.23999999463558197
+  ],
+  "sizeMetres": [
+    1.4399999678134918,
+    1.5567717403173447,
+    0.47999998927116394
+  ]
+}

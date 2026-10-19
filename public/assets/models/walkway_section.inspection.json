@@ -1,0 +1,87 @@
+{
+  "file": "public/assets/models/walkway_section.glb",
+  "bytes": 64960,
+  "meshes": 1,
+  "materials": [
+    "steel_painted",
+    "steel_grating",
+    "paint_safety_yellow"
+  ],
+  "primitives": [
+    {
+      "material": "steel_painted",
+      "triangles": 36,
+      "vertices": 72,
+      "signedVolume": 0.04723998156383588,
+      "windingDisagreesWithNormal": 0,
+      "min": [
+        -1.5,
+        -0.13500000536441803,
+        -0.5249999761581421
+      ],
+      "max": [
+        1.5,
+        0.10999999940395355,
+        0.5249999761581421
+      ]
+    },
+    {
+      "material": "steel_grating",
+      "triangles": 648,
+      "vertices": 1296,
+      "signedVolume": 0.013776003458604262,
+      "windingDisagreesWithNormal": 0,
+      "min": [
+        -1.5,
+        -0.01600000075995922,
+        -0.4699999988079071
+      ],
+      "max": [
+        1.5,
+        0.01600000075995922,
+        0.4699999988079071
+      ]
+    },
+    {
+      "material": "paint_safety_yellow",
+      "triangles": 552,
+      "vertices": 380,
+      "signedVolume": 0.010261622733854996,
+      "windingDisagreesWithNormal": 0,
+      "min": [
+        -1.4210000038146973,
+        -0.019999999552965164,
+        0.4790000021457672
+      ],
+      "max": [
+        1.4210000038146973,
+        1.0709999799728394,
+        0.5210000276565552
+      ]
+    }
+  ],
+  "totalSignedVolume": 0.07127760775629513,
+  "triangles": 1236,
+  "vertices": 1748,
+  "nonFiniteValues": 0,
+  "nonUnitNormals": 0,
+  "degenerateTriangles": 0,
+  "edges": 1854,
+  "boundaryEdges": 0,
+  "nonManifoldEdges": 0,
+  "boundsMin": [
+    -1.5,
+    -0.13500000536441803,
+    -0.5249999761581421
+  ],
+  "boundsMax": [
+    1.5,
+    1.0709999799728394,
+    0.5249999761581421
+  ],
+  "sizeMetres": [
+    3,
+    1.2059999853372574,
+    1.0499999523162842
+  ]
+}

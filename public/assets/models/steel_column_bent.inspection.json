@@ -1,0 +1,69 @@
+{
+  "file": "public/assets/models/steel_column_bent.glb",
+  "bytes": 77528,
+  "meshes": 1,
+  "materials": [
+    "steel_painted",
+    "steel_bare"
+  ],
+  "primitives": [
+    {
+      "material": "steel_painted",
+      "triangles": 608,
+      "vertices": 1774,
+      "signedVolume": 0.06287606105999466,
+      "windingDisagreesWithNormal": 0,
+      "min": [
+        -0.8301597833633423,
+        -1.9299999475479126,
+        -0.30000001192092896
+      ],
+      "max": [
+        0.30000001192092896,
+        1.826955795288086,
+        0.30000001192092896
+      ]
+    },
+    {
+      "material": "steel_bare",
+      "triangles": 112,
+      "vertices": 128,
+      "signedVolume": 0.0006430714412554774,
+      "windingDisagreesWithNormal": 0,
+      "min": [
+        -0.23399999737739563,
+        -2.1500000953674316,
+        -0.23399999737739563
+      ],
+      "max": [
+        0.23399999737739563,
+        -1.8600000143051147,
+        0.23399999737739563
+      ]
+    }
+  ],
+  "totalSignedVolume": 0.06351913250125013,
+  "triangles": 720,
+  "vertices": 1902,
+  "nonFiniteValues": 0,
+  "nonUnitNormals": 0,
+  "degenerateTriangles": 0,
+  "edges": 1080,
+  "boundaryEdges": 0,
+  "nonManifoldEdges": 0,
+  "boundsMin": [
+    -0.8301597833633423,
+    -2.1500000953674316,
+    -0.30000001192092896
+  ],
+  "boundsMax": [
+    0.30000001192092896,
+    1.826955795288086,
+    0.30000001192092896
+  ],
+  "sizeMetres": [
+    1.1301597952842712,
+    3.9769558906555176,
+    0.6000000238418579
+  ]
+}

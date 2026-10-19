@@ -1,0 +1,21 @@
+.atlas-advisor { position: absolute; top: 26px; left: 50%; transform: translateX(-50%); z-index: 5; display: flex; flex-direction: column; align-items: center; gap: 10px; pointer-events: none; font-family: var(--mono); }
+.atlas-advisor > * { pointer-events: auto; }
+.atlas-pill { display: inline-flex; align-items: center; gap: 9px; padding: 7px 14px; border: 1px solid rgb(201 167 255 / 34%); border-radius: 99px; background: rgb(8 10 34 / 62%); backdrop-filter: blur(8px); color: #e9defb; font: 500 11px var(--mono); letter-spacing: .14em; cursor: pointer; }
+.atlas-pill em { font-style: normal; color: #c9b9e8; letter-spacing: .1em; text-transform: uppercase; }
+.atlas-pill kbd { font: 500 10px var(--mono); padding: 1px 5px; border: 1px solid rgb(201 167 255 / 40%); border-radius: 4px; color: #cdbaf0; }
+.atlas-pill:hover { background: rgb(40 20 90 / 70%); }
+.atlas-dot { width: 7px; height: 7px; border-radius: 50%; background: #8b98ae; }
+.atlas-pill.is-linked .atlas-dot { background: #e467e6; box-shadow: 0 0 10px #e467e6; }
+.atlas-pill.is-stale .atlas-dot { background: #ffb35c; box-shadow: 0 0 10px #ffb35c; }
+.atlas-panel { width: min(400px, 88vw); padding: 14px 18px 12px; border-radius: 14px; text-align: left; }
+.atlas-title { margin: 8px 0 6px; font: 600 16px 'Segoe UI', system-ui, sans-serif; letter-spacing: 0; color: #f6eaff; line-height: 1.3; }
+.atlas-detail { margin: 0 0 8px; font: 13px/1.45 'Segoe UI', system-ui, sans-serif; letter-spacing: 0; color: #e3d6f7; }
+.atlas-detail kbd, .atlas-foot kbd { font: 500 10px var(--mono); padding: 1px 5px; border: 1px solid rgb(201 167 255 / 40%); border-radius: 4px; }
+.atlas-bearing { display: flex; align-items: center; gap: 10px; margin: 6px 0 8px; font: 13px 'Segoe UI', system-ui, sans-serif; color: #e3d6f7; }
+.atlas-bearing .ring { fill: none; stroke: rgb(201 167 255 / 40%); stroke-width: 1; }
+.atlas-bearing .arrow { fill: #f3e2ff; filter: drop-shadow(0 0 4px #e467e6); }
+.atlas-goal { display: grid; gap: 4px; margin: 6px 0; font: 500 10px var(--mono); letter-spacing: .14em; color: #9fb0c8; text-transform: uppercase; }
+.atlas-goal select { padding: 6px 8px; border: 1px solid rgb(201 167 255 / 34%); border-radius: 8px; background: rgb(8 10 34 / 70%); color: #e9defb; font: 12px 'Segoe UI', system-ui, sans-serif; letter-spacing: 0; text-transform: none; }
+.atlas-limit { margin: 6px 0 4px; font: 11.5px/1.4 'Segoe UI', system-ui, sans-serif; letter-spacing: 0; color: #cdbaf0; }
+.atlas-stale { color: #ffb35c; font-weight: 600; }
+.atlas-foot { margin: 8px 0 0; font: 10px var(--mono); letter-spacing: .08em; color: #8b98ae; }

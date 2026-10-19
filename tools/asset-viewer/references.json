@@ -1,0 +1,24 @@
+{
+  "_comment": "Maintained by hand. 'sheets' maps reference images in Design/Object Designs/ (matched by filename substring) to gallery categories; images with no match still appear as unmapped references. 'planned' lists components seen on the reference sheets that do not exist as models yet (shown as MISSING), or phenomena rendered by shaders rather than meshes.",
+  "sheets": [
+    { "match": "10_46_23", "title": "Microbot hero, orthographic views and formations", "categories": ["microbot", "formation"] },
+    { "match": "10_46_28", "title": "Construction debris: concrete, steel, scaffolding, walkways, panels, pipes, cables", "categories": ["concrete", "rubble", "steel", "scaffold", "walkway", "pipe", "electrical", "panel", "cluster"] },
+    { "match": "10_46_31", "title": "Capsule and components (reference only: no NASA marks or Callaghan company in our models)", "categories": ["landmark"] },
+    { "match": "10_46_34", "title": "Baymax remnants", "categories": ["baymax"] },
+    { "match": "10_46_37", "title": "Dimensional phenomena (dust, currents, compressed matter, gas, apertures, orbits)", "categories": ["cluster", "terrain", "planned"] }
+  ],
+  "planned": [
+    { "label": "Baymax chest armour fragment", "category": "baymax", "status": "missing" },
+    { "label": "Baymax helmet / visor shell", "category": "baymax", "status": "missing" },
+    { "label": "Baymax wing armour fragments", "category": "baymax", "status": "missing" },
+    { "label": "Baymax hand armour segment", "category": "baymax", "status": "missing" },
+    { "label": "Baymax thruster housing", "category": "baymax", "status": "missing" },
+    { "label": "Capsule heat-shield panel (separate piece)", "category": "landmark", "status": "missing" },
+    { "label": "Capsule RCS thruster module (separate piece)", "category": "landmark", "status": "missing", "note": "RCS ports exist only as part of the collar remnant" },
+    { "label": "Capsule communications antenna", "category": "landmark", "status": "missing" },
+    { "label": "Complete pod / crew compartment", "category": "landmark", "status": "not planned", "note": "Deliberately not modelled: the film rescues the pod intact" },
+    { "label": "Temporary fold aperture", "category": "effect", "status": "shader", "note": "Luminous tear shader (src/scene/SpatialEffects.tsx), not a mesh" },
+    { "label": "Spatial shear / echo", "category": "effect", "status": "shader", "note": "Gas raymarch shear (src/scene/gas/GasVolumePass.ts), not a mesh" },
+    { "label": "Dimensional dust", "category": "effect", "status": "shader", "note": "Point motes (src/scene/gas/GasMotes.tsx), not a mesh" }
+  ]
+}

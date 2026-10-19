@@ -1,0 +1,51 @@
+{
+  "file": "public/assets/models/rubble_cluster_b.glb",
+  "bytes": 14764,
+  "meshes": 1,
+  "materials": [
+    "concrete"
+  ],
+  "primitives": [
+    {
+      "material": "concrete",
+      "triangles": 176,
+      "vertices": 318,
+      "signedVolume": 0.1436073818111599,
+      "windingDisagreesWithNormal": 0,
+      "min": [
+        -0.6158577799797058,
+        -0.35137060284614563,
+        -0.6112583875656128
+      ],
+      "max": [
+        0.6786675453186035,
+        0.5046534538269043,
+        0.6538252830505371
+      ]
+    }
+  ],
+  "totalSignedVolume": 0.1436073818111599,
+  "triangles": 176,
+  "vertices": 318,
+  "nonFiniteValues": 0,
+  "nonUnitNormals": 0,
+  "degenerateTriangles": 0,
+  "edges": 264,
+  "boundaryEdges": 0,
+  "nonManifoldEdges": 0,
+  "boundsMin": [
+    -0.6158577799797058,
+    -0.35137060284614563,
+    -0.6112583875656128
+  ],
+  "boundsMax": [
+    0.6786675453186035,
+    0.5046534538269043,
+    0.6538252830505371
+  ],
+  "sizeMetres": [
+    1.2945253252983093,
+    0.8560240566730499,
+    1.26508367061615
+  ]
+}

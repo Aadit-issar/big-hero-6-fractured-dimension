@@ -1,0 +1,2230 @@
+{
+  "microbot": {
+    "file": "/assets/models/microbot.glb",
+    "bytes": 199432,
+    "triangles": 5872,
+    "vertices": 5266,
+    "materials": [
+      "microbot_shell",
+      "microbot_recess",
+      "microbot_joint"
+    ],
+    "min": [
+      -0.01940000057220459,
+      -0.003697499632835388,
+      -0.003697499632835388
+    ],
+    "max": [
+      0.01940000057220459,
+      0.003697499632835388,
+      0.003697499632835388
+    ],
+    "size": [
+      0.03880000114440918,
+      0.007394999265670776,
+      0.007394999265670776
+    ]
+  },
+  "microbot_lod1": {
+    "file": "/assets/models/microbot_lod1.glb",
+    "bytes": 22792,
+    "triangles": 544,
+    "vertices": 602,
+    "materials": [
+      "microbot_shell",
+      "microbot_joint"
+    ],
+    "min": [
+      -0.01940000057220459,
+      -0.003700000001117587,
+      -0.003700000001117587
+    ],
+    "max": [
+      0.01940000057220459,
+      0.003700000001117587,
+      0.003700000001117587
+    ],
+    "size": [
+      0.03880000114440918,
+      0.007400000002235174,
+      0.007400000002235174
+    ]
+  },
+  "microbot_lod2": {
+    "file": "/assets/models/microbot_lod2.glb",
+    "bytes": 10016,
+    "triangles": 176,
+    "vertices": 254,
+    "materials": [
+      "microbot_shell",
+      "microbot_joint"
+    ],
+    "min": [
+      -0.01940000057220459,
+      -0.003700000001117587,
+      -0.003700000001117587
+    ],
+    "max": [
+      0.01940000057220459,
+      0.003700000001117587,
+      0.003700000001117587
+    ],
+    "size": [
+      0.03880000114440918,
+      0.007400000002235174,
+      0.007400000002235174
+    ]
+  },
+  "baymax_shoulder_shell": {
+    "file": "/assets/models/candidates/baymax/baymax_shoulder_shell.glb",
+    "bytes": 2477044,
+    "triangles": 52596,
+    "vertices": 42016,
+    "materials": [
+      "shoulder_paint",
+      "liner",
+      "rim",
+      "steel",
+      "gunmetal",
+      "cable_red",
+      "cable_black"
+    ],
+    "min": [
+      -0.40415,
+      -0.44796,
+      -0.36527
+    ],
+    "max": [
+      0.56327,
+      0.33895,
+      0.35064
+    ],
+    "size": [
+      0.96742,
+      0.7869,
+      0.71592
+    ],
+    "family": "baymax",
+    "replaces": "baymax_shoulder_fragment",
+    "label": "Shoulder armour shell, torn open on the joint",
+    "maxTexture": 1536,
+    "lods": [
+      {
+        "file": "/assets/models/candidates/baymax/baymax_shoulder_shell_lod1.glb",
+        "bytes": 1413628,
+        "triangles": 11997,
+        "size": [
+          0.9671,
+          0.7869,
+          0.71635
+        ],
+        "maxTexture": 1536,
+        "materials": [
+          "shoulder_paint",
+          "liner",
+          "rim",
+          "steel",
+          "gunmetal",
+          "cable_red",
+          "cable_black"
+        ]
+      }
+    ]
+  },
+  "baymax_forearm_shell": {
+    "file": "/assets/models/candidates/baymax/baymax_forearm_shell.glb",
+    "bytes": 2204568,
+    "triangles": 37260,
+    "vertices": 36036,
+    "materials": [
+      "forearm_paint",
+      "liner",
+      "rim",
+      "gunmetal",
+      "steel",
+      "cable_red",
+      "cable_black"
+    ],
+    "min": [
+      -0.28677,
+      -0.1445,
+      -0.2528
+    ],
+    "max": [
+      0.28682,
+      0.90123,
+      0.25625
+    ],
+    "size": [
+      0.57359,
+      1.04573,
+      0.50904
+    ],
+    "family": "baymax",
+    "replaces": "baymax_forearm_fragment",
+    "label": "Forearm armour shell with split panel and wrist hub",
+    "maxTexture": 1280,
+    "lods": [
+      {
+        "file": "/assets/models/candidates/baymax/baymax_forearm_shell_lod1.glb",
+        "bytes": 1501104,
+        "triangles": 12000,
+        "size": [
+          0.57379,
+          1.04573,
+          0.51004
+        ],
+        "maxTexture": 1280,
+        "materials": [
+          "forearm_paint",
+          "liner",
+          "rim",
+          "gunmetal",
+          "steel",
+          "cable_red",
+          "cable_black"
+        ]
+      }
+    ]
+  },
+  "baymax_chest_armor": {
+    "file": "/assets/models/candidates/baymax/baymax_chest_armor.glb",
+    "bytes": 2632408,
+    "triangles": 43136,
+    "vertices": 44559,
+    "materials": [
+      "chest_paint",
+      "liner",
+      "rim",
+      "gunmetal",
+      "steel",
+      "cable_red",
+      "cable_black",
+      "lens_blue"
+    ],
+    "min": [
+      -0.64527,
+      -0.48855,
+      -0.195
+    ],
+    "max": [
+      0.665,
+      0.6784,
+      0.41139
+    ],
+    "size": [
+      1.31027,
+      1.16694,
+      0.60639
+    ],
+    "family": "baymax",
+    "replaces": null,
+    "label": "Chest armour fragment with emblem and exposed interior",
+    "maxTexture": 1536,
+    "lods": [
+      {
+        "file": "/assets/models/candidates/baymax/baymax_chest_armor_lod1.glb",
+        "bytes": 1519432,
+        "triangles": 11978,
+        "size": [
+          1.31064,
+          1.16635,
+          0.60624
+        ],
+        "maxTexture": 1536,
+        "materials": [
+          "chest_paint",
+          "liner",
+          "rim",
+          "gunmetal",
+          "steel",
+          "cable_red",
+          "cable_black",
+          "lens_blue"
+        ]
+      }
+    ]
+  },
+  "baymax_joint_shell": {
+    "file": "/assets/models/candidates/baymax/baymax_joint_shell.glb",
+    "bytes": 1647460,
+    "triangles": 25068,
+    "vertices": 23376,
+    "materials": [
+      "joint_paint",
+      "liner",
+      "rim",
+      "gunmetal",
+      "steel",
+      "cable_red",
+      "lens_blue",
+      "cable_black"
+    ],
+    "min": [
+      -0.25752,
+      -0.29565,
+      -0.27654
+    ],
+    "max": [
+      0.27652,
+      0.33655,
+      0.27492
+    ],
+    "size": [
+      0.53404,
+      0.6322,
+      0.55146
+    ],
+    "family": "baymax",
+    "replaces": null,
+    "label": "Joint shell piece with bearing hub and lens",
+    "maxTexture": 1280,
+    "lods": [
+      {
+        "file": "/assets/models/candidates/baymax/baymax_joint_shell_lod1.glb",
+        "bytes": 1154876,
+        "triangles": 9000,
+        "size": [
+          0.53471,
+          0.63344,
+          0.55079
+        ],
+        "maxTexture": 1280,
+        "materials": [
+          "joint_paint",
+          "liner",
+          "rim",
+          "gunmetal",
+          "steel",
+          "cable_red",
+          "lens_blue",
+          "cable_black"
+        ]
+      }
+    ]
+  },
+  "baymax_plating_shard": {
+    "file": "/assets/models/candidates/baymax/baymax_plating_shard.glb",
+    "bytes": 921652,
+    "triangles": 11920,
+    "vertices": 12355,
+    "materials": [
+      "shard_paint",
+      "liner",
+      "rim"
+    ],
+    "min": [
+      -0.35466,
+      -0.31005,
+      -0.09973
+    ],
+    "max": [
+      0.38145,
+      0.30513,
+      0.01332
+    ],
+    "size": [
+      0.73611,
+      0.61518,
+      0.11305
+    ],
+    "family": "baymax",
+    "replaces": null,
+    "label": "Armour plating shard with slot",
+    "maxTexture": 1024,
+    "lods": [
+      {
+        "file": "/assets/models/candidates/baymax/baymax_plating_shard_lod1.glb",
+        "bytes": 759836,
+        "triangles": 5000,
+        "size": [
+          0.73611,
+          0.61518,
+          0.11332
+        ],
+        "maxTexture": 1024,
+        "materials": [
+          "shard_paint",
+          "liner",
+          "rim"
+        ]
+      }
+    ]
+  },
+  "capsule_shell_remnant": {
+    "file": "/assets/models/candidates/capsule/capsule_shell_remnant.glb",
+    "bytes": 6399388,
+    "triangles": 101999,
+    "vertices": 106964,
+    "materials": [
+      "hs_outer",
+      "ablator_rim",
+      "wall_outer",
+      "skin_back",
+      "rim_metal",
+      "deck",
+      "pw_outer",
+      "cabin_wall",
+      "insulation",
+      "insulation_rim",
+      "stringer",
+      "frame",
+      "floor",
+      "gunmetal",
+      "steel_dark",
+      "cushion_orange",
+      "cushion_dark",
+      "cable_black",
+      "steel_bright",
+      "avionics",
+      "lamp_green",
+      "lamp_amber",
+      "lamp_red",
+      "screen",
+      "lamp_white",
+      "gold_foil",
+      "cable_orange",
+      "cable_blue",
+      "cable_red",
+      "copper",
+      "cable_yellow",
+      "glass",
+      "rubber",
+      "cabin_dark",
+      "glass_opaque",
+      "nozzle",
+      "whitepaint",
+      "burnt"
+    ],
+    "min": [
+      -1.9565,
+      0.01202,
+      -2.28087
+    ],
+    "max": [
+      1.99296,
+      2.86404,
+      1.9565
+    ],
+    "size": [
+      3.94946,
+      2.85202,
+      4.23737
+    ],
+    "family": "capsule",
+    "replaces": "capsule_collar_remnant",
+    "label": "Capsule shell remnant (hero)",
+    "maxTexture": 2048,
+    "lods": [
+      {
+        "file": "/assets/models/candidates/capsule/capsule_shell_remnant_lod1.glb",
+        "bytes": 1793540,
+        "triangles": 17930,
+        "size": [
+          3.94892,
+          2.85148,
+          4.24194
+        ],
+        "maxTexture": 1024,
+        "materials": [
+          "hs_outer",
+          "ablator_rim",
+          "wall_outer",
+          "skin_back",
+          "rim_metal",
+          "deck",
+          "pw_outer",
+          "cabin_wall",
+          "insulation",
+          "insulation_rim",
+          "stringer",
+          "frame",
+          "floor",
+          "gunmetal",
+          "steel_dark",
+          "cushion_orange",
+          "cushion_dark",
+          "cable_black",
+          "steel_bright",
+          "avionics",
+          "lamp_green",
+          "lamp_amber",
+          "lamp_red",
+          "screen",
+          "lamp_white",
+          "gold_foil",
+          "cable_orange",
+          "cable_blue",
+          "cable_red",
+          "copper",
+          "cable_yellow",
+          "glass",
+          "rubber",
+          "cabin_dark",
+          "glass_opaque",
+          "nozzle",
+          "whitepaint",
+          "burnt"
+        ]
+      },
+      {
+        "file": "/assets/models/candidates/capsule/capsule_shell_remnant_lod2.glb",
+        "bytes": 521792,
+        "triangles": 4263,
+        "size": [
+          3.93387,
+          2.82649,
+          4.24272
+        ],
+        "maxTexture": 512,
+        "materials": [
+          "hs_outer",
+          "ablator_rim",
+          "wall_outer",
+          "skin_back",
+          "rim_metal",
+          "deck",
+          "pw_outer",
+          "cabin_wall",
+          "insulation",
+          "insulation_rim",
+          "stringer",
+          "frame",
+          "floor",
+          "gunmetal",
+          "steel_dark",
+          "cushion_orange",
+          "cushion_dark",
+          "cable_black",
+          "steel_bright",
+          "avionics",
+          "lamp_green",
+          "lamp_amber",
+          "lamp_red",
+          "screen",
+          "lamp_white",
+          "gold_foil",
+          "cable_orange",
+          "cable_blue",
+          "cable_red",
+          "copper",
+          "cable_yellow",
+          "glass",
+          "rubber",
+          "cabin_dark",
+          "glass_opaque",
+          "nozzle",
+          "whitepaint",
+          "burnt"
+        ]
+      }
+    ]
+  },
+  "capsule_collar_ring": {
+    "file": "/assets/models/candidates/capsule/capsule_collar_ring.glb",
+    "bytes": 551776,
+    "triangles": 9204,
+    "vertices": 11362,
+    "materials": [
+      "gunmetal",
+      "rubber",
+      "steel_bright",
+      "whitepaint",
+      "steel_dark",
+      "lamp_amber",
+      "cable_orange",
+      "cable_black",
+      "copper",
+      "cable_blue"
+    ],
+    "min": [
+      -0.84636,
+      -0.19163,
+      -0.86093
+    ],
+    "max": [
+      0.84636,
+      0.19163,
+      0.86093
+    ],
+    "size": [
+      1.69273,
+      0.38326,
+      1.72186
+    ],
+    "family": "capsule",
+    "replaces": "capsule_collar_remnant",
+    "label": "Docking collar, separation damage",
+    "maxTexture": 512,
+    "lods": [
+      {
+        "file": "/assets/models/candidates/capsule/capsule_collar_ring_lod1.glb",
+        "bytes": 267068,
+        "triangles": 4000,
+        "size": [
+          1.69273,
+          0.38334,
+          1.72186
+        ],
+        "maxTexture": 256,
+        "materials": [
+          "gunmetal",
+          "rubber",
+          "steel_bright",
+          "whitepaint",
+          "steel_dark",
+          "lamp_amber",
+          "cable_orange",
+          "cable_black",
+          "copper",
+          "cable_blue"
+        ]
+      },
+      {
+        "file": "/assets/models/candidates/capsule/capsule_collar_ring_lod2.glb",
+        "bytes": 110088,
+        "triangles": 1189,
+        "size": [
+          1.69273,
+          0.3791,
+          1.72186
+        ],
+        "maxTexture": 128,
+        "materials": [
+          "gunmetal",
+          "rubber",
+          "steel_bright",
+          "whitepaint",
+          "steel_dark",
+          "lamp_amber",
+          "cable_orange",
+          "cable_black",
+          "copper",
+          "cable_blue"
+        ]
+      }
+    ]
+  },
+  "capsule_heatshield_panel": {
+    "file": "/assets/models/candidates/capsule/capsule_heatshield_panel.glb",
+    "bytes": 1017896,
+    "triangles": 18272,
+    "vertices": 15189,
+    "materials": [
+      "frag_hs",
+      "cabin_dark",
+      "char_solid",
+      "structure",
+      "steel_bright",
+      "steel_dark"
+    ],
+    "min": [
+      -0.61566,
+      -0.15683,
+      -0.44521
+    ],
+    "max": [
+      0.61566,
+      0.15683,
+      0.44521
+    ],
+    "size": [
+      1.23133,
+      0.31367,
+      0.89043
+    ],
+    "family": "capsule",
+    "replaces": null,
+    "label": "Heat-shield panel, charred ablator on ribbed carrier",
+    "maxTexture": 1024,
+    "lods": [
+      {
+        "file": "/assets/models/candidates/capsule/capsule_heatshield_panel_lod1.glb",
+        "bytes": 285792,
+        "triangles": 4000,
+        "size": [
+          1.23148,
+          0.31311,
+          0.89011
+        ],
+        "maxTexture": 512,
+        "materials": [
+          "frag_hs",
+          "cabin_dark",
+          "char_solid",
+          "structure",
+          "steel_bright",
+          "steel_dark"
+        ]
+      },
+      {
+        "file": "/assets/models/candidates/capsule/capsule_heatshield_panel_lod2.glb",
+        "bytes": 95396,
+        "triangles": 1190,
+        "size": [
+          1.22996,
+          0.31157,
+          0.88691
+        ],
+        "maxTexture": 256,
+        "materials": [
+          "frag_hs",
+          "cabin_dark",
+          "char_solid",
+          "structure",
+          "steel_bright",
+          "steel_dark"
+        ]
+      }
+    ]
+  },
+  "capsule_upper_shell_fragment": {
+    "file": "/assets/models/candidates/capsule/capsule_upper_shell_fragment.glb",
+    "bytes": 797948,
+    "triangles": 16566,
+    "vertices": 12891,
+    "materials": [
+      "frag_outer",
+      "primer_solid",
+      "steel_bright",
+      "insulation",
+      "steel_dark",
+      "glass_opaque"
+    ],
+    "min": [
+      -0.58827,
+      -0.18279,
+      -0.52917
+    ],
+    "max": [
+      0.58827,
+      0.18279,
+      0.52917
+    ],
+    "size": [
+      1.17654,
+      0.36558,
+      1.05834
+    ],
+    "family": "capsule",
+    "replaces": null,
+    "label": "Upper shell fragment with RE-01 stencil and camera port",
+    "maxTexture": 1024,
+    "lods": [
+      {
+        "file": "/assets/models/candidates/capsule/capsule_upper_shell_fragment_lod1.glb",
+        "bytes": 256232,
+        "triangles": 3999,
+        "size": [
+          1.17725,
+          0.36498,
+          1.05849
+        ],
+        "maxTexture": 512,
+        "materials": [
+          "frag_outer",
+          "primer_solid",
+          "steel_bright",
+          "insulation",
+          "steel_dark",
+          "glass_opaque"
+        ]
+      },
+      {
+        "file": "/assets/models/candidates/capsule/capsule_upper_shell_fragment_lod2.glb",
+        "bytes": 104028,
+        "triangles": 1198,
+        "size": [
+          1.17527,
+          0.36749,
+          1.05841
+        ],
+        "maxTexture": 256,
+        "materials": [
+          "frag_outer",
+          "primer_solid",
+          "steel_bright",
+          "insulation",
+          "steel_dark",
+          "glass_opaque"
+        ]
+      }
+    ]
+  },
+  "capsule_impact_fragment": {
+    "file": "/assets/models/candidates/capsule/capsule_impact_fragment.glb",
+    "bytes": 951984,
+    "triangles": 20652,
+    "vertices": 17360,
+    "materials": [
+      "frag2_outer",
+      "primer_solid",
+      "steel_bright",
+      "insulation",
+      "structure_solid",
+      "cable_orange",
+      "copper",
+      "cable_black",
+      "cable_blue",
+      "cable_red",
+      "cable_white",
+      "cable_yellow",
+      "steel_dark"
+    ],
+    "min": [
+      -0.58097,
+      -0.336,
+      -0.52714
+    ],
+    "max": [
+      0.58097,
+      0.336,
+      0.52714
+    ],
+    "size": [
+      1.16194,
+      0.67199,
+      1.05428
+    ],
+    "family": "capsule",
+    "replaces": null,
+    "label": "Impact fragment: folded skin, layers and torn loom",
+    "maxTexture": 1024,
+    "lods": [
+      {
+        "file": "/assets/models/candidates/capsule/capsule_impact_fragment_lod1.glb",
+        "bytes": 279080,
+        "triangles": 4000,
+        "size": [
+          1.16328,
+          0.67091,
+          1.05559
+        ],
+        "maxTexture": 512,
+        "materials": [
+          "frag2_outer",
+          "primer_solid",
+          "steel_bright",
+          "insulation",
+          "structure_solid",
+          "cable_orange",
+          "copper",
+          "cable_black",
+          "cable_blue",
+          "cable_red",
+          "cable_white",
+          "cable_yellow",
+          "steel_dark"
+        ]
+      },
+      {
+        "file": "/assets/models/candidates/capsule/capsule_impact_fragment_lod2.glb",
+        "bytes": 106276,
+        "triangles": 1192,
+        "size": [
+          1.16525,
+          0.6719,
+          1.04729
+        ],
+        "maxTexture": 256,
+        "materials": [
+          "frag2_outer",
+          "primer_solid",
+          "steel_bright",
+          "insulation",
+          "structure_solid",
+          "cable_orange",
+          "copper",
+          "cable_black",
+          "cable_blue",
+          "cable_red",
+          "cable_white",
+          "cable_yellow",
+          "steel_dark"
+        ]
+      }
+    ]
+  },
+  "capsule_rcs_thruster": {
+    "file": "/assets/models/candidates/capsule/capsule_rcs_thruster.glb",
+    "bytes": 568416,
+    "triangles": 6780,
+    "vertices": 5543,
+    "materials": [
+      "gunmetal",
+      "steel_bright",
+      "interior",
+      "cable_orange",
+      "copper",
+      "cable_blue",
+      "cable_black"
+    ],
+    "min": [
+      -0.35585,
+      -0.21536,
+      -0.26491
+    ],
+    "max": [
+      0.35585,
+      0.21536,
+      0.26491
+    ],
+    "size": [
+      0.71169,
+      0.43072,
+      0.52982
+    ],
+    "family": "capsule",
+    "replaces": null,
+    "label": "RCS thruster module, damaged",
+    "maxTexture": 1024,
+    "lods": [
+      {
+        "file": "/assets/models/candidates/capsule/capsule_rcs_thruster_lod1.glb",
+        "bytes": 522660,
+        "triangles": 4999,
+        "size": [
+          0.71169,
+          0.43072,
+          0.52982
+        ],
+        "maxTexture": 1024,
+        "materials": [
+          "gunmetal",
+          "steel_bright",
+          "interior",
+          "cable_orange",
+          "copper",
+          "cable_blue",
+          "cable_black"
+        ]
+      },
+      {
+        "file": "/assets/models/candidates/capsule/capsule_rcs_thruster_lod2.glb",
+        "bytes": 404624,
+        "triangles": 1200,
+        "size": [
+          0.71315,
+          0.42892,
+          0.53056
+        ],
+        "maxTexture": 1024,
+        "materials": [
+          "gunmetal",
+          "steel_bright",
+          "interior",
+          "cable_orange",
+          "copper",
+          "cable_blue",
+          "cable_black"
+        ]
+      }
+    ]
+  },
+  "capsule_antenna_broken": {
+    "file": "/assets/models/candidates/capsule/capsule_antenna_broken.glb",
+    "bytes": 242872,
+    "triangles": 1332,
+    "vertices": 1755,
+    "materials": [
+      "gunmetal",
+      "steel_bright",
+      "rubber",
+      "nozzle_burnt",
+      "cable_black",
+      "copper"
+    ],
+    "min": [
+      -0.23914,
+      -0.31432,
+      -0.10105
+    ],
+    "max": [
+      0.23914,
+      0.31432,
+      0.10105
+    ],
+    "size": [
+      0.47828,
+      0.62863,
+      0.2021
+    ],
+    "family": "capsule",
+    "replaces": null,
+    "label": "Communications antenna, broken",
+    "maxTexture": 1024,
+    "lods": [
+      {
+        "file": "/assets/models/candidates/capsule/capsule_antenna_broken_lod1.glb",
+        "bytes": 242872,
+        "triangles": 1332,
+        "size": [
+          0.47828,
+          0.62863,
+          0.2021
+        ],
+        "maxTexture": 1024,
+        "materials": [
+          "gunmetal",
+          "steel_bright",
+          "rubber",
+          "nozzle_burnt",
+          "cable_black",
+          "copper"
+        ]
+      },
+      {
+        "file": "/assets/models/candidates/capsule/capsule_antenna_broken_lod2.glb",
+        "bytes": 213856,
+        "triangles": 600,
+        "size": [
+          0.47706,
+          0.62878,
+          0.20012
+        ],
+        "maxTexture": 1024,
+        "materials": [
+          "gunmetal",
+          "steel_bright",
+          "rubber",
+          "nozzle_burnt",
+          "cable_black",
+          "copper"
+        ]
+      }
+    ]
+  },
+  "capsule_instrument_unit": {
+    "file": "/assets/models/candidates/capsule/capsule_instrument_unit.glb",
+    "bytes": 666832,
+    "triangles": 2768,
+    "vertices": 4104,
+    "materials": [
+      "gunmetal",
+      "interior",
+      "whitepaint",
+      "steel_bright",
+      "glass",
+      "rubber",
+      "lamp_amber",
+      "lamp_blue",
+      "cable_orange",
+      "copper",
+      "cable_blue",
+      "cable_black",
+      "cable_red"
+    ],
+    "min": [
+      -0.3,
+      -0.37821,
+      -0.40142
+    ],
+    "max": [
+      0.3,
+      0.37821,
+      0.40142
+    ],
+    "size": [
+      0.6,
+      0.75641,
+      0.80284
+    ],
+    "family": "capsule",
+    "replaces": null,
+    "label": "Scientific instrument unit, recovered",
+    "maxTexture": 1024,
+    "lods": [
+      {
+        "file": "/assets/models/candidates/capsule/capsule_instrument_unit_lod1.glb",
+        "bytes": 666832,
+        "triangles": 2768,
+        "size": [
+          0.6,
+          0.75641,
+          0.80284
+        ],
+        "maxTexture": 1024,
+        "materials": [
+          "gunmetal",
+          "interior",
+          "whitepaint",
+          "steel_bright",
+          "glass",
+          "rubber",
+          "lamp_amber",
+          "lamp_blue",
+          "cable_orange",
+          "copper",
+          "cable_blue",
+          "cable_black",
+          "cable_red"
+        ]
+      },
+      {
+        "file": "/assets/models/candidates/capsule/capsule_instrument_unit_lod2.glb",
+        "bytes": 585172,
+        "triangles": 1200,
+        "size": [
+          0.6,
+          0.75637,
+          0.80291
+        ],
+        "maxTexture": 1024,
+        "materials": [
+          "gunmetal",
+          "interior",
+          "whitepaint",
+          "steel_bright",
+          "glass",
+          "rubber",
+          "lamp_amber",
+          "lamp_blue",
+          "cable_orange",
+          "copper",
+          "cable_blue",
+          "cable_black",
+          "cable_red"
+        ]
+      }
+    ]
+  },
+  "concrete_chunk_a": {
+    "file": "/assets/models/candidates/concrete/concrete_chunk_a.glb",
+    "bytes": 2085364,
+    "triangles": 7648,
+    "vertices": 6869,
+    "materials": [
+      "concrete_fracture",
+      "rebar_steel"
+    ],
+    "min": [
+      -0.61428,
+      -0.38172,
+      -0.47497
+    ],
+    "max": [
+      0.51668,
+      0.43519,
+      0.36458
+    ],
+    "size": [
+      1.13095,
+      0.81692,
+      0.83955
+    ],
+    "family": "concrete",
+    "replaces": "concrete_chunk_a",
+    "label": "Compact faceted chunk with a bar stub",
+    "maxTexture": 1024,
+    "lods": []
+  },
+  "concrete_chunk_b": {
+    "file": "/assets/models/candidates/concrete/concrete_chunk_b.glb",
+    "bytes": 2594944,
+    "triangles": 8824,
+    "vertices": 8911,
+    "materials": [
+      "concrete_cast",
+      "concrete_fracture",
+      "rebar_steel"
+    ],
+    "min": [
+      -1.03016,
+      -0.12005,
+      -0.38235
+    ],
+    "max": [
+      0.88156,
+      0.123,
+      0.16999
+    ],
+    "size": [
+      1.91172,
+      0.24305,
+      0.55234
+    ],
+    "family": "concrete",
+    "replaces": "concrete_chunk_b",
+    "label": "Slab-edge strip fragment with two bars",
+    "maxTexture": 1024,
+    "lods": []
+  },
+  "concrete_chunk_c": {
+    "file": "/assets/models/candidates/concrete/concrete_chunk_c.glb",
+    "bytes": 2630772,
+    "triangles": 7362,
+    "vertices": 9659,
+    "materials": [
+      "concrete_cast",
+      "concrete_fracture",
+      "rebar_steel"
+    ],
+    "min": [
+      -0.69384,
+      -0.09583,
+      -0.70828
+    ],
+    "max": [
+      0.62152,
+      0.09543,
+      0.78907
+    ],
+    "size": [
+      1.31536,
+      0.19125,
+      1.49734
+    ],
+    "family": "concrete",
+    "replaces": "concrete_chunk_c",
+    "label": "Thin broad plate shard with cast corner",
+    "maxTexture": 1024,
+    "lods": []
+  },
+  "concrete_rubble_cluster_a": {
+    "file": "/assets/models/candidates/concrete/concrete_rubble_cluster_a.glb",
+    "bytes": 1681256,
+    "triangles": 8996,
+    "vertices": 10262,
+    "materials": [
+      "concrete_fracture"
+    ],
+    "min": [
+      -0.4182,
+      -0.33804,
+      -0.67788
+    ],
+    "max": [
+      0.40012,
+      0.45295,
+      0.77715
+    ],
+    "size": [
+      0.81832,
+      0.79099,
+      1.45504
+    ],
+    "family": "concrete",
+    "replaces": "rubble_cluster_a",
+    "label": "Rubble cluster (broken pieces 10-40 cm)",
+    "maxTexture": 1024,
+    "lods": []
+  },
+  "concrete_rubble_cluster_b": {
+    "file": "/assets/models/candidates/concrete/concrete_rubble_cluster_b.glb",
+    "bytes": 1678768,
+    "triangles": 8992,
+    "vertices": 10206,
+    "materials": [
+      "concrete_fracture"
+    ],
+    "min": [
+      -0.49513,
+      -0.3516,
+      -0.71822
+    ],
+    "max": [
+      0.54538,
+      0.37291,
+      0.71335
+    ],
+    "size": [
+      1.04052,
+      0.72451,
+      1.43157
+    ],
+    "family": "concrete",
+    "replaces": "rubble_cluster_b",
+    "label": "Rubble cluster with bar offcuts",
+    "maxTexture": 1024,
+    "lods": []
+  },
+  "concrete_slab_plain": {
+    "file": "/assets/models/candidates/concrete/concrete_slab_plain.glb",
+    "bytes": 1873144,
+    "triangles": 29998,
+    "vertices": 35198,
+    "materials": [
+      "concrete_slab_plain_baked"
+    ],
+    "min": [
+      -1.35004,
+      -0.1032,
+      -0.55193
+    ],
+    "max": [
+      1.46016,
+      0.10192,
+      0.55009
+    ],
+    "size": [
+      2.8102,
+      0.20512,
+      1.10202
+    ],
+    "family": "concrete",
+    "replaces": "concrete_slab_plain",
+    "label": "Long plain slab fragment (unreinforced, parallelogram break)",
+    "maxTexture": 1024,
+    "lods": []
+  },
+  "concrete_slab_rebar": {
+    "file": "/assets/models/candidates/concrete/concrete_slab_rebar.glb",
+    "bytes": 6917400,
+    "triangles": 69486,
+    "vertices": 83382,
+    "materials": [
+      "concrete_slab_rebar_baked",
+      "rebar_steel"
+    ],
+    "min": [
+      -1.56877,
+      -0.1634,
+      -0.97968
+    ],
+    "max": [
+      1.29772,
+      0.12357,
+      0.77512
+    ],
+    "size": [
+      2.86649,
+      0.28697,
+      1.75479
+    ],
+    "family": "concrete",
+    "replaces": "concrete_slab_rebar",
+    "label": "Broken reinforced slab (stepped shear fracture, exposed rebar)",
+    "maxTexture": 2048,
+    "lods": [
+      {
+        "file": "/assets/models/candidates/concrete/concrete_slab_rebar_lod1.glb",
+        "bytes": 730980,
+        "triangles": 15286,
+        "size": [
+          2.86649,
+          0.29271,
+          1.7597
+        ],
+        "maxTexture": 0,
+        "materials": [
+          "concrete_slab_rebar_baked",
+          "rebar_steel"
+        ]
+      },
+      {
+        "file": "/assets/models/candidates/concrete/concrete_slab_rebar_lod2.glb",
+        "bytes": 209288,
+        "triangles": 4168,
+        "size": [
+          2.86515,
+          0.29267,
+          1.75772
+        ],
+        "maxTexture": 0,
+        "materials": [
+          "concrete_slab_rebar_baked",
+          "rebar_steel"
+        ]
+      }
+    ]
+  },
+  "concrete_wall_breach": {
+    "file": "/assets/models/candidates/concrete/concrete_wall_breach.glb",
+    "bytes": 8294476,
+    "triangles": 107438,
+    "vertices": 120825,
+    "materials": [
+      "concrete_wall_breach_baked",
+      "rebar_steel"
+    ],
+    "min": [
+      -2.04489,
+      -1.1998,
+      -0.22986
+    ],
+    "max": [
+      1.73238,
+      1.20048,
+      0.22948
+    ],
+    "size": [
+      3.77727,
+      2.40028,
+      0.45933
+    ],
+    "family": "concrete",
+    "replaces": "concrete_wall_breach",
+    "label": "Wall section with blast breach and missing corner",
+    "maxTexture": 2048,
+    "lods": [
+      {
+        "file": "/assets/models/candidates/concrete/concrete_wall_breach_lod1.glb",
+        "bytes": 911784,
+        "triangles": 19338,
+        "size": [
+          3.77744,
+          2.40925,
+          0.45283
+        ],
+        "maxTexture": 0,
+        "materials": [
+          "concrete_wall_breach_baked",
+          "rebar_steel"
+        ]
+      },
+      {
+        "file": "/assets/models/candidates/concrete/concrete_wall_breach_lod2.glb",
+        "bytes": 267528,
+        "triangles": 4834,
+        "size": [
+          3.77515,
+          2.40813,
+          0.4505
+        ],
+        "maxTexture": 0,
+        "materials": [
+          "concrete_wall_breach_baked",
+          "rebar_steel"
+        ]
+      }
+    ]
+  },
+  "industrial_ibeam_twisted": {
+    "file": "/assets/models/candidates/industrial/industrial_ibeam_twisted.glb",
+    "bytes": 1024240,
+    "triangles": 14676,
+    "vertices": 11881,
+    "materials": [
+      "industrial_ibeam_twisted_pbr",
+      "bolt",
+      "weld"
+    ],
+    "min": [
+      -0.0304,
+      -0.27168,
+      -0.53605
+    ],
+    "max": [
+      4.68766,
+      0.23,
+      0.12
+    ],
+    "size": [
+      4.71806,
+      0.50168,
+      0.65605
+    ],
+    "family": "industrial",
+    "replaces": "steel_ibeam_twisted",
+    "label": "Torsionally buckled W360 I-beam, torch-cut end, bolted end plate",
+    "maxTexture": 2048,
+    "lods": [
+      {
+        "file": "/assets/models/candidates/industrial/industrial_ibeam_twisted_lod1.glb",
+        "bytes": 322360,
+        "triangles": 4402,
+        "size": [
+          4.71765,
+          0.50104,
+          0.65529
+        ],
+        "maxTexture": 1024,
+        "materials": [
+          "industrial_ibeam_twisted_pbr",
+          "bolt",
+          "weld"
+        ]
+      },
+      {
+        "file": "/assets/models/candidates/industrial/industrial_ibeam_twisted_lod2.glb",
+        "bytes": 109300,
+        "triangles": 1163,
+        "size": [
+          4.71838,
+          0.49964,
+          0.64971
+        ],
+        "maxTexture": 512,
+        "materials": [
+          "industrial_ibeam_twisted_pbr",
+          "bolt",
+          "weld"
+        ]
+      }
+    ]
+  },
+  "industrial_ibeam_bolted": {
+    "file": "/assets/models/candidates/industrial/industrial_ibeam_bolted.glb",
+    "bytes": 1239228,
+    "triangles": 16472,
+    "vertices": 16885,
+    "materials": [
+      "industrial_ibeam_bolted_pbr",
+      "bolt"
+    ],
+    "min": [
+      0,
+      -0.55391,
+      -0.12219
+    ],
+    "max": [
+      4.26312,
+      0.2044,
+      0.104
+    ],
+    "size": [
+      4.26312,
+      0.75831,
+      0.22619
+    ],
+    "family": "industrial",
+    "replaces": "steel_ibeam_bolted",
+    "label": "Bolted W360 splice, failed joint with sheared bolts and a dropped span",
+    "maxTexture": 2048,
+    "lods": [
+      {
+        "file": "/assets/models/candidates/industrial/industrial_ibeam_bolted_lod1.glb",
+        "bytes": 398176,
+        "triangles": 4938,
+        "size": [
+          4.26311,
+          0.7579,
+          0.22602
+        ],
+        "maxTexture": 1024,
+        "materials": [
+          "industrial_ibeam_bolted_pbr",
+          "bolt"
+        ]
+      },
+      {
+        "file": "/assets/models/candidates/industrial/industrial_ibeam_bolted_lod2.glb",
+        "bytes": 135480,
+        "triangles": 1286,
+        "size": [
+          4.26305,
+          0.75968,
+          0.22732
+        ],
+        "maxTexture": 512,
+        "materials": [
+          "industrial_ibeam_bolted_pbr",
+          "bolt"
+        ]
+      }
+    ]
+  },
+  "industrial_column_bent": {
+    "file": "/assets/models/candidates/industrial/industrial_column_bent.glb",
+    "bytes": 1072152,
+    "triangles": 13546,
+    "vertices": 11114,
+    "materials": [
+      "industrial_column_bent_pbr",
+      "bolt",
+      "weld"
+    ],
+    "min": [
+      -0.05005,
+      -0.64637,
+      -0.28
+    ],
+    "max": [
+      4.0449,
+      0.28,
+      0.28
+    ],
+    "size": [
+      4.09495,
+      0.92637,
+      0.56
+    ],
+    "family": "industrial",
+    "replaces": "steel_column_bent",
+    "label": "Bent W300 H-column on a base plate with anchor bolts",
+    "maxTexture": 2048,
+    "lods": [
+      {
+        "file": "/assets/models/candidates/industrial/industrial_column_bent_lod1.glb",
+        "bytes": 365004,
+        "triangles": 4062,
+        "size": [
+          4.09439,
+          0.92622,
+          0.5597
+        ],
+        "maxTexture": 1024,
+        "materials": [
+          "industrial_column_bent_pbr",
+          "bolt",
+          "weld"
+        ]
+      },
+      {
+        "file": "/assets/models/candidates/industrial/industrial_column_bent_lod2.glb",
+        "bytes": 127852,
+        "triangles": 1075,
+        "size": [
+          4.0951,
+          0.92504,
+          0.55869
+        ],
+        "maxTexture": 512,
+        "materials": [
+          "industrial_column_bent_pbr",
+          "bolt",
+          "weld"
+        ]
+      }
+    ]
+  },
+  "industrial_scaffold_section": {
+    "file": "/assets/models/candidates/industrial/industrial_scaffold_section.glb",
+    "bytes": 2249692,
+    "triangles": 18552,
+    "vertices": 19498,
+    "materials": [
+      "industrial_scaffold_section_pbr",
+      "wood"
+    ],
+    "min": [
+      -0.12,
+      0,
+      -1.37398
+    ],
+    "max": [
+      2.12,
+      3.3,
+      0.12
+    ],
+    "size": [
+      2.24,
+      3.3,
+      1.49398
+    ],
+    "family": "industrial",
+    "replaces": "scaffold_section",
+    "label": "Scaffold bay, 3 lifts, buckled standard and dropped ledger",
+    "maxTexture": 2048,
+    "lods": [
+      {
+        "file": "/assets/models/candidates/industrial/industrial_scaffold_section_lod1.glb",
+        "bytes": 843228,
+        "triangles": 5599,
+        "size": [
+          2.24,
+          3.3,
+          1.49241
+        ],
+        "maxTexture": 1024,
+        "materials": [
+          "industrial_scaffold_section_pbr",
+          "wood"
+        ]
+      },
+      {
+        "file": "/assets/models/candidates/industrial/industrial_scaffold_section_lod2.glb",
+        "bytes": 273516,
+        "triangles": 1529,
+        "size": [
+          2.24001,
+          3.297,
+          1.48731
+        ],
+        "maxTexture": 512,
+        "materials": [
+          "industrial_scaffold_section_pbr",
+          "wood"
+        ]
+      }
+    ]
+  },
+  "industrial_walkway_section": {
+    "file": "/assets/models/candidates/industrial/industrial_walkway_section.glb",
+    "bytes": 2134004,
+    "triangles": 18968,
+    "vertices": 24049,
+    "materials": [
+      "industrial_walkway_section_pbr",
+      "bolt"
+    ],
+    "min": [
+      -0.025,
+      -0.1825,
+      -0.5062
+    ],
+    "max": [
+      3.025,
+      1.07016,
+      0.5062
+    ],
+    "size": [
+      3.05,
+      1.25266,
+      1.0124
+    ],
+    "family": "industrial",
+    "replaces": "walkway_section",
+    "label": "Catwalk section: C-channel frame, open grating, toe plates, 1.05 m rails",
+    "maxTexture": 2048,
+    "lods": [
+      {
+        "file": "/assets/models/candidates/industrial/industrial_walkway_section_lod1.glb",
+        "bytes": 730264,
+        "triangles": 5688,
+        "size": [
+          3.04921,
+          1.25229,
+          1.01199
+        ],
+        "maxTexture": 1024,
+        "materials": [
+          "industrial_walkway_section_pbr",
+          "bolt"
+        ]
+      },
+      {
+        "file": "/assets/models/candidates/industrial/industrial_walkway_section_lod2.glb",
+        "bytes": 232920,
+        "triangles": 1472,
+        "size": [
+          3.04921,
+          1.25299,
+          1.01272
+        ],
+        "maxTexture": 512,
+        "materials": [
+          "industrial_walkway_section_pbr",
+          "bolt"
+        ]
+      }
+    ]
+  },
+  "industrial_walkway_torn": {
+    "file": "/assets/models/candidates/industrial/industrial_walkway_torn.glb",
+    "bytes": 2095740,
+    "triangles": 20688,
+    "vertices": 24676,
+    "materials": [
+      "industrial_walkway_torn_pbr",
+      "bolt"
+    ],
+    "min": [
+      -0.025,
+      -1.1914,
+      -0.79228
+    ],
+    "max": [
+      3.87439,
+      1.07016,
+      0.51249
+    ],
+    "size": [
+      3.89939,
+      2.26156,
+      1.30477
+    ],
+    "family": "industrial",
+    "replaces": "walkway_torn",
+    "label": "Collapsed catwalk: dropped hinge, missing grating, snapped stringer and rails",
+    "maxTexture": 2048,
+    "lods": [
+      {
+        "file": "/assets/models/candidates/industrial/industrial_walkway_torn_lod1.glb",
+        "bytes": 702808,
+        "triangles": 6205,
+        "size": [
+          3.89926,
+          2.26198,
+          1.30477
+        ],
+        "maxTexture": 1024,
+        "materials": [
+          "industrial_walkway_torn_pbr",
+          "bolt"
+        ]
+      },
+      {
+        "file": "/assets/models/candidates/industrial/industrial_walkway_torn_lod2.glb",
+        "bytes": 225660,
+        "triangles": 1456,
+        "size": [
+          3.89891,
+          2.25874,
+          1.30156
+        ],
+        "maxTexture": 512,
+        "materials": [
+          "industrial_walkway_torn_pbr",
+          "bolt"
+        ]
+      }
+    ]
+  },
+  "industrial_pipe_large_fractured": {
+    "file": "/assets/models/candidates/industrial/industrial_pipe_large_fractured.glb",
+    "bytes": 1106476,
+    "triangles": 17200,
+    "vertices": 15134,
+    "materials": [
+      "industrial_pipe_large_fractured_pbr",
+      "bolt",
+      "weld",
+      "rubber"
+    ],
+    "min": [
+      0,
+      -0.63903,
+      -0.60975
+    ],
+    "max": [
+      3.68674,
+      0.455,
+      0.4392
+    ],
+    "size": [
+      3.68674,
+      1.09403,
+      1.04895
+    ],
+    "family": "industrial",
+    "replaces": "pipe_large_fractured",
+    "label": "O.D. 600 pipe, opened flange joint and burst petal end",
+    "maxTexture": 2048,
+    "lods": [
+      {
+        "file": "/assets/models/candidates/industrial/industrial_pipe_large_fractured_lod1.glb",
+        "bytes": 383136,
+        "triangles": 5160,
+        "size": [
+          3.68674,
+          1.0932,
+          1.04895
+        ],
+        "maxTexture": 1024,
+        "materials": [
+          "industrial_pipe_large_fractured_pbr",
+          "bolt",
+          "weld",
+          "rubber"
+        ]
+      },
+      {
+        "file": "/assets/models/candidates/industrial/industrial_pipe_large_fractured_lod2.glb",
+        "bytes": 126512,
+        "triangles": 1380,
+        "size": [
+          3.68136,
+          1.06882,
+          1.03042
+        ],
+        "maxTexture": 512,
+        "materials": [
+          "industrial_pipe_large_fractured_pbr",
+          "bolt",
+          "weld",
+          "rubber"
+        ]
+      }
+    ]
+  },
+  "industrial_pipe_elbow_torn": {
+    "file": "/assets/models/candidates/industrial/industrial_pipe_elbow_torn.glb",
+    "bytes": 903004,
+    "triangles": 8074,
+    "vertices": 6709,
+    "materials": [
+      "industrial_pipe_elbow_torn_pbr",
+      "bolt",
+      "weld"
+    ],
+    "min": [
+      -0.62085,
+      -0.255,
+      -0.2625
+    ],
+    "max": [
+      0.67508,
+      1.44406,
+      0.2625
+    ],
+    "size": [
+      1.29593,
+      1.69906,
+      0.525
+    ],
+    "family": "industrial",
+    "replaces": "pipe_elbow_torn",
+    "label": "O.D. 300 long-radius elbow with flange, strap and torn spigot",
+    "maxTexture": 2048,
+    "lods": [
+      {
+        "file": "/assets/models/candidates/industrial/industrial_pipe_elbow_torn_lod1.glb",
+        "bytes": 322904,
+        "triangles": 2420,
+        "size": [
+          1.2919,
+          1.69906,
+          0.51689
+        ],
+        "maxTexture": 1024,
+        "materials": [
+          "industrial_pipe_elbow_torn_pbr",
+          "bolt",
+          "weld"
+        ]
+      },
+      {
+        "file": "/assets/models/candidates/industrial/industrial_pipe_elbow_torn_lod2.glb",
+        "bytes": 119364,
+        "triangles": 631,
+        "size": [
+          1.29537,
+          1.63741,
+          0.52259
+        ],
+        "maxTexture": 512,
+        "materials": [
+          "industrial_pipe_elbow_torn_pbr",
+          "bolt",
+          "weld"
+        ]
+      }
+    ]
+  },
+  "industrial_cable_bundle": {
+    "file": "/assets/models/candidates/industrial/industrial_cable_bundle.glb",
+    "bytes": 671964,
+    "triangles": 10642,
+    "vertices": 9129,
+    "materials": [
+      "industrial_cable_bundle_pbr",
+      "bolt",
+      "rubber",
+      "cable_red",
+      "cable_blue",
+      "cable_yellow",
+      "copper"
+    ],
+    "min": [
+      -0.05,
+      -0.67744,
+      -0.2609
+    ],
+    "max": [
+      2.98071,
+      0.101,
+      0.22515
+    ],
+    "size": [
+      3.03071,
+      0.77844,
+      0.48605
+    ],
+    "family": "industrial",
+    "replaces": "cable_bundle",
+    "label": "Lay-twisted 7-cable bundle with clamps, lugs and a snapped conductor",
+    "maxTexture": 2048,
+    "lods": [
+      {
+        "file": "/assets/models/candidates/industrial/industrial_cable_bundle_lod1.glb",
+        "bytes": 208056,
+        "triangles": 3187,
+        "size": [
+          3.03133,
+          0.77925,
+          0.4843
+        ],
+        "maxTexture": 1024,
+        "materials": [
+          "industrial_cable_bundle_pbr",
+          "bolt",
+          "rubber",
+          "cable_red",
+          "cable_blue",
+          "cable_yellow",
+          "copper"
+        ]
+      },
+      {
+        "file": "/assets/models/candidates/industrial/industrial_cable_bundle_lod2.glb",
+        "bytes": 73400,
+        "triangles": 922,
+        "size": [
+          3.03134,
+          0.77948,
+          0.48969
+        ],
+        "maxTexture": 512,
+        "materials": [
+          "industrial_cable_bundle_pbr",
+          "bolt",
+          "rubber",
+          "cable_red",
+          "cable_blue",
+          "cable_yellow",
+          "copper"
+        ]
+      }
+    ]
+  },
+  "industrial_junction_box_broken": {
+    "file": "/assets/models/candidates/industrial/industrial_junction_box_broken.glb",
+    "bytes": 812412,
+    "triangles": 6547,
+    "vertices": 5879,
+    "materials": [
+      "industrial_junction_box_broken_pbr",
+      "dark",
+      "bolt",
+      "cable_red",
+      "cable_blue",
+      "cable_yellow",
+      "rubber"
+    ],
+    "min": [
+      -0.00282,
+      -0.53321,
+      -0.34821
+    ],
+    "max": [
+      0.68653,
+      1.14261,
+      0.28358
+    ],
+    "size": [
+      0.68936,
+      1.67582,
+      0.63179
+    ],
+    "family": "industrial",
+    "replaces": "junction_box_broken",
+    "label": "Wall junction box with dented corner, torn open door, DIN rail devices and trailing wires",
+    "maxTexture": 2048,
+    "lods": [
+      {
+        "file": "/assets/models/candidates/industrial/industrial_junction_box_broken_lod1.glb",
+        "bytes": 283636,
+        "triangles": 1967,
+        "size": [
+          0.68946,
+          1.67582,
+          0.63179
+        ],
+        "maxTexture": 1024,
+        "materials": [
+          "industrial_junction_box_broken_pbr",
+          "dark",
+          "bolt",
+          "cable_red",
+          "cable_blue",
+          "cable_yellow",
+          "rubber"
+        ]
+      },
+      {
+        "file": "/assets/models/candidates/industrial/industrial_junction_box_broken_lod2.glb",
+        "bytes": 109644,
+        "triangles": 684,
+        "size": [
+          0.68768,
+          1.67463,
+          0.63125
+        ],
+        "maxTexture": 512,
+        "materials": [
+          "industrial_junction_box_broken_pbr",
+          "dark",
+          "bolt",
+          "cable_red",
+          "cable_blue",
+          "cable_yellow",
+          "rubber"
+        ]
+      }
+    ]
+  },
+  "industrial_facility_panel": {
+    "file": "/assets/models/candidates/industrial/industrial_facility_panel.glb",
+    "bytes": 1377000,
+    "triangles": 15774,
+    "vertices": 12403,
+    "materials": [
+      "industrial_facility_panel_pbr",
+      "bolt"
+    ],
+    "min": [
+      0,
+      -0.86565,
+      -0.66768
+    ],
+    "max": [
+      2.23031,
+      0.06314,
+      0.6
+    ],
+    "size": [
+      2.23031,
+      0.92879,
+      1.26768
+    ],
+    "family": "industrial",
+    "replaces": "facility_panel_krei",
+    "label": "Ribbed cladding panel 2.4 x 1.2 m with Z-girts, diagonal fold and torn corner (no logos)",
+    "maxTexture": 2048,
+    "lods": [
+      {
+        "file": "/assets/models/candidates/industrial/industrial_facility_panel_lod1.glb",
+        "bytes": 487148,
+        "triangles": 4731,
+        "size": [
+          2.23032,
+          0.92847,
+          1.23616
+        ],
+        "maxTexture": 1024,
+        "materials": [
+          "industrial_facility_panel_pbr",
+          "bolt"
+        ]
+      },
+      {
+        "file": "/assets/models/candidates/industrial/industrial_facility_panel_lod2.glb",
+        "bytes": 168028,
+        "triangles": 1246,
+        "size": [
+          2.23138,
+          0.92955,
+          1.243
+        ],
+        "maxTexture": 512,
+        "materials": [
+          "industrial_facility_panel_pbr",
+          "bolt"
+        ]
+      }
+    ]
+  },
+  "industrial_scaffold_pole_bent": {
+    "file": "/assets/models/candidates/industrial/industrial_scaffold_pole_bent.glb",
+    "bytes": 681724,
+    "triangles": 6260,
+    "vertices": 4924,
+    "materials": [
+      "industrial_scaffold_pole_bent_pbr"
+    ],
+    "min": [
+      -0.075,
+      0,
+      -0.77159
+    ],
+    "max": [
+      1.62674,
+      4.00847,
+      0.075
+    ],
+    "size": [
+      1.70174,
+      4.00847,
+      0.84659
+    ],
+    "family": "industrial",
+    "replaces": "scaffold_pole_bent",
+    "label": "Kinked scaffold standard with coupler, ledger stub and base jack",
+    "maxTexture": 2048,
+    "lods": [
+      {
+        "file": "/assets/models/candidates/industrial/industrial_scaffold_pole_bent_lod1.glb",
+        "bytes": 247512,
+        "triangles": 1878,
+        "size": [
+          1.70179,
+          4.00825,
+          0.84659
+        ],
+        "maxTexture": 1024,
+        "materials": [
+          "industrial_scaffold_pole_bent_pbr"
+        ]
+      },
+      {
+        "file": "/assets/models/candidates/industrial/industrial_scaffold_pole_bent_lod2.glb",
+        "bytes": 91052,
+        "triangles": 500,
+        "size": [
+          1.70016,
+          4.00883,
+          0.84575
+        ],
+        "maxTexture": 512,
+        "materials": [
+          "industrial_scaffold_pole_bent_pbr"
+        ]
+      }
+    ]
+  },
+  "industrial_steel_girder_premium": {
+    "file": "/assets/models/candidates/industrial/industrial_steel_girder_premium.glb",
+    "bytes": 3457636,
+    "triangles": 64680,
+    "vertices": 63152,
+    "materials": [
+      "girder_painted_steel_pbr",
+      "bolts",
+      "welds"
+    ],
+    "min": [
+      -0.0315,
+      -0.25,
+      -0.14603
+    ],
+    "max": [
+      3.97179,
+      1.36562,
+      0.13
+    ],
+    "size": [
+      4.00329,
+      1.61562,
+      0.27603
+    ],
+    "family": "industrial",
+    "replaces": "steel_ibeam_twisted",
+    "label": "Premium damaged steel girder: plates, bolts, welds, accordion flange, torn web, severed flange",
+    "maxTexture": 4096,
+    "lods": [
+      {
+        "file": "/assets/models/candidates/industrial/industrial_steel_girder_premium_lod1.glb",
+        "bytes": 1130292,
+        "triangles": 16164,
+        "size": [
+          4.00278,
+          1.61518,
+          0.27546
+        ],
+        "maxTexture": 2048,
+        "materials": [
+          "girder_painted_steel_pbr",
+          "bolts",
+          "welds"
+        ]
+      },
+      {
+        "file": "/assets/models/candidates/industrial/industrial_steel_girder_premium_lod2.glb",
+        "bytes": 672844,
+        "triangles": 8474,
+        "size": [
+          4.00281,
+          1.6133,
+          0.2806
+        ],
+        "maxTexture": 1024,
+        "materials": [
+          "girder_painted_steel_pbr",
+          "bolts",
+          "welds"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "file": "public/assets/models/scaffold_section.glb",
+  "bytes": 40888,
+  "meshes": 1,
+  "materials": [
+    "steel_bare",
+    "steel_painted"
+  ],
+  "primitives": [
+    {
+      "material": "steel_bare",
+      "triangles": 768,
+      "vertices": 666,
+      "signedVolume": 0.04479273659624347,
+      "windingDisagreesWithNormal": 0,
+      "min": [
+        -1.0419819355010986,
+        -1.7999999523162842,
+        -0.5239999890327454
+      ],
+      "max": [
+        1.0418139696121216,
+        1.7999999523162842,
+        0.5241397619247437
+      ]
+    },
+    {
+      "material": "steel_painted",
+      "triangles": 96,
+      "vertices": 192,
+      "signedVolume": 0.0035839983291625368,
+      "windingDisagreesWithNormal": 0,
+      "min": [
+        -1.0399999618530273,
+        -1.6349999904632568,
+        -0.5400000214576721
+      ],
+      "max": [
+        1.0399999618530273,
+        0.13500000536441803,
+        0.5400000214576721
+      ]
+    }
+  ],
+  "totalSignedVolume": 0.048376734925406006,
+  "triangles": 864,
+  "vertices": 858,
+  "nonFiniteValues": 0,
+  "nonUnitNormals": 0,
+  "degenerateTriangles": 0,
+  "edges": 1296,
+  "boundaryEdges": 0,
+  "nonManifoldEdges": 0,
+  "boundsMin": [
+    -1.0419819355010986,
+    -1.7999999523162842,
+    -0.5400000214576721
+  ],
+  "boundsMax": [
+    1.0418139696121216,
+    1.7999999523162842,
+    0.5400000214576721
+  ],
+  "sizeMetres": [
+    2.08379590511322,
+    3.5999999046325684,
+    1.0800000429153442
+  ]
+}

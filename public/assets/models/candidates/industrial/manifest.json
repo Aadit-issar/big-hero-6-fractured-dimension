@@ -1,0 +1,340 @@
+{
+  "industrial_ibeam_twisted": {
+    "file": "/assets/models/candidates/industrial/industrial_ibeam_twisted.glb",
+    "replaces": "steel_ibeam_twisted",
+    "category": "steel",
+    "label": "Torsionally buckled W360 I-beam, torch-cut end, bolted end plate",
+    "state": "Textured PBR candidate (industrial kit); review.",
+    "triangles": 14676,
+    "bytes": 1024240,
+    "bounds_m": [
+      4.718,
+      0.502,
+      0.656
+    ],
+    "lods": [
+      {
+        "file": "/assets/models/candidates/industrial/industrial_ibeam_twisted_lod1.glb",
+        "triangles": 4402,
+        "bytes": 322360
+      },
+      {
+        "file": "/assets/models/candidates/industrial/industrial_ibeam_twisted_lod2.glb",
+        "triangles": 1163,
+        "bytes": 109300
+      }
+    ]
+  },
+  "industrial_ibeam_bolted": {
+    "file": "/assets/models/candidates/industrial/industrial_ibeam_bolted.glb",
+    "replaces": "steel_ibeam_bolted",
+    "category": "steel",
+    "label": "Bolted W360 splice, failed joint with sheared bolts and a dropped span",
+    "state": "Textured PBR candidate (industrial kit); review.",
+    "triangles": 16472,
+    "bytes": 1239228,
+    "bounds_m": [
+      4.263,
+      0.758,
+      0.226
+    ],
+    "lods": [
+      {
+        "file": "/assets/models/candidates/industrial/industrial_ibeam_bolted_lod1.glb",
+        "triangles": 4938,
+        "bytes": 398176
+      },
+      {
+        "file": "/assets/models/candidates/industrial/industrial_ibeam_bolted_lod2.glb",
+        "triangles": 1286,
+        "bytes": 135480
+      }
+    ]
+  },
+  "industrial_column_bent": {
+    "file": "/assets/models/candidates/industrial/industrial_column_bent.glb",
+    "replaces": "steel_column_bent",
+    "category": "steel",
+    "label": "Bent W300 H-column on a base plate with anchor bolts",
+    "state": "Textured PBR candidate (industrial kit); review.",
+    "triangles": 13546,
+    "bytes": 1072152,
+    "bounds_m": [
+      4.095,
+      0.926,
+      0.56
+    ],
+    "lods": [
+      {
+        "file": "/assets/models/candidates/industrial/industrial_column_bent_lod1.glb",
+        "triangles": 4062,
+        "bytes": 365004
+      },
+      {
+        "file": "/assets/models/candidates/industrial/industrial_column_bent_lod2.glb",
+        "triangles": 1075,
+        "bytes": 127852
+      }
+    ]
+  },
+  "industrial_scaffold_section": {
+    "file": "/assets/models/candidates/industrial/industrial_scaffold_section.glb",
+    "replaces": "scaffold_section",
+    "category": "scaffold",
+    "label": "Scaffold bay, 3 lifts, buckled standard and dropped ledger",
+    "state": "Textured PBR candidate (industrial kit); review.",
+    "triangles": 18552,
+    "bytes": 2249692,
+    "bounds_m": [
+      2.24,
+      3.3,
+      1.494
+    ],
+    "lods": [
+      {
+        "file": "/assets/models/candidates/industrial/industrial_scaffold_section_lod1.glb",
+        "triangles": 5599,
+        "bytes": 843228
+      },
+      {
+        "file": "/assets/models/candidates/industrial/industrial_scaffold_section_lod2.glb",
+        "triangles": 1529,
+        "bytes": 273516
+      }
+    ]
+  },
+  "industrial_walkway_section": {
+    "file": "/assets/models/candidates/industrial/industrial_walkway_section.glb",
+    "replaces": "walkway_section",
+    "category": "walkway",
+    "label": "Catwalk section: C-channel frame, open grating, toe plates, 1.05 m rails",
+    "state": "Textured PBR candidate (industrial kit); review.",
+    "triangles": 18968,
+    "bytes": 2134004,
+    "bounds_m": [
+      3.05,
+      1.253,
+      1.012
+    ],
+    "lods": [
+      {
+        "file": "/assets/models/candidates/industrial/industrial_walkway_section_lod1.glb",
+        "triangles": 5688,
+        "bytes": 730264
+      },
+      {
+        "file": "/assets/models/candidates/industrial/industrial_walkway_section_lod2.glb",
+        "triangles": 1472,
+        "bytes": 232920
+      }
+    ]
+  },
+  "industrial_walkway_torn": {
+    "file": "/assets/models/candidates/industrial/industrial_walkway_torn.glb",
+    "replaces": "walkway_torn",
+    "category": "walkway",
+    "label": "Collapsed catwalk: dropped hinge, missing grating, snapped stringer and rails",
+    "state": "Textured PBR candidate (industrial kit); review.",
+    "triangles": 20688,
+    "bytes": 2095740,
+    "bounds_m": [
+      3.899,
+      2.262,
+      1.305
+    ],
+    "lods": [
+      {
+        "file": "/assets/models/candidates/industrial/industrial_walkway_torn_lod1.glb",
+        "triangles": 6205,
+        "bytes": 702808
+      },
+      {
+        "file": "/assets/models/candidates/industrial/industrial_walkway_torn_lod2.glb",
+        "triangles": 1456,
+        "bytes": 225660
+      }
+    ]
+  },
+  "industrial_pipe_large_fractured": {
+    "file": "/assets/models/candidates/industrial/industrial_pipe_large_fractured.glb",
+    "replaces": "pipe_large_fractured",
+    "category": "pipe",
+    "label": "O.D. 600 pipe, opened flange joint and burst petal end",
+    "state": "Textured PBR candidate (industrial kit); review.",
+    "triangles": 17200,
+    "bytes": 1106476,
+    "bounds_m": [
+      3.687,
+      1.094,
+      1.049
+    ],
+    "lods": [
+      {
+        "file": "/assets/models/candidates/industrial/industrial_pipe_large_fractured_lod1.glb",
+        "triangles": 5160,
+        "bytes": 383136
+      },
+      {
+        "file": "/assets/models/candidates/industrial/industrial_pipe_large_fractured_lod2.glb",
+        "triangles": 1380,
+        "bytes": 126512
+      }
+    ]
+  },
+  "industrial_pipe_elbow_torn": {
+    "file": "/assets/models/candidates/industrial/industrial_pipe_elbow_torn.glb",
+    "replaces": "pipe_elbow_torn",
+    "category": "pipe",
+    "label": "O.D. 300 long-radius elbow with flange, strap and torn spigot",
+    "state": "Textured PBR candidate (industrial kit); review.",
+    "triangles": 8074,
+    "bytes": 903004,
+    "bounds_m": [
+      1.296,
+      1.699,
+      0.525
+    ],
+    "lods": [
+      {
+        "file": "/assets/models/candidates/industrial/industrial_pipe_elbow_torn_lod1.glb",
+        "triangles": 2420,
+        "bytes": 322904
+      },
+      {
+        "file": "/assets/models/candidates/industrial/industrial_pipe_elbow_torn_lod2.glb",
+        "triangles": 631,
+        "bytes": 119364
+      }
+    ]
+  },
+  "industrial_cable_bundle": {
+    "file": "/assets/models/candidates/industrial/industrial_cable_bundle.glb",
+    "replaces": "cable_bundle",
+    "category": "electrical",
+    "label": "Lay-twisted 7-cable bundle with clamps, lugs and a snapped conductor",
+    "state": "Textured PBR candidate (industrial kit); review.",
+    "triangles": 10642,
+    "bytes": 671964,
+    "bounds_m": [
+      3.031,
+      0.778,
+      0.486
+    ],
+    "lods": [
+      {
+        "file": "/assets/models/candidates/industrial/industrial_cable_bundle_lod1.glb",
+        "triangles": 3187,
+        "bytes": 208056
+      },
+      {
+        "file": "/assets/models/candidates/industrial/industrial_cable_bundle_lod2.glb",
+        "triangles": 922,
+        "bytes": 73400
+      }
+    ]
+  },
+  "industrial_junction_box_broken": {
+    "file": "/assets/models/candidates/industrial/industrial_junction_box_broken.glb",
+    "replaces": "junction_box_broken",
+    "category": "electrical",
+    "label": "Wall junction box with dented corner, torn open door, DIN rail devices and trailing wires",
+    "state": "Textured PBR candidate (industrial kit); review.",
+    "triangles": 6547,
+    "bytes": 812412,
+    "bounds_m": [
+      0.689,
+      1.676,
+      0.632
+    ],
+    "lods": [
+      {
+        "file": "/assets/models/candidates/industrial/industrial_junction_box_broken_lod1.glb",
+        "triangles": 1967,
+        "bytes": 283636
+      },
+      {
+        "file": "/assets/models/candidates/industrial/industrial_junction_box_broken_lod2.glb",
+        "triangles": 684,
+        "bytes": 109644
+      }
+    ]
+  },
+  "industrial_facility_panel": {
+    "file": "/assets/models/candidates/industrial/industrial_facility_panel.glb",
+    "replaces": "facility_panel_krei",
+    "category": "panel",
+    "label": "Ribbed cladding panel 2.4 x 1.2 m with Z-girts, diagonal fold and torn corner (no logos)",
+    "state": "Textured PBR candidate (industrial kit); review.",
+    "triangles": 15774,
+    "bytes": 1377000,
+    "bounds_m": [
+      2.23,
+      0.929,
+      1.268
+    ],
+    "lods": [
+      {
+        "file": "/assets/models/candidates/industrial/industrial_facility_panel_lod1.glb",
+        "triangles": 4731,
+        "bytes": 487148
+      },
+      {
+        "file": "/assets/models/candidates/industrial/industrial_facility_panel_lod2.glb",
+        "triangles": 1246,
+        "bytes": 168028
+      }
+    ]
+  },
+  "industrial_scaffold_pole_bent": {
+    "file": "/assets/models/candidates/industrial/industrial_scaffold_pole_bent.glb",
+    "replaces": "scaffold_pole_bent",
+    "category": "scaffold",
+    "label": "Kinked scaffold standard with coupler, ledger stub and base jack",
+    "state": "Textured PBR candidate (industrial kit); review.",
+    "triangles": 6260,
+    "bytes": 681724,
+    "bounds_m": [
+      1.702,
+      4.008,
+      0.847
+    ],
+    "lods": [
+      {
+        "file": "/assets/models/candidates/industrial/industrial_scaffold_pole_bent_lod1.glb",
+        "triangles": 1878,
+        "bytes": 247512
+      },
+      {
+        "file": "/assets/models/candidates/industrial/industrial_scaffold_pole_bent_lod2.glb",
+        "triangles": 500,
+        "bytes": 91052
+      }
+    ]
+  },
+  "industrial_steel_girder_premium": {
+    "file": "/assets/models/candidates/industrial/industrial_steel_girder_premium.glb",
+    "replaces": "steel_ibeam_twisted",
+    "category": "steel",
+    "label": "Premium damaged steel girder: plates, bolts, welds, accordion flange, torn web, severed flange",
+    "state": "Textured PBR (planned-UV atlas bake); review.",
+    "triangles": 64680,
+    "bytes": 3457636,
+    "bounds_m": [
+      4.003,
+      1.616,
+      0.276
+    ],
+    "lods": [
+      {
+        "file": "/assets/models/candidates/industrial/industrial_steel_girder_premium_lod1.glb",
+        "triangles": 16164,
+        "bytes": 1130292
+      },
+      {
+        "file": "/assets/models/candidates/industrial/industrial_steel_girder_premium_lod2.glb",
+        "triangles": 8474,
+        "bytes": 672844
+      }
+    ]
+  }
+}

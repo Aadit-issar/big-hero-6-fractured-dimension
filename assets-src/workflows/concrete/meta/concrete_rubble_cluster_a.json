@@ -1,0 +1,16 @@
+{
+ "file": "/assets/models/candidates/concrete/concrete_rubble_cluster_a.glb",
+ "replaces": "rubble_cluster_a",
+ "category": "rubble",
+ "label": "Rubble cluster (broken pieces 10-40 cm)",
+ "state": "Review candidate. Parameterised concrete family; shared textures.",
+ "source": "assets-src/workflows/concrete/build.py",
+ "triangles": 8996,
+ "bytes": 1681256,
+ "bounds_m": [
+  0.818,
+  1.455,
+  0.791
+ ],
+ "lods": {}
+}

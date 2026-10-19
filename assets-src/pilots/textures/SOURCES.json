@@ -1,0 +1,44 @@
+{
+ "concrete_wall_007": {
+  "name": "Concrete Wall 007",
+  "authors": {
+   "Dario Barresi": "Processing",
+   "Rico Cilliers": "Tiling",
+   "Charlotte Baglioni": "Photography"
+  },
+  "url": "https://polyhaven.com/a/concrete_wall_007",
+  "licence": "CC0 1.0",
+  "files": {
+   "Diffuse": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/concrete_wall_007/concrete_wall_007_diff_2k.jpg",
+   "nor_gl": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/concrete_wall_007/concrete_wall_007_nor_gl_2k.jpg",
+   "arm": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/concrete_wall_007/concrete_wall_007_arm_2k.jpg"
+  }
+ },
+ "concrete_debris": {
+  "name": "Concrete Debris",
+  "authors": {
+   "Amal Kumar": "All"
+  },
+  "url": "https://polyhaven.com/a/concrete_debris",
+  "licence": "CC0 1.0",
+  "files": {
+   "Diffuse": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/concrete_debris/concrete_debris_diff_2k.jpg",
+   "nor_gl": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/concrete_debris/concrete_debris_nor_gl_2k.jpg",
+   "arm": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/concrete_debris/concrete_debris_arm_2k.jpg"
+  }
+ },
+ "rust_coarse_01": {
+  "name": "Rust Coarse 01",
+  "authors": {
+   "Dimitrios Savva": "Photography",
+   "Rico Cilliers": "Processing"
+  },
+  "url": "https://polyhaven.com/a/rust_coarse_01",
+  "licence": "CC0 1.0",
+  "files": {
+   "Diffuse": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/rust_coarse_01/rust_coarse_01_diff_2k.jpg",
+   "nor_gl": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/rust_coarse_01/rust_coarse_01_nor_gl_2k.jpg",
+   "arm": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/rust_coarse_01/rust_coarse_01_arm_2k.jpg"
+  }
+ }
+}

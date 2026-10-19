@@ -1,0 +1,892 @@
+{
+  "_comment": "Candidates under visual review. They are NOT approved and are not used by the dimension. 'replaces' is the existing library asset each candidate would supersede after approval.",
+  "concrete_slab_premium": {
+    "file": "/assets/models/candidates/concrete_slab_premium.glb",
+    "replaces": "concrete_slab_rebar",
+    "category": "concrete",
+    "label": "Broken reinforced-concrete slab (pilot A)",
+    "state": "Textured PBR; concrete and exposed rebar. Review candidate.",
+    "source": "assets-src/pilots/concrete_slab_premium.py"
+  },
+  "steel_girder_premium": {
+    "file": "/assets/models/candidates/steel_girder_premium.glb",
+    "replaces": "steel_ibeam_twisted",
+    "category": "steel",
+    "label": "Damaged structural steel girder (pilot B)",
+    "state": "GEOMETRY ONLY with a flat placeholder paint. The baked paint, rust and wear material is not finished.",
+    "source": "assets-src/pilots/steel_girder_premium.py"
+  },
+  "baymax_shoulder_shell": {
+    "file": "/assets/models/candidates/baymax/baymax_shoulder_shell.glb",
+    "replaces": "baymax_shoulder_fragment",
+    "category": "baymax",
+    "label": "Shoulder armour shell, torn open on the joint",
+    "state": "Textured PBR review candidate Not approved.",
+    "source": "assets-src/workflows/baymax/",
+    "family": "baymax",
+    "triangles": 52596,
+    "bytes": 2477044,
+    "bounds_m": [
+      0.967,
+      0.716,
+      0.787
+    ],
+    "lods": {
+      "lod1": {
+        "file": "/assets/models/candidates/baymax/baymax_shoulder_shell_lod1.glb",
+        "triangles": 12000,
+        "bytes": 1413628
+      },
+      "lod2": {
+        "file": "/assets/models/candidates/baymax/baymax_shoulder_shell_lod2.glb",
+        "triangles": 6623,
+        "bytes": 1218640
+      }
+    }
+  },
+  "baymax_forearm_shell": {
+    "file": "/assets/models/candidates/baymax/baymax_forearm_shell.glb",
+    "replaces": "baymax_forearm_fragment",
+    "category": "baymax",
+    "label": "Forearm armour shell with split panel and wrist hub",
+    "state": "Textured PBR review candidate Not approved.",
+    "source": "assets-src/workflows/baymax/",
+    "family": "baymax",
+    "triangles": 37260,
+    "bytes": 2204568,
+    "bounds_m": [
+      0.574,
+      0.509,
+      1.046
+    ],
+    "lods": {
+      "lod1": {
+        "file": "/assets/models/candidates/baymax/baymax_forearm_shell_lod1.glb",
+        "triangles": 12000,
+        "bytes": 1501104
+      },
+      "lod2": {
+        "file": "/assets/models/candidates/baymax/baymax_forearm_shell_lod2.glb",
+        "triangles": 8384,
+        "bytes": 1369184
+      }
+    }
+  },
+  "baymax_chest_armor": {
+    "file": "/assets/models/candidates/baymax/baymax_chest_armor.glb",
+    "replaces": null,
+    "category": "baymax",
+    "label": "Chest armour fragment with emblem and exposed interior",
+    "state": "Textured PBR review candidate Not approved.",
+    "source": "assets-src/workflows/baymax/",
+    "family": "baymax",
+    "triangles": 43136,
+    "bytes": 2632408,
+    "bounds_m": [
+      1.31,
+      0.606,
+      1.167
+    ],
+    "lods": {
+      "lod1": {
+        "file": "/assets/models/candidates/baymax/baymax_chest_armor_lod1.glb",
+        "triangles": 11999,
+        "bytes": 1519432
+      },
+      "lod2": {
+        "file": "/assets/models/candidates/baymax/baymax_chest_armor_lod2.glb",
+        "triangles": 3385,
+        "bytes": 1122240
+      }
+    }
+  },
+  "baymax_joint_shell": {
+    "file": "/assets/models/candidates/baymax/baymax_joint_shell.glb",
+    "replaces": null,
+    "category": "baymax",
+    "label": "Joint shell piece with bearing hub and lens",
+    "state": "Textured PBR review candidate Not approved.",
+    "source": "assets-src/workflows/baymax/",
+    "family": "baymax",
+    "triangles": 25068,
+    "bytes": 1647460,
+    "bounds_m": [
+      0.534,
+      0.551,
+      0.632
+    ],
+    "lods": {
+      "lod1": {
+        "file": "/assets/models/candidates/baymax/baymax_joint_shell_lod1.glb",
+        "triangles": 9000,
+        "bytes": 1154876
+      },
+      "lod2": {
+        "file": "/assets/models/candidates/baymax/baymax_joint_shell_lod2.glb",
+        "triangles": 2725,
+        "bytes": 915724
+      }
+    }
+  },
+  "baymax_plating_shard": {
+    "file": "/assets/models/candidates/baymax/baymax_plating_shard.glb",
+    "replaces": null,
+    "category": "baymax",
+    "label": "Armour plating shard with slot",
+    "state": "Textured PBR review candidate Not approved.",
+    "source": "assets-src/workflows/baymax/",
+    "family": "baymax",
+    "triangles": 11920,
+    "bytes": 921652,
+    "bounds_m": [
+      0.736,
+      0.113,
+      0.615
+    ],
+    "lods": {
+      "lod1": {
+        "file": "/assets/models/candidates/baymax/baymax_plating_shard_lod1.glb",
+        "triangles": 5000,
+        "bytes": 759836
+      },
+      "lod2": {
+        "file": "/assets/models/candidates/baymax/baymax_plating_shard_lod2.glb",
+        "triangles": 4462,
+        "bytes": 746144
+      }
+    }
+  },
+  "capsule_shell_remnant": {
+    "file": "/assets/models/candidates/capsule/capsule_shell_remnant.glb",
+    "replaces": "capsule_collar_remnant",
+    "category": "landmark",
+    "label": "Capsule shell remnant (hero)",
+    "state": "Textured PBR review candidate (v2) Not approved.",
+    "source": "assets-src/workflows/capsule/",
+    "family": "capsule",
+    "triangles": 101999,
+    "bytes": 6399388,
+    "bounds_m": [
+      3.949,
+      4.237,
+      2.852
+    ],
+    "lods": {
+      "lod1": {
+        "file": "/assets/models/candidates/capsule/capsule_shell_remnant_lod1.glb",
+        "triangles": 18000,
+        "bytes": 1793540
+      },
+      "lod2": {
+        "file": "/assets/models/candidates/capsule/capsule_shell_remnant_lod2.glb",
+        "triangles": 4499,
+        "bytes": 521792
+      }
+    }
+  },
+  "capsule_collar_ring": {
+    "file": "/assets/models/candidates/capsule/capsule_collar_ring.glb",
+    "replaces": "capsule_collar_remnant",
+    "category": "landmark",
+    "label": "Docking collar, separation damage",
+    "state": "Textured PBR review candidate (v2) Not approved.",
+    "source": "assets-src/workflows/capsule/",
+    "family": "capsule",
+    "triangles": 9204,
+    "bytes": 551776,
+    "bounds_m": [
+      1.693,
+      1.722,
+      0.383
+    ],
+    "lods": {
+      "lod1": {
+        "file": "/assets/models/candidates/capsule/capsule_collar_ring_lod1.glb",
+        "triangles": 4000,
+        "bytes": 267068
+      },
+      "lod2": {
+        "file": "/assets/models/candidates/capsule/capsule_collar_ring_lod2.glb",
+        "triangles": 1199,
+        "bytes": 110088
+      }
+    }
+  },
+  "capsule_heatshield_panel": {
+    "file": "/assets/models/candidates/capsule/capsule_heatshield_panel.glb",
+    "replaces": null,
+    "category": "landmark",
+    "label": "Heat-shield panel, charred ablator on ribbed carrier",
+    "state": "Textured PBR review candidate (v2) Not approved.",
+    "source": "assets-src/workflows/capsule/",
+    "family": "capsule",
+    "triangles": 18272,
+    "bytes": 1017896,
+    "bounds_m": [
+      1.231,
+      0.89,
+      0.314
+    ],
+    "lods": {
+      "lod1": {
+        "file": "/assets/models/candidates/capsule/capsule_heatshield_panel_lod1.glb",
+        "triangles": 4000,
+        "bytes": 285792
+      },
+      "lod2": {
+        "file": "/assets/models/candidates/capsule/capsule_heatshield_panel_lod2.glb",
+        "triangles": 1200,
+        "bytes": 95396
+      }
+    }
+  },
+  "capsule_upper_shell_fragment": {
+    "file": "/assets/models/candidates/capsule/capsule_upper_shell_fragment.glb",
+    "replaces": null,
+    "category": "landmark",
+    "label": "Upper shell fragment with RE-01 stencil and camera port",
+    "state": "Textured PBR review candidate (v2) Not approved.",
+    "source": "assets-src/workflows/capsule/",
+    "family": "capsule",
+    "triangles": 16566,
+    "bytes": 797948,
+    "bounds_m": [
+      1.177,
+      1.058,
+      0.366
+    ],
+    "lods": {
+      "lod1": {
+        "file": "/assets/models/candidates/capsule/capsule_upper_shell_fragment_lod1.glb",
+        "triangles": 3999,
+        "bytes": 256232
+      },
+      "lod2": {
+        "file": "/assets/models/candidates/capsule/capsule_upper_shell_fragment_lod2.glb",
+        "triangles": 1199,
+        "bytes": 104028
+      }
+    }
+  },
+  "capsule_impact_fragment": {
+    "file": "/assets/models/candidates/capsule/capsule_impact_fragment.glb",
+    "replaces": null,
+    "category": "landmark",
+    "label": "Impact fragment: folded skin, layers and torn loom",
+    "state": "Textured PBR review candidate (v2) Not approved.",
+    "source": "assets-src/workflows/capsule/",
+    "family": "capsule",
+    "triangles": 20652,
+    "bytes": 951984,
+    "bounds_m": [
+      1.162,
+      1.054,
+      0.672
+    ],
+    "lods": {
+      "lod1": {
+        "file": "/assets/models/candidates/capsule/capsule_impact_fragment_lod1.glb",
+        "triangles": 4000,
+        "bytes": 279080
+      },
+      "lod2": {
+        "file": "/assets/models/candidates/capsule/capsule_impact_fragment_lod2.glb",
+        "triangles": 1200,
+        "bytes": 106276
+      }
+    }
+  },
+  "capsule_rcs_thruster": {
+    "file": "/assets/models/candidates/capsule/capsule_rcs_thruster.glb",
+    "replaces": null,
+    "category": "landmark",
+    "label": "RCS thruster module, damaged",
+    "state": "Textured PBR review candidate Not approved.",
+    "source": "assets-src/workflows/capsule/",
+    "family": "capsule",
+    "triangles": 6780,
+    "bytes": 568416,
+    "bounds_m": [
+      0.712,
+      0.53,
+      0.431
+    ],
+    "lods": {
+      "lod1": {
+        "file": "/assets/models/candidates/capsule/capsule_rcs_thruster_lod1.glb",
+        "triangles": 4999,
+        "bytes": 522660
+      },
+      "lod2": {
+        "file": "/assets/models/candidates/capsule/capsule_rcs_thruster_lod2.glb",
+        "triangles": 1200,
+        "bytes": 404624
+      }
+    }
+  },
+  "capsule_antenna_broken": {
+    "file": "/assets/models/candidates/capsule/capsule_antenna_broken.glb",
+    "replaces": null,
+    "category": "landmark",
+    "label": "Communications antenna, broken",
+    "state": "Textured PBR review candidate Not approved.",
+    "source": "assets-src/workflows/capsule/",
+    "family": "capsule",
+    "triangles": 1332,
+    "bytes": 242872,
+    "bounds_m": [
+      0.478,
+      0.202,
+      0.629
+    ],
+    "lods": {
+      "lod1": {
+        "file": "/assets/models/candidates/capsule/capsule_antenna_broken_lod1.glb",
+        "triangles": 1332,
+        "bytes": 242872
+      },
+      "lod2": {
+        "file": "/assets/models/candidates/capsule/capsule_antenna_broken_lod2.glb",
+        "triangles": 600,
+        "bytes": 213856
+      }
+    }
+  },
+  "capsule_instrument_unit": {
+    "file": "/assets/models/candidates/capsule/capsule_instrument_unit.glb",
+    "replaces": null,
+    "category": "landmark",
+    "label": "Scientific instrument unit, recovered",
+    "state": "Textured PBR review candidate Not approved.",
+    "source": "assets-src/workflows/capsule/",
+    "family": "capsule",
+    "triangles": 2768,
+    "bytes": 666832,
+    "bounds_m": [
+      0.6,
+      0.803,
+      0.756
+    ],
+    "lods": {
+      "lod1": {
+        "file": "/assets/models/candidates/capsule/capsule_instrument_unit_lod1.glb",
+        "triangles": 2768,
+        "bytes": 666832
+      },
+      "lod2": {
+        "file": "/assets/models/candidates/capsule/capsule_instrument_unit_lod2.glb",
+        "triangles": 1200,
+        "bytes": 585172
+      }
+    }
+  },
+  "concrete_chunk_a": {
+    "file": "/assets/models/candidates/concrete/concrete_chunk_a.glb",
+    "replaces": "concrete_chunk_a",
+    "category": "concrete",
+    "label": "Compact faceted chunk with a bar stub",
+    "state": "Review candidate. Parameterised concrete family; shared textures. Not approved.",
+    "source": "assets-src/workflows/concrete/build.py",
+    "family": "concrete",
+    "triangles": 7648,
+    "bytes": 2085364,
+    "bounds_m": [
+      1.131,
+      0.84,
+      0.817
+    ],
+    "lods": {}
+  },
+  "concrete_chunk_b": {
+    "file": "/assets/models/candidates/concrete/concrete_chunk_b.glb",
+    "replaces": "concrete_chunk_b",
+    "category": "concrete",
+    "label": "Slab-edge strip fragment with two bars",
+    "state": "Review candidate. Parameterised concrete family; shared textures. Not approved.",
+    "source": "assets-src/workflows/concrete/build.py",
+    "family": "concrete",
+    "triangles": 8824,
+    "bytes": 2594944,
+    "bounds_m": [
+      1.912,
+      0.552,
+      0.243
+    ],
+    "lods": {}
+  },
+  "concrete_chunk_c": {
+    "file": "/assets/models/candidates/concrete/concrete_chunk_c.glb",
+    "replaces": "concrete_chunk_c",
+    "category": "concrete",
+    "label": "Thin broad plate shard with cast corner",
+    "state": "Review candidate. Parameterised concrete family; shared textures. Not approved.",
+    "source": "assets-src/workflows/concrete/build.py",
+    "family": "concrete",
+    "triangles": 7362,
+    "bytes": 2630772,
+    "bounds_m": [
+      1.315,
+      1.497,
+      0.191
+    ],
+    "lods": {}
+  },
+  "concrete_rubble_cluster_a": {
+    "file": "/assets/models/candidates/concrete/concrete_rubble_cluster_a.glb",
+    "replaces": "rubble_cluster_a",
+    "category": "rubble",
+    "label": "Rubble cluster (broken pieces 10-40 cm)",
+    "state": "Review candidate. Parameterised concrete family; shared textures. Not approved.",
+    "source": "assets-src/workflows/concrete/build.py",
+    "family": "concrete",
+    "triangles": 8996,
+    "bytes": 1681256,
+    "bounds_m": [
+      0.818,
+      1.455,
+      0.791
+    ],
+    "lods": {}
+  },
+  "concrete_rubble_cluster_b": {
+    "file": "/assets/models/candidates/concrete/concrete_rubble_cluster_b.glb",
+    "replaces": "rubble_cluster_b",
+    "category": "rubble",
+    "label": "Rubble cluster with bar offcuts",
+    "state": "Review candidate. Parameterised concrete family; shared textures. Not approved.",
+    "source": "assets-src/workflows/concrete/build.py",
+    "family": "concrete",
+    "triangles": 8992,
+    "bytes": 1678768,
+    "bounds_m": [
+      1.041,
+      1.432,
+      0.725
+    ],
+    "lods": {}
+  },
+  "concrete_slab_plain": {
+    "file": "/assets/models/candidates/concrete/concrete_slab_plain.glb",
+    "replaces": "concrete_slab_plain",
+    "category": "concrete",
+    "label": "Long plain slab fragment (unreinforced, parallelogram break)",
+    "state": "Review candidate. Parameterised concrete family; shared textures. Not approved.",
+    "source": "assets-src/workflows/concrete/build.py",
+    "family": "concrete",
+    "triangles": 29998,
+    "bytes": 1873144,
+    "bounds_m": [
+      2.81,
+      1.102,
+      0.205
+    ],
+    "lods": {}
+  },
+  "concrete_slab_rebar": {
+    "file": "/assets/models/candidates/concrete/concrete_slab_rebar.glb",
+    "replaces": "concrete_slab_rebar",
+    "category": "concrete",
+    "label": "Broken reinforced slab (stepped shear fracture, exposed rebar)",
+    "state": "Review candidate. Parameterised concrete family; shared textures. Not approved.",
+    "source": "assets-src/workflows/concrete/build.py",
+    "family": "concrete",
+    "triangles": 69486,
+    "bytes": 6917400,
+    "bounds_m": [
+      2.866,
+      1.755,
+      0.287
+    ],
+    "lods": {
+      "1": {
+        "file": "/assets/models/candidates/concrete/concrete_slab_rebar_lod1.glb",
+        "triangles": 14656,
+        "bytes": 1633648
+      },
+      "2": {
+        "file": "/assets/models/candidates/concrete/concrete_slab_rebar_lod2.glb",
+        "triangles": 10212,
+        "bytes": 1391104
+      }
+    }
+  },
+  "concrete_wall_breach": {
+    "file": "/assets/models/candidates/concrete/concrete_wall_breach.glb",
+    "replaces": "concrete_wall_breach",
+    "category": "concrete",
+    "label": "Wall section with blast breach and missing corner",
+    "state": "Review candidate. Parameterised concrete family; shared textures. Not approved.",
+    "source": "assets-src/workflows/concrete/build.py",
+    "family": "concrete",
+    "triangles": 107438,
+    "bytes": 8294476,
+    "bounds_m": [
+      3.777,
+      0.459,
+      2.4
+    ],
+    "lods": {
+      "1": {
+        "file": "/assets/models/candidates/concrete/concrete_wall_breach_lod1.glb",
+        "triangles": 21354,
+        "bytes": 1872468
+      },
+      "2": {
+        "file": "/assets/models/candidates/concrete/concrete_wall_breach_lod2.glb",
+        "triangles": 9146,
+        "bytes": 1258216
+      }
+    }
+  },
+  "industrial_ibeam_twisted": {
+    "file": "/assets/models/candidates/industrial/industrial_ibeam_twisted.glb",
+    "replaces": "steel_ibeam_twisted",
+    "category": "steel",
+    "label": "Torsionally buckled W360 I-beam, torch-cut end, bolted end plate",
+    "state": "Textured PBR candidate (industrial kit); review. Not approved.",
+    "family": "industrial",
+    "triangles": 14676,
+    "bytes": 1024240,
+    "bounds_m": [
+      4.718,
+      0.502,
+      0.656
+    ],
+    "lods": [
+      {
+        "file": "/assets/models/candidates/industrial/industrial_ibeam_twisted_lod1.glb",
+        "triangles": 4402,
+        "bytes": 322360
+      },
+      {
+        "file": "/assets/models/candidates/industrial/industrial_ibeam_twisted_lod2.glb",
+        "triangles": 1163,
+        "bytes": 109300
+      }
+    ]
+  },
+  "industrial_ibeam_bolted": {
+    "file": "/assets/models/candidates/industrial/industrial_ibeam_bolted.glb",
+    "replaces": "steel_ibeam_bolted",
+    "category": "steel",
+    "label": "Bolted W360 splice, failed joint with sheared bolts and a dropped span",
+    "state": "Textured PBR candidate (industrial kit); review. Not approved.",
+    "family": "industrial",
+    "triangles": 16472,
+    "bytes": 1239228,
+    "bounds_m": [
+      4.263,
+      0.758,
+      0.226
+    ],
+    "lods": [
+      {
+        "file": "/assets/models/candidates/industrial/industrial_ibeam_bolted_lod1.glb",
+        "triangles": 4938,
+        "bytes": 398176
+      },
+      {
+        "file": "/assets/models/candidates/industrial/industrial_ibeam_bolted_lod2.glb",
+        "triangles": 1286,
+        "bytes": 135480
+      }
+    ]
+  },
+  "industrial_column_bent": {
+    "file": "/assets/models/candidates/industrial/industrial_column_bent.glb",
+    "replaces": "steel_column_bent",
+    "category": "steel",
+    "label": "Bent W300 H-column on a base plate with anchor bolts",
+    "state": "Textured PBR candidate (industrial kit); review. Not approved.",
+    "family": "industrial",
+    "triangles": 13546,
+    "bytes": 1072152,
+    "bounds_m": [
+      4.095,
+      0.926,
+      0.56
+    ],
+    "lods": [
+      {
+        "file": "/assets/models/candidates/industrial/industrial_column_bent_lod1.glb",
+        "triangles": 4062,
+        "bytes": 365004
+      },
+      {
+        "file": "/assets/models/candidates/industrial/industrial_column_bent_lod2.glb",
+        "triangles": 1075,
+        "bytes": 127852
+      }
+    ]
+  },
+  "industrial_scaffold_section": {
+    "file": "/assets/models/candidates/industrial/industrial_scaffold_section.glb",
+    "replaces": "scaffold_section",
+    "category": "scaffold",
+    "label": "Scaffold bay, 3 lifts, buckled standard and dropped ledger",
+    "state": "Textured PBR candidate (industrial kit); review. Not approved.",
+    "family": "industrial",
+    "triangles": 18552,
+    "bytes": 2249692,
+    "bounds_m": [
+      2.24,
+      3.3,
+      1.494
+    ],
+    "lods": [
+      {
+        "file": "/assets/models/candidates/industrial/industrial_scaffold_section_lod1.glb",
+        "triangles": 5599,
+        "bytes": 843228
+      },
+      {
+        "file": "/assets/models/candidates/industrial/industrial_scaffold_section_lod2.glb",
+        "triangles": 1529,
+        "bytes": 273516
+      }
+    ]
+  },
+  "industrial_walkway_section": {
+    "file": "/assets/models/candidates/industrial/industrial_walkway_section.glb",
+    "replaces": "walkway_section",
+    "category": "walkway",
+    "label": "Catwalk section: C-channel frame, open grating, toe plates, 1.05 m rails",
+    "state": "Textured PBR candidate (industrial kit); review. Not approved.",
+    "family": "industrial",
+    "triangles": 18968,
+    "bytes": 2134004,
+    "bounds_m": [
+      3.05,
+      1.253,
+      1.012
+    ],
+    "lods": [
+      {
+        "file": "/assets/models/candidates/industrial/industrial_walkway_section_lod1.glb",
+        "triangles": 5688,
+        "bytes": 730264
+      },
+      {
+        "file": "/assets/models/candidates/industrial/industrial_walkway_section_lod2.glb",
+        "triangles": 1472,
+        "bytes": 232920
+      }
+    ]
+  },
+  "industrial_walkway_torn": {
+    "file": "/assets/models/candidates/industrial/industrial_walkway_torn.glb",
+    "replaces": "walkway_torn",
+    "category": "walkway",
+    "label": "Collapsed catwalk: dropped hinge, missing grating, snapped stringer and rails",
+    "state": "Textured PBR candidate (industrial kit); review. Not approved.",
+    "family": "industrial",
+    "triangles": 20688,
+    "bytes": 2095740,
+    "bounds_m": [
+      3.899,
+      2.262,
+      1.305
+    ],
+    "lods": [
+      {
+        "file": "/assets/models/candidates/industrial/industrial_walkway_torn_lod1.glb",
+        "triangles": 6205,
+        "bytes": 702808
+      },
+      {
+        "file": "/assets/models/candidates/industrial/industrial_walkway_torn_lod2.glb",
+        "triangles": 1456,
+        "bytes": 225660
+      }
+    ]
+  },
+  "industrial_pipe_large_fractured": {
+    "file": "/assets/models/candidates/industrial/industrial_pipe_large_fractured.glb",
+    "replaces": "pipe_large_fractured",
+    "category": "pipe",
+    "label": "O.D. 600 pipe, opened flange joint and burst petal end",
+    "state": "Textured PBR candidate (industrial kit); review. Not approved.",
+    "family": "industrial",
+    "triangles": 17200,
+    "bytes": 1106476,
+    "bounds_m": [
+      3.687,
+      1.094,
+      1.049
+    ],
+    "lods": [
+      {
+        "file": "/assets/models/candidates/industrial/industrial_pipe_large_fractured_lod1.glb",
+        "triangles": 5160,
+        "bytes": 383136
+      },
+      {
+        "file": "/assets/models/candidates/industrial/industrial_pipe_large_fractured_lod2.glb",
+        "triangles": 1380,
+        "bytes": 126512
+      }
+    ]
+  },
+  "industrial_pipe_elbow_torn": {
+    "file": "/assets/models/candidates/industrial/industrial_pipe_elbow_torn.glb",
+    "replaces": "pipe_elbow_torn",
+    "category": "pipe",
+    "label": "O.D. 300 long-radius elbow with flange, strap and torn spigot",
+    "state": "Textured PBR candidate (industrial kit); review. Not approved.",
+    "family": "industrial",
+    "triangles": 8074,
+    "bytes": 903004,
+    "bounds_m": [
+      1.296,
+      1.699,
+      0.525
+    ],
+    "lods": [
+      {
+        "file": "/assets/models/candidates/industrial/industrial_pipe_elbow_torn_lod1.glb",
+        "triangles": 2420,
+        "bytes": 322904
+      },
+      {
+        "file": "/assets/models/candidates/industrial/industrial_pipe_elbow_torn_lod2.glb",
+        "triangles": 631,
+        "bytes": 119364
+      }
+    ]
+  },
+  "industrial_cable_bundle": {
+    "file": "/assets/models/candidates/industrial/industrial_cable_bundle.glb",
+    "replaces": "cable_bundle",
+    "category": "electrical",
+    "label": "Lay-twisted 7-cable bundle with clamps, lugs and a snapped conductor",
+    "state": "Textured PBR candidate (industrial kit); review. Not approved.",
+    "family": "industrial",
+    "triangles": 10642,
+    "bytes": 671964,
+    "bounds_m": [
+      3.031,
+      0.778,
+      0.486
+    ],
+    "lods": [
+      {
+        "file": "/assets/models/candidates/industrial/industrial_cable_bundle_lod1.glb",
+        "triangles": 3187,
+        "bytes": 208056
+      },
+      {
+        "file": "/assets/models/candidates/industrial/industrial_cable_bundle_lod2.glb",
+        "triangles": 922,
+        "bytes": 73400
+      }
+    ]
+  },
+  "industrial_junction_box_broken": {
+    "file": "/assets/models/candidates/industrial/industrial_junction_box_broken.glb",
+    "replaces": "junction_box_broken",
+    "category": "electrical",
+    "label": "Wall junction box with dented corner, torn open door, DIN rail devices and trailing wires",
+    "state": "Textured PBR candidate (industrial kit); review. Not approved.",
+    "family": "industrial",
+    "triangles": 6547,
+    "bytes": 812412,
+    "bounds_m": [
+      0.689,
+      1.676,
+      0.632
+    ],
+    "lods": [
+      {
+        "file": "/assets/models/candidates/industrial/industrial_junction_box_broken_lod1.glb",
+        "triangles": 1967,
+        "bytes": 283636
+      },
+      {
+        "file": "/assets/models/candidates/industrial/industrial_junction_box_broken_lod2.glb",
+        "triangles": 684,
+        "bytes": 109644
+      }
+    ]
+  },
+  "industrial_facility_panel": {
+    "file": "/assets/models/candidates/industrial/industrial_facility_panel.glb",
+    "replaces": "facility_panel_krei",
+    "category": "panel",
+    "label": "Ribbed cladding panel 2.4 x 1.2 m with Z-girts, diagonal fold and torn corner (no logos)",
+    "state": "Textured PBR candidate (industrial kit); review. Not approved.",
+    "family": "industrial",
+    "triangles": 15774,
+    "bytes": 1377000,
+    "bounds_m": [
+      2.23,
+      0.929,
+      1.268
+    ],
+    "lods": [
+      {
+        "file": "/assets/models/candidates/industrial/industrial_facility_panel_lod1.glb",
+        "triangles": 4731,
+        "bytes": 487148
+      },
+      {
+        "file": "/assets/models/candidates/industrial/industrial_facility_panel_lod2.glb",
+        "triangles": 1246,
+        "bytes": 168028
+      }
+    ]
+  },
+  "industrial_scaffold_pole_bent": {
+    "file": "/assets/models/candidates/industrial/industrial_scaffold_pole_bent.glb",
+    "replaces": "scaffold_pole_bent",
+    "category": "scaffold",
+    "label": "Kinked scaffold standard with coupler, ledger stub and base jack",
+    "state": "Textured PBR candidate (industrial kit); review. Not approved.",
+    "family": "industrial",
+    "triangles": 6260,
+    "bytes": 681724,
+    "bounds_m": [
+      1.702,
+      4.008,
+      0.847
+    ],
+    "lods": [
+      {
+        "file": "/assets/models/candidates/industrial/industrial_scaffold_pole_bent_lod1.glb",
+        "triangles": 1878,
+        "bytes": 247512
+      },
+      {
+        "file": "/assets/models/candidates/industrial/industrial_scaffold_pole_bent_lod2.glb",
+        "triangles": 500,
+        "bytes": 91052
+      }
+    ]
+  },
+  "industrial_steel_girder_premium": {
+    "file": "/assets/models/candidates/industrial/industrial_steel_girder_premium.glb",
+    "replaces": "steel_ibeam_twisted",
+    "category": "steel",
+    "label": "Premium damaged steel girder: plates, bolts, welds, accordion flange, torn web, severed flange",
+    "state": "Textured PBR (planned-UV atlas bake); review. Not approved.",
+    "family": "industrial",
+    "triangles": 64680,
+    "bytes": 3457636,
+    "bounds_m": [
+      4.003,
+      1.616,
+      0.276
+    ],
+    "lods": [
+      {
+        "file": "/assets/models/candidates/industrial/industrial_steel_girder_premium_lod1.glb",
+        "triangles": 16164,
+        "bytes": 1130292
+      },
+      {
+        "file": "/assets/models/candidates/industrial/industrial_steel_girder_premium_lod2.glb",
+        "triangles": 8474,
+        "bytes": 672844
+      }
+    ]
+  }
+}

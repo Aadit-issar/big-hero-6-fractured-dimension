@@ -1,0 +1,87 @@
+{
+  "file": "public/assets/models/cable_bundle.glb",
+  "bytes": 110224,
+  "meshes": 1,
+  "materials": [
+    "cable_insulation",
+    "copper",
+    "steel_painted"
+  ],
+  "primitives": [
+    {
+      "material": "cable_insulation",
+      "triangles": 2772,
+      "vertices": 1512,
+      "signedVolume": 0.005668072895515801,
+      "windingDisagreesWithNormal": 0,
+      "min": [
+        -0.9031795859336853,
+        -0.13864018023014069,
+        -0.11445721238851547
+      ],
+      "max": [
+        0.8138131499290466,
+        0.1426326483488083,
+        0.10507626086473465
+      ]
+    },
+    {
+      "material": "copper",
+      "triangles": 336,
+      "vertices": 630,
+      "signedVolume": 0.00004798850939469767,
+      "windingDisagreesWithNormal": 0,
+      "min": [
+        0.4569733738899231,
+        -0.1686069816350937,
+        -0.13011950254440308
+      ],
+      "max": [
+        0.906712532043457,
+        0.14284709095954895,
+        0.055519092828035355
+      ]
+    },
+    {
+      "material": "steel_painted",
+      "triangles": 12,
+      "vertices": 24,
+      "signedVolume": 0.00194400023174287,
+      "windingDisagreesWithNormal": 0,
+      "min": [
+        -0.6800000071525574,
+        -0.09000000357627869,
+        -0.09000000357627869
+      ],
+      "max": [
+        -0.6200000047683716,
+        0.09000000357627869,
+        0.09000000357627869
+      ]
+    }
+  ],
+  "totalSignedVolume": 0.007660061636653369,
+  "triangles": 3120,
+  "vertices": 2166,
+  "nonFiniteValues": 0,
+  "nonUnitNormals": 0,
+  "degenerateTriangles": 0,
+  "edges": 4680,
+  "boundaryEdges": 0,
+  "nonManifoldEdges": 0,
+  "boundsMin": [
+    -0.9031795859336853,
+    -0.1686069816350937,
+    -0.13011950254440308
+  ],
+  "boundsMax": [
+    0.906712532043457,
+    0.14284709095954895,
+    0.10507626086473465
+  ],
+  "sizeMetres": [
+    1.8098921179771423,
+    0.31145407259464264,
+    0.23519576340913773
+  ]
+}

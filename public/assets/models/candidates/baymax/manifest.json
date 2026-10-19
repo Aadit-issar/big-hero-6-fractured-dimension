@@ -1,0 +1,137 @@
+{
+ "baymax_shoulder_shell": {
+  "file": "/assets/models/candidates/baymax/baymax_shoulder_shell.glb",
+  "replaces": "baymax_shoulder_fragment",
+  "category": "baymax",
+  "label": "Shoulder armour shell, torn open on the joint",
+  "state": "Textured PBR review candidate",
+  "triangles": 52596,
+  "bytes": 2477044,
+  "bounds_m": [
+   0.967,
+   0.716,
+   0.787
+  ],
+  "lods": {
+   "lod1": {
+    "file": "/assets/models/candidates/baymax/baymax_shoulder_shell_lod1.glb",
+    "triangles": 12000,
+    "bytes": 1413628
+   },
+   "lod2": {
+    "file": "/assets/models/candidates/baymax/baymax_shoulder_shell_lod2.glb",
+    "triangles": 6623,
+    "bytes": 1218640
+   }
+  },
+  "source": "assets-src/workflows/baymax/"
+ },
+ "baymax_forearm_shell": {
+  "file": "/assets/models/candidates/baymax/baymax_forearm_shell.glb",
+  "replaces": "baymax_forearm_fragment",
+  "category": "baymax",
+  "label": "Forearm armour shell with split panel and wrist hub",
+  "state": "Textured PBR review candidate",
+  "triangles": 37260,
+  "bytes": 2204568,
+  "bounds_m": [
+   0.574,
+   0.509,
+   1.046
+  ],
+  "lods": {
+   "lod1": {
+    "file": "/assets/models/candidates/baymax/baymax_forearm_shell_lod1.glb",
+    "triangles": 12000,
+    "bytes": 1501104
+   },
+   "lod2": {
+    "file": "/assets/models/candidates/baymax/baymax_forearm_shell_lod2.glb",
+    "triangles": 8384,
+    "bytes": 1369184
+   }
+  },
+  "source": "assets-src/workflows/baymax/"
+ },
+ "baymax_chest_armor": {
+  "file": "/assets/models/candidates/baymax/baymax_chest_armor.glb",
+  "replaces": null,
+  "category": "baymax",
+  "label": "Chest armour fragment with emblem and exposed interior",
+  "state": "Textured PBR review candidate",
+  "triangles": 43136,
+  "bytes": 2632408,
+  "bounds_m": [
+   1.31,
+   0.606,
+   1.167
+  ],
+  "lods": {
+   "lod1": {
+    "file": "/assets/models/candidates/baymax/baymax_chest_armor_lod1.glb",
+    "triangles": 11999,
+    "bytes": 1519432
+   },
+   "lod2": {
+    "file": "/assets/models/candidates/baymax/baymax_chest_armor_lod2.glb",
+    "triangles": 3385,
+    "bytes": 1122240
+   }
+  },
+  "source": "assets-src/workflows/baymax/"
+ },
+ "baymax_joint_shell": {
+  "file": "/assets/models/candidates/baymax/baymax_joint_shell.glb",
+  "replaces": null,
+  "category": "baymax",
+  "label": "Joint shell piece with bearing hub and lens",
+  "state": "Textured PBR review candidate",
+  "triangles": 25068,
+  "bytes": 1647460,
+  "bounds_m": [
+   0.534,
+   0.551,
+   0.632
+  ],
+  "lods": {
+   "lod1": {
+    "file": "/assets/models/candidates/baymax/baymax_joint_shell_lod1.glb",
+    "triangles": 9000,
+    "bytes": 1154876
+   },
+   "lod2": {
+    "file": "/assets/models/candidates/baymax/baymax_joint_shell_lod2.glb",
+    "triangles": 2725,
+    "bytes": 915724
+   }
+  },
+  "source": "assets-src/workflows/baymax/"
+ },
+ "baymax_plating_shard": {
+  "file": "/assets/models/candidates/baymax/baymax_plating_shard.glb",
+  "replaces": null,
+  "category": "baymax",
+  "label": "Armour plating shard with slot",
+  "state": "Textured PBR review candidate",
+  "triangles": 11920,
+  "bytes": 921652,
+  "bounds_m": [
+   0.736,
+   0.113,
+   0.615
+  ],
+  "lods": {
+   "lod1": {
+    "file": "/assets/models/candidates/baymax/baymax_plating_shard_lod1.glb",
+    "triangles": 5000,
+    "bytes": 759836
+   },
+   "lod2": {
+    "file": "/assets/models/candidates/baymax/baymax_plating_shard_lod2.glb",
+    "triangles": 4462,
+    "bytes": 746144
+   }
+  },
+  "source": "assets-src/workflows/baymax/"
+ }
+}

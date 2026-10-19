@@ -1,0 +1,51 @@
+{
+  "file": "public/assets/models/steel_ibeam_twisted.glb",
+  "bytes": 82960,
+  "meshes": 1,
+  "materials": [
+    "steel_painted"
+  ],
+  "primitives": [
+    {
+      "material": "steel_painted",
+      "triangles": 692,
+      "vertices": 2040,
+      "signedVolume": 0.05469542874036061,
+      "windingDisagreesWithNormal": 0,
+      "min": [
+        -2.75,
+        -0.19904674589633942,
+        -0.5579825043678284
+      ],
+      "max": [
+        2.4958391189575195,
+        1.3766640424728394,
+        0.1579311490058899
+      ]
+    }
+  ],
+  "totalSignedVolume": 0.05469542874036061,
+  "triangles": 692,
+  "vertices": 2040,
+  "nonFiniteValues": 0,
+  "nonUnitNormals": 0,
+  "degenerateTriangles": 0,
+  "edges": 1038,
+  "boundaryEdges": 0,
+  "nonManifoldEdges": 0,
+  "boundsMin": [
+    -2.75,
+    -0.19904674589633942,
+    -0.5579825043678284
+  ],
+  "boundsMax": [
+    2.4958391189575195,
+    1.3766640424728394,
+    0.1579311490058899
+  ],
+  "sizeMetres": [
+    5.2458391189575195,
+    1.5757107883691788,
+    0.7159136533737183
+  ]
+}

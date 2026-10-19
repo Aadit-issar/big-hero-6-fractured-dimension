@@ -1,0 +1,152 @@
+{
+ "concrete_chunk_a": {
+  "file": "/assets/models/candidates/concrete/concrete_chunk_a.glb",
+  "replaces": "concrete_chunk_a",
+  "category": "concrete",
+  "label": "Compact faceted chunk with a bar stub",
+  "state": "Review candidate. Parameterised concrete family; shared textures.",
+  "source": "assets-src/workflows/concrete/build.py",
+  "triangles": 7648,
+  "bytes": 2085364,
+  "bounds_m": [
+   1.131,
+   0.84,
+   0.817
+  ],
+  "lods": {}
+ },
+ "concrete_chunk_b": {
+  "file": "/assets/models/candidates/concrete/concrete_chunk_b.glb",
+  "replaces": "concrete_chunk_b",
+  "category": "concrete",
+  "label": "Slab-edge strip fragment with two bars",
+  "state": "Review candidate. Parameterised concrete family; shared textures.",
+  "source": "assets-src/workflows/concrete/build.py",
+  "triangles": 8824,
+  "bytes": 2594944,
+  "bounds_m": [
+   1.912,
+   0.552,
+   0.243
+  ],
+  "lods": {}
+ },
+ "concrete_chunk_c": {
+  "file": "/assets/models/candidates/concrete/concrete_chunk_c.glb",
+  "replaces": "concrete_chunk_c",
+  "category": "concrete",
+  "label": "Thin broad plate shard with cast corner",
+  "state": "Review candidate. Parameterised concrete family; shared textures.",
+  "source": "assets-src/workflows/concrete/build.py",
+  "triangles": 7362,
+  "bytes": 2630772,
+  "bounds_m": [
+   1.315,
+   1.497,
+   0.191
+  ],
+  "lods": {}
+ },
+ "concrete_rubble_cluster_a": {
+  "file": "/assets/models/candidates/concrete/concrete_rubble_cluster_a.glb",
+  "replaces": "rubble_cluster_a",
+  "category": "rubble",
+  "label": "Rubble cluster (broken pieces 10-40 cm)",
+  "state": "Review candidate. Parameterised concrete family; shared textures.",
+  "source": "assets-src/workflows/concrete/build.py",
+  "triangles": 8996,
+  "bytes": 1681256,
+  "bounds_m": [
+   0.818,
+   1.455,
+   0.791
+  ],
+  "lods": {}
+ },
+ "concrete_rubble_cluster_b": {
+  "file": "/assets/models/candidates/concrete/concrete_rubble_cluster_b.glb",
+  "replaces": "rubble_cluster_b",
+  "category": "rubble",
+  "label": "Rubble cluster with bar offcuts",
+  "state": "Review candidate. Parameterised concrete family; shared textures.",
+  "source": "assets-src/workflows/concrete/build.py",
+  "triangles": 8992,
+  "bytes": 1678768,
+  "bounds_m": [
+   1.041,
+   1.432,
+   0.725
+  ],
+  "lods": {}
+ },
+ "concrete_slab_plain": {
+  "file": "/assets/models/candidates/concrete/concrete_slab_plain.glb",
+  "replaces": "concrete_slab_plain",
+  "category": "concrete",
+  "label": "Long plain slab fragment (unreinforced, parallelogram break)",
+  "state": "Review candidate. Parameterised concrete family; shared textures.",
+  "source": "assets-src/workflows/concrete/build.py",
+  "triangles": 29998,
+  "bytes": 1873144,
+  "bounds_m": [
+   2.81,
+   1.102,
+   0.205
+  ],
+  "lods": {}
+ },
+ "concrete_slab_rebar": {
+  "file": "/assets/models/candidates/concrete/concrete_slab_rebar.glb",
+  "replaces": "concrete_slab_rebar",
+  "category": "concrete",
+  "label": "Broken reinforced slab (stepped shear fracture, exposed rebar)",
+  "state": "Review candidate. Parameterised concrete family; shared textures.",
+  "source": "assets-src/workflows/concrete/build.py",
+  "triangles": 69486,
+  "bytes": 6917400,
+  "bounds_m": [
+   2.866,
+   1.755,
+   0.287
+  ],
+  "lods": {
+   "1": {
+    "file": "/assets/models/candidates/concrete/concrete_slab_rebar_lod1.glb",
+    "triangles": 14656,
+    "bytes": 1633648
+   },
+   "2": {
+    "file": "/assets/models/candidates/concrete/concrete_slab_rebar_lod2.glb",
+    "triangles": 10212,
+    "bytes": 1391104
+   }
+  }
+ },
+ "concrete_wall_breach": {
+  "file": "/assets/models/candidates/concrete/concrete_wall_breach.glb",
+  "replaces": "concrete_wall_breach",
+  "category": "concrete",
+  "label": "Wall section with blast breach and missing corner",
+  "state": "Review candidate. Parameterised concrete family; shared textures.",
+  "source": "assets-src/workflows/concrete/build.py",
+  "triangles": 107438,
+  "bytes": 8294476,
+  "bounds_m": [
+   3.777,
+   0.459,
+   2.4
+  ],
+  "lods": {
+   "1": {
+    "file": "/assets/models/candidates/concrete/concrete_wall_breach_lod1.glb",
+    "triangles": 21354,
+    "bytes": 1872468
+   },
+   "2": {
+    "file": "/assets/models/candidates/concrete/concrete_wall_breach_lod2.glb",
+    "triangles": 9146,
+    "bytes": 1258216
+   }
+  }
+ }
+}

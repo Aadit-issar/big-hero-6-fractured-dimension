@@ -1,0 +1,87 @@
+{
+  "file": "public/assets/models/walkway_torn.glb",
+  "bytes": 54880,
+  "meshes": 1,
+  "materials": [
+    "steel_painted",
+    "steel_grating",
+    "paint_safety_yellow"
+  ],
+  "primitives": [
+    {
+      "material": "steel_painted",
+      "triangles": 36,
+      "vertices": 72,
+      "signedVolume": 0.03775998680472281,
+      "windingDisagreesWithNormal": 0,
+      "min": [
+        -1.2000000476837158,
+        -0.13500000536441803,
+        -0.5249999761581421
+      ],
+      "max": [
+        1.2000000476837158,
+        0.10999999940395355,
+        0.5249999761581421
+      ]
+    },
+    {
+      "material": "steel_grating",
+      "triangles": 504,
+      "vertices": 1008,
+      "signedVolume": 0.009614856988047635,
+      "windingDisagreesWithNormal": 0,
+      "min": [
+        -1.2000000476837158,
+        -0.01600000075995922,
+        -0.4699999988079071
+      ],
+      "max": [
+        1.147749900817871,
+        0.01600000075995922,
+        0.4699999988079071
+      ]
+    },
+    {
+      "material": "paint_safety_yellow",
+      "triangles": 524,
+      "vertices": 348,
+      "signedVolume": 0.008023545685732126,
+      "windingDisagreesWithNormal": 0,
+      "min": [
+        -1.121000051498413,
+        -0.024720875546336174,
+        0.4790000021457672
+      ],
+      "max": [
+        1.270803451538086,
+        1.0709999799728394,
+        0.7598770260810852
+      ]
+    }
+  ],
+  "totalSignedVolume": 0.05539838947850257,
+  "triangles": 1064,
+  "vertices": 1428,
+  "nonFiniteValues": 0,
+  "nonUnitNormals": 0,
+  "degenerateTriangles": 0,
+  "edges": 1596,
+  "boundaryEdges": 0,
+  "nonManifoldEdges": 0,
+  "boundsMin": [
+    -1.2000000476837158,
+    -0.13500000536441803,
+    -0.5249999761581421
+  ],
+  "boundsMax": [
+    1.270803451538086,
+    1.0709999799728394,
+    0.7598770260810852
+  ],
+  "sizeMetres": [
+    2.4708034992218018,
+    1.2059999853372574,
+    1.2848770022392273
+  ]
+}

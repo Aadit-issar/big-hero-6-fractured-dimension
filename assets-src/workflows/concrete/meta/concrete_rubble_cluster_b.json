@@ -1,0 +1,16 @@
+{
+ "file": "/assets/models/candidates/concrete/concrete_rubble_cluster_b.glb",
+ "replaces": "rubble_cluster_b",
+ "category": "rubble",
+ "label": "Rubble cluster with bar offcuts",
+ "state": "Review candidate. Parameterised concrete family; shared textures.",
+ "source": "assets-src/workflows/concrete/build.py",
+ "triangles": 8992,
+ "bytes": 1678768,
+ "bounds_m": [
+  1.041,
+  1.432,
+  0.725
+ ],
+ "lods": {}
+}

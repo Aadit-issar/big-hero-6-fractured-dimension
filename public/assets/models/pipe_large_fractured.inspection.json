@@ -1,0 +1,69 @@
+{
+  "file": "public/assets/models/pipe_large_fractured.glb",
+  "bytes": 117360,
+  "meshes": 1,
+  "materials": [
+    "pipe_steel",
+    "paint_krei_red"
+  ],
+  "primitives": [
+    {
+      "material": "pipe_steel",
+      "triangles": 2224,
+      "vertices": 2144,
+      "signedVolume": 0.12709029757882298,
+      "windingDisagreesWithNormal": 0,
+      "min": [
+        -1.5299999713897705,
+        -0.4399999976158142,
+        -0.4399999976158142
+      ],
+      "max": [
+        1.4768580198287964,
+        0.4399999976158142,
+        0.4399999976158142
+      ]
+    },
+    {
+      "material": "paint_krei_red",
+      "triangles": 320,
+      "vertices": 320,
+      "signedVolume": 0.005060029038513348,
+      "windingDisagreesWithNormal": 0,
+      "min": [
+        -0.6000000238418579,
+        -0.30399999022483826,
+        -0.30399999022483826
+      ],
+      "max": [
+        -0.30000001192092896,
+        0.30399999022483826,
+        0.30399999022483826
+      ]
+    }
+  ],
+  "totalSignedVolume": 0.13215032661733633,
+  "triangles": 2544,
+  "vertices": 2464,
+  "nonFiniteValues": 0,
+  "nonUnitNormals": 0,
+  "degenerateTriangles": 0,
+  "edges": 3816,
+  "boundaryEdges": 0,
+  "nonManifoldEdges": 0,
+  "boundsMin": [
+    -1.5299999713897705,
+    -0.4399999976158142,
+    -0.4399999976158142
+  ],
+  "boundsMax": [
+    1.4768580198287964,
+    0.4399999976158142,
+    0.4399999976158142
+  ],
+  "sizeMetres": [
+    3.006857991218567,
+    0.8799999952316284,
+    0.8799999952316284
+  ]
+}

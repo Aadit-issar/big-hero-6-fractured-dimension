@@ -1,0 +1,746 @@
+{
+ "_comment": "Repeatable camera test matrix for placement evidence (world metres; [position, target]). Same poses before and after. Categories: crowded (the pre-redesign cluster), empty-before (previously empty regions), sweep (6 directions from 5 locations), folds, fractures, composition (near/mid/far), capsule.",
+ "poses": {
+  "p01-front-islands": {
+   "category": "crowded",
+   "position": [
+    -22,
+    14,
+    20
+   ],
+   "target": [
+    0,
+    4,
+    -15
+   ]
+  },
+  "p02-mid-chamber": {
+   "category": "empty-before",
+   "position": [
+    -4,
+    6,
+    -48
+   ],
+   "target": [
+    -40,
+    0,
+    -72
+   ]
+  },
+  "p03-fold-ridge": {
+   "category": "folds",
+   "position": [
+    2,
+    10,
+    -16
+   ],
+   "target": [
+    26,
+    5,
+    -62
+   ]
+  },
+  "p04-far-chamber": {
+   "category": "empty-before",
+   "position": [
+    8,
+    21,
+    -78
+   ],
+   "target": [
+    22,
+    10,
+    -122
+   ]
+  },
+  "p05-left-edge": {
+   "category": "empty-before",
+   "position": [
+    -38,
+    10,
+    -78
+   ],
+   "target": [
+    -70,
+    0,
+    -108
+   ]
+  },
+  "p06-right-edge": {
+   "category": "empty-before",
+   "position": [
+    30,
+    2,
+    -88
+   ],
+   "target": [
+    62,
+    -10,
+    -116
+   ]
+  },
+  "p07-high-overview": {
+   "category": "composition",
+   "position": [
+    0,
+    48,
+    14
+   ],
+   "target": [
+    0,
+    0,
+    -70
+   ]
+  },
+  "p08-low-underside": {
+   "category": "empty-before",
+   "position": [
+    -10,
+    -26,
+    -28
+   ],
+   "target": [
+    10,
+    -10,
+    -92
+   ]
+  },
+  "p09-side-looking-in": {
+   "category": "crowded",
+   "position": [
+    64,
+    10,
+    -20
+   ],
+   "target": [
+    -10,
+    0,
+    -62
+   ]
+  },
+  "p10-toward-vortex": {
+   "category": "empty-before",
+   "position": [
+    30,
+    26,
+    -128
+   ],
+   "target": [
+    111,
+    74,
+    -246
+   ]
+  },
+  "p11-left-cluster": {
+   "category": "empty-before",
+   "position": [
+    -62,
+    8,
+    -34
+   ],
+   "target": [
+    -30,
+    -6,
+    -62
+   ]
+  },
+  "p12-back-entrance": {
+   "category": "composition",
+   "position": [
+    -3,
+    12,
+    60
+   ],
+   "target": [
+    5,
+    6,
+    -20
+   ]
+  },
+  "c01-old-crowd-close": {
+   "category": "crowded",
+   "position": [
+    6,
+    12,
+    2
+   ],
+   "target": [
+    -8,
+    9,
+    -18
+   ]
+  },
+  "c02-old-crowd-wide": {
+   "category": "crowded",
+   "position": [
+    -40,
+    16,
+    6
+   ],
+   "target": [
+    -8,
+    9,
+    -18
+   ]
+  },
+  "f01-fold-ridge-side": {
+   "category": "folds",
+   "position": [
+    -6,
+    18,
+    -30
+   ],
+   "target": [
+    18,
+    8,
+    -30
+   ]
+  },
+  "f02-fold-ridge-far": {
+   "category": "folds",
+   "position": [
+    50,
+    20,
+    10
+   ],
+   "target": [
+    20,
+    8,
+    -35
+   ]
+  },
+  "x01-fractures-ceiling": {
+   "category": "fractures",
+   "position": [
+    10,
+    24,
+    -80
+   ],
+   "target": [
+    30,
+    46,
+    -100
+   ]
+  },
+  "x02-fractures-east": {
+   "category": "fractures",
+   "position": [
+    40,
+    10,
+    -40
+   ],
+   "target": [
+    80,
+    13,
+    -35
+   ]
+  },
+  "x03-fractures-distant-west": {
+   "category": "fractures",
+   "position": [
+    -50,
+    15,
+    -70
+   ],
+   "target": [
+    -170,
+    15,
+    -109
+   ]
+  },
+  "n01-near-breach": {
+   "category": "composition",
+   "position": [
+    -36,
+    12,
+    -74
+   ],
+   "target": [
+    -47,
+    9,
+    -82
+   ]
+  },
+  "n02-mid-industrial": {
+   "category": "composition",
+   "position": [
+    28,
+    12,
+    -72
+   ],
+   "target": [
+    51,
+    5,
+    -92
+   ]
+  },
+  "n03-far-funnel": {
+   "category": "composition",
+   "position": [
+    0,
+    20,
+    -100
+   ],
+   "target": [
+    26,
+    34,
+    -158
+   ]
+  },
+  "k01-capsule-trail": {
+   "category": "capsule",
+   "position": [
+    -30,
+    16,
+    -50
+   ],
+   "target": [
+    -8,
+    13,
+    -72
+   ]
+  },
+  "k02-capsule-close": {
+   "category": "capsule",
+   "position": [
+    -23,
+    11,
+    -58
+   ],
+   "target": [
+    -17,
+    9,
+    -65
+   ]
+  },
+  "k03-capsule-from-opening-side": {
+   "category": "capsule",
+   "position": [
+    0,
+    14,
+    -40
+   ],
+   "target": [
+    -17,
+    9,
+    -65
+   ]
+  },
+  "s-L1-front-N": {
+   "category": "sweep",
+   "position": [
+    -4,
+    10,
+    8
+   ],
+   "target": [
+    -4,
+    10,
+    -42
+   ]
+  },
+  "s-L1-front-S": {
+   "category": "sweep",
+   "position": [
+    -4,
+    10,
+    8
+   ],
+   "target": [
+    -4,
+    10,
+    58
+   ]
+  },
+  "s-L1-front-E": {
+   "category": "sweep",
+   "position": [
+    -4,
+    10,
+    8
+   ],
+   "target": [
+    46,
+    10,
+    8
+   ]
+  },
+  "s-L1-front-W": {
+   "category": "sweep",
+   "position": [
+    -4,
+    10,
+    8
+   ],
+   "target": [
+    -54,
+    10,
+    8
+   ]
+  },
+  "s-L1-front-U": {
+   "category": "sweep",
+   "position": [
+    -4,
+    10,
+    8
+   ],
+   "target": [
+    3.5,
+    60,
+    -7.0
+   ]
+  },
+  "s-L1-front-D": {
+   "category": "sweep",
+   "position": [
+    -4,
+    10,
+    8
+   ],
+   "target": [
+    1.0,
+    -40,
+    -7.0
+   ]
+  },
+  "s-L2-centre-N": {
+   "category": "sweep",
+   "position": [
+    0,
+    6,
+    -60
+   ],
+   "target": [
+    0,
+    6,
+    -110
+   ]
+  },
+  "s-L2-centre-S": {
+   "category": "sweep",
+   "position": [
+    0,
+    6,
+    -60
+   ],
+   "target": [
+    0,
+    6,
+    -10
+   ]
+  },
+  "s-L2-centre-E": {
+   "category": "sweep",
+   "position": [
+    0,
+    6,
+    -60
+   ],
+   "target": [
+    50,
+    6,
+    -60
+   ]
+  },
+  "s-L2-centre-W": {
+   "category": "sweep",
+   "position": [
+    0,
+    6,
+    -60
+   ],
+   "target": [
+    -50,
+    6,
+    -60
+   ]
+  },
+  "s-L2-centre-U": {
+   "category": "sweep",
+   "position": [
+    0,
+    6,
+    -60
+   ],
+   "target": [
+    7.5,
+    56,
+    -75.0
+   ]
+  },
+  "s-L2-centre-D": {
+   "category": "sweep",
+   "position": [
+    0,
+    6,
+    -60
+   ],
+   "target": [
+    5.0,
+    -44,
+    -75.0
+   ]
+  },
+  "s-L3-back-N": {
+   "category": "sweep",
+   "position": [
+    10,
+    14,
+    -116
+   ],
+   "target": [
+    10,
+    14,
+    -166
+   ]
+  },
+  "s-L3-back-S": {
+   "category": "sweep",
+   "position": [
+    10,
+    14,
+    -116
+   ],
+   "target": [
+    10,
+    14,
+    -66
+   ]
+  },
+  "s-L3-back-E": {
+   "category": "sweep",
+   "position": [
+    10,
+    14,
+    -116
+   ],
+   "target": [
+    60,
+    14,
+    -116
+   ]
+  },
+  "s-L3-back-W": {
+   "category": "sweep",
+   "position": [
+    10,
+    14,
+    -116
+   ],
+   "target": [
+    -40,
+    14,
+    -116
+   ]
+  },
+  "s-L3-back-U": {
+   "category": "sweep",
+   "position": [
+    10,
+    14,
+    -116
+   ],
+   "target": [
+    17.5,
+    64,
+    -131.0
+   ]
+  },
+  "s-L3-back-D": {
+   "category": "sweep",
+   "position": [
+    10,
+    14,
+    -116
+   ],
+   "target": [
+    15.0,
+    -36,
+    -131.0
+   ]
+  },
+  "s-L4-west-N": {
+   "category": "sweep",
+   "position": [
+    -58,
+    5,
+    -52
+   ],
+   "target": [
+    -58,
+    5,
+    -102
+   ]
+  },
+  "s-L4-west-S": {
+   "category": "sweep",
+   "position": [
+    -58,
+    5,
+    -52
+   ],
+   "target": [
+    -58,
+    5,
+    -2
+   ]
+  },
+  "s-L4-west-E": {
+   "category": "sweep",
+   "position": [
+    -58,
+    5,
+    -52
+   ],
+   "target": [
+    -8,
+    5,
+    -52
+   ]
+  },
+  "s-L4-west-W": {
+   "category": "sweep",
+   "position": [
+    -58,
+    5,
+    -52
+   ],
+   "target": [
+    -108,
+    5,
+    -52
+   ]
+  },
+  "s-L4-west-U": {
+   "category": "sweep",
+   "position": [
+    -58,
+    5,
+    -52
+   ],
+   "target": [
+    -50.5,
+    55,
+    -67.0
+   ]
+  },
+  "s-L4-west-D": {
+   "category": "sweep",
+   "position": [
+    -58,
+    5,
+    -52
+   ],
+   "target": [
+    -53.0,
+    -45,
+    -67.0
+   ]
+  },
+  "s-L5-east-N": {
+   "category": "sweep",
+   "position": [
+    56,
+    4,
+    -56
+   ],
+   "target": [
+    56,
+    4,
+    -106
+   ]
+  },
+  "s-L5-east-S": {
+   "category": "sweep",
+   "position": [
+    56,
+    4,
+    -56
+   ],
+   "target": [
+    56,
+    4,
+    -6
+   ]
+  },
+  "s-L5-east-E": {
+   "category": "sweep",
+   "position": [
+    56,
+    4,
+    -56
+   ],
+   "target": [
+    106,
+    4,
+    -56
+   ]
+  },
+  "s-L5-east-W": {
+   "category": "sweep",
+   "position": [
+    56,
+    4,
+    -56
+   ],
+   "target": [
+    6,
+    4,
+    -56
+   ]
+  },
+  "s-L5-east-U": {
+   "category": "sweep",
+   "position": [
+    56,
+    4,
+    -56
+   ],
+   "target": [
+    63.5,
+    54,
+    -71.0
+   ]
+  },
+  "s-L5-east-D": {
+   "category": "sweep",
+   "position": [
+    56,
+    4,
+    -56
+   ],
+   "target": [
+    61.0,
+    -46,
+    -71.0
+   ]
+  },
+  "f03-fold-close": {
+   "category": "folds",
+   "position": [
+    19.07,
+    6.79,
+    -11.13
+   ],
+   "target": [
+    11.36,
+    3.17,
+    -14.03
+   ]
+  },
+  "f04-fold-ridge-along": {
+   "category": "folds",
+   "position": [
+    2.0,
+    9.0,
+    4.0
+   ],
+   "target": [
+    22.0,
+    6.0,
+    -50.0
+   ]
+  }
+ }
+}

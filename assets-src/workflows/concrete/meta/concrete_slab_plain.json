@@ -1,0 +1,16 @@
+{
+ "file": "/assets/models/candidates/concrete/concrete_slab_plain.glb",
+ "replaces": "concrete_slab_plain",
+ "category": "concrete",
+ "label": "Long plain slab fragment (unreinforced, parallelogram break)",
+ "state": "Review candidate. Parameterised concrete family; shared textures.",
+ "source": "assets-src/workflows/concrete/build.py",
+ "triangles": 29998,
+ "bytes": 1873144,
+ "bounds_m": [
+  2.81,
+  1.102,
+  0.205
+ ],
+ "lods": {}
+}

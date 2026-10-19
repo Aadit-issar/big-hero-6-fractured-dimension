@@ -1,0 +1,16 @@
+{
+ "file": "/assets/models/candidates/concrete/concrete_chunk_a.glb",
+ "replaces": "concrete_chunk_a",
+ "category": "concrete",
+ "label": "Compact faceted chunk with a bar stub",
+ "state": "Review candidate. Parameterised concrete family; shared textures.",
+ "source": "assets-src/workflows/concrete/build.py",
+ "triangles": 7648,
+ "bytes": 2085364,
+ "bounds_m": [
+  1.131,
+  0.84,
+  0.817
+ ],
+ "lods": {}
+}

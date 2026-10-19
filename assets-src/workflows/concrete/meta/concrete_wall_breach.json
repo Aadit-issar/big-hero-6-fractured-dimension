@@ -1,0 +1,27 @@
+{
+ "file": "/assets/models/candidates/concrete/concrete_wall_breach.glb",
+ "replaces": "concrete_wall_breach",
+ "category": "concrete",
+ "label": "Wall section with blast breach and missing corner",
+ "state": "Review candidate. Parameterised concrete family; shared textures.",
+ "source": "assets-src/workflows/concrete/build.py",
+ "triangles": 107438,
+ "bytes": 8294476,
+ "bounds_m": [
+  3.777,
+  0.459,
+  2.4
+ ],
+ "lods": {
+  "1": {
+   "file": "/assets/models/candidates/concrete/concrete_wall_breach_lod1.glb",
+   "triangles": 21354,
+   "bytes": 1872468
+  },
+  "2": {
+   "file": "/assets/models/candidates/concrete/concrete_wall_breach_lod2.glb",
+   "triangles": 9146,
+   "bytes": 1258216
+  }
+ }
+}

@@ -1,0 +1,51 @@
+{
+  "file": "public/assets/models/concrete_slab_plain.glb",
+  "bytes": 22236,
+  "meshes": 1,
+  "materials": [
+    "concrete"
+  ],
+  "primitives": [
+    {
+      "material": "concrete",
+      "triangles": 312,
+      "vertices": 480,
+      "signedVolume": 0.7640990060200147,
+      "windingDisagreesWithNormal": 0,
+      "min": [
+        -1.2000000476837158,
+        -0.10000000149011612,
+        -0.800000011920929
+      ],
+      "max": [
+        1.2000000476837158,
+        0.12399999797344208,
+        0.800000011920929
+      ]
+    }
+  ],
+  "totalSignedVolume": 0.7640990060200147,
+  "triangles": 312,
+  "vertices": 480,
+  "nonFiniteValues": 0,
+  "nonUnitNormals": 0,
+  "degenerateTriangles": 0,
+  "edges": 468,
+  "boundaryEdges": 0,
+  "nonManifoldEdges": 0,
+  "boundsMin": [
+    -1.2000000476837158,
+    -0.10000000149011612,
+    -0.800000011920929
+  ],
+  "boundsMax": [
+    1.2000000476837158,
+    0.12399999797344208,
+    0.800000011920929
+  ],
+  "sizeMetres": [
+    2.4000000953674316,
+    0.2239999994635582,
+    1.600000023841858
+  ]
+}

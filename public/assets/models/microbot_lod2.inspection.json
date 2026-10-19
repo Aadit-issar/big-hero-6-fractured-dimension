@@ -1,0 +1,69 @@
+{
+  "file": "public/assets/models/microbot_lod2.glb",
+  "bytes": 10016,
+  "meshes": 1,
+  "materials": [
+    "microbot_shell",
+    "microbot_joint"
+  ],
+  "primitives": [
+    {
+      "material": "microbot_shell",
+      "triangles": 128,
+      "vertices": 228,
+      "signedVolume": 9.661520747390267e-7,
+      "windingDisagreesWithNormal": 0,
+      "min": [
+        -0.01940000057220459,
+        -0.003659999929368496,
+        -0.003659999929368496
+      ],
+      "max": [
+        0.01940000057220459,
+        0.003659999929368496,
+        0.003659999929368496
+      ]
+    },
+    {
+      "material": "microbot_joint",
+      "triangles": 48,
+      "vertices": 26,
+      "signedVolume": 1.6304954988128069e-7,
+      "windingDisagreesWithNormal": 0,
+      "min": [
+        -0.003700000001117587,
+        -0.003700000001117587,
+        -0.003700000001117587
+      ],
+      "max": [
+        0.003700000001117587,
+        0.003700000001117587,
+        0.003700000001117587
+      ]
+    }
+  ],
+  "totalSignedVolume": 0.0000011292016246203073,
+  "triangles": 176,
+  "vertices": 254,
+  "nonFiniteValues": 0,
+  "nonUnitNormals": 0,
+  "degenerateTriangles": 0,
+  "edges": 264,
+  "boundaryEdges": 0,
+  "nonManifoldEdges": 0,
+  "boundsMin": [
+    -0.01940000057220459,
+    -0.003700000001117587,
+    -0.003700000001117587
+  ],
+  "boundsMax": [
+    0.01940000057220459,
+    0.003700000001117587,
+    0.003700000001117587
+  ],
+  "sizeMetres": [
+    0.03880000114440918,
+    0.007400000002235174,
+    0.007400000002235174
+  ]
+}

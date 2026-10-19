@@ -1,0 +1,27 @@
+{
+ "file": "/assets/models/candidates/concrete/concrete_slab_rebar.glb",
+ "replaces": "concrete_slab_rebar",
+ "category": "concrete",
+ "label": "Broken reinforced slab (stepped shear fracture, exposed rebar)",
+ "state": "Review candidate. Parameterised concrete family; shared textures.",
+ "source": "assets-src/workflows/concrete/build.py",
+ "triangles": 69486,
+ "bytes": 6917400,
+ "bounds_m": [
+  2.866,
+  1.755,
+  0.287
+ ],
+ "lods": {
+  "1": {
+   "file": "/assets/models/candidates/concrete/concrete_slab_rebar_lod1.glb",
+   "triangles": 14656,
+   "bytes": 1633648
+  },
+  "2": {
+   "file": "/assets/models/candidates/concrete/concrete_slab_rebar_lod2.glb",
+   "triangles": 10212,
+   "bytes": 1391104
+  }
+ }
+}

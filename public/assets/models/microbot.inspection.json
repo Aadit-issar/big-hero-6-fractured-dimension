@@ -1,0 +1,86 @@
+{
+  "file": "public/assets/models/microbot.glb",
+  "bytes": 199432,
+  "meshes": 1,
+  "materials": [
+    "microbot_shell",
+    "microbot_recess",
+    "microbot_joint"
+  ],
+  "primitives": [
+    {
+      "material": "microbot_shell",
+      "triangles": 1304,
+      "vertices": 2064,
+      "signedVolume": 0.0000010459922492054237,
+      "windingDisagreesWithNormal": 0,
+      "min": [
+        -0.01940000057220459,
+        -0.003659999929368496,
+        -0.003659999929368496
+      ],
+      "max": [
+        0.01940000057220459,
+        0.003659999929368496,
+        0.003659999929368496
+      ]
+    },
+    {
+      "material": "microbot_recess",
+      "triangles": 784,
+      "vertices": 1264,
+      "signedVolume": 3.062106285124161e-8,
+      "windingDisagreesWithNormal": 0,
+      "min": [
+        -0.016888000071048737,
+        -0.003697499632835388,
+        -0.003697499632835388
+      ],
+      "max": [
+        0.016888000071048737,
+        0.003697499632835388,
+        0.003697499632835388
+      ]
+    },
+    {
+      "material": "microbot_joint",
+      "triangles": 3784,
+      "vertices": 1938,
+      "signedVolume": 2.034345627331076e-7,
+      "windingDisagreesWithNormal": 0,
+      "min": [
+        -0.003700000001117587,
+        -0.003697499632835388,
+        -0.003697499632835388
+      ],
+      "max": [
+        0.003700000001117587,
+        0.003697499632835388,
+        0.003697499632835388
+      ]
+    }
+  ],
+  "triangles": 5872,
+  "vertices": 5266,
+  "nonFiniteValues": 0,
+  "nonUnitNormals": 0,
+  "degenerateTriangles": 0,
+  "edges": 8808,
+  "boundaryEdges": 0,
+  "nonManifoldEdges": 0,
+  "boundsMin": [
+    -0.01940000057220459,
+    -0.003697499632835388,
+    -0.003697499632835388
+  ],
+  "boundsMax": [
+    0.01940000057220459,
+    0.003697499632835388,
+    0.003697499632835388
+  ],
+  "sizeMetres": [
+    0.03880000114440918,
+    0.007394999265670776,
+    0.007394999265670776
+  ]
+}

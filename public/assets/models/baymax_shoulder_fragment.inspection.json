@@ -1,0 +1,87 @@
+{
+  "file": "public/assets/models/baymax_shoulder_fragment.glb",
+  "bytes": 262996,
+  "meshes": 1,
+  "materials": [
+    "baymax_armour_red",
+    "mechanism_grey",
+    "baymax_armour_purple"
+  ],
+  "primitives": [
+    {
+      "material": "baymax_armour_red",
+      "triangles": 2914,
+      "vertices": 1538,
+      "signedVolume": 0.07198427789541462,
+      "windingDisagreesWithNormal": 0,
+      "min": [
+        -0.3990689516067505,
+        0.015597878955304623,
+        -0.10221342742443085
+      ],
+      "max": [
+        0.40257129073143005,
+        0.3977016806602478,
+        0.43895620107650757
+      ]
+    },
+    {
+      "material": "mechanism_grey",
+      "triangles": 4610,
+      "vertices": 3796,
+      "signedVolume": -0.06360151207675536,
+      "windingDisagreesWithNormal": 0,
+      "min": [
+        -0.3990689516067505,
+        -0.009999999776482582,
+        -0.2199999988079071
+      ],
+      "max": [
+        0.40257129073143005,
+        0.3977016806602478,
+        0.43895620107650757
+      ]
+    },
+    {
+      "material": "baymax_armour_purple",
+      "triangles": 932,
+      "vertices": 513,
+      "signedVolume": 0.005040728892429747,
+      "windingDisagreesWithNormal": 0,
+      "min": [
+        -0.0019604975823312998,
+        0.2853448987007141,
+        0.09794850647449493
+      ],
+      "max": [
+        0.20245201885700226,
+        0.39128363132476807,
+        0.2969389855861664
+      ]
+    }
+  ],
+  "totalSignedVolume": 0.013423494711088998,
+  "triangles": 8456,
+  "vertices": 5847,
+  "nonFiniteValues": 0,
+  "nonUnitNormals": 0,
+  "degenerateTriangles": 0,
+  "edges": 12684,
+  "boundaryEdges": 0,
+  "nonManifoldEdges": 0,
+  "boundsMin": [
+    -0.3990689516067505,
+    -0.009999999776482582,
+    -0.2199999988079071
+  ],
+  "boundsMax": [
+    0.40257129073143005,
+    0.3977016806602478,
+    0.43895620107650757
+  ],
+  "sizeMetres": [
+    0.8016402423381805,
+    0.4077016804367304,
+    0.6589561998844147
+  ]
+}
