@@ -1,3 +1,5 @@
+> **Superseded in part.** The link is now protocol v2 (poses, clock, moving objects, routes and acknowledgements); see `docs/ATLAS_LIVE_FINAL_ARCHITECTURE.md` section 5 and `docs/ATLAS_LIVE_DIMENSION_NOTES.md`. The v1 notes below remain accurate for the advisory panel.
+
 # ATLAS bridge (Dimension side)
 
 A read-only, origin-validated link from the running Dimension to an ATLAS window, plus a compact in-game advisor.

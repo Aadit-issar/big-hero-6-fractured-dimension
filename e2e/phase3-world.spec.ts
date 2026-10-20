@@ -46,7 +46,7 @@ test('loads detailed geology and materials, keeps terrain parented, and isolates
   await page.getByTestId('reset-camera').click();await page.waitForTimeout(200);
   const opening=(await read(page)).cameraPosition;
   await page.locator('canvas').click({position:{x:700,y:430}});
-  await page.keyboard.press('Digit2');await page.waitForTimeout(200);
+  await page.keyboard.press('Alt+Digit2');await page.waitForTimeout(200);
   expect((await read(page)).cameraPosition).not.toEqual(opening);
   await capture(page,'phase3-closeup.png');
   await page.keyboard.press('KeyR');await page.waitForTimeout(200);

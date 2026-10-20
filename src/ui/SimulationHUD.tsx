@@ -133,9 +133,13 @@ export function SimulationHUD({ engine, telemetry, onStateChange, onResetCamera,
           <div><span className="key-wide"><kbd>SHIFT</kbd></span><span>Boost</span></div>
           <div><span className="key-wide"><kbd>R</kbd></span><span>Reset view</span></div>
           <div><span className="key-wide"><kbd>E</kbd></span><span>Enter fold</span></div>
-          <div><span className="key-wide"><kbd>H</kbd></span><span>Hide HUD</span></div>
+          <div><span className="key-wide"><kbd>V</kbd></span><span>Baymax view</span></div>
+          <div><span className="key-wide"><kbd>L</kbd></span><span>Open ATLAS</span></div>
+          <div><span className="key-wide"><kbd>T</kbd></span><span>ATLAS tags</span></div>
+          <div><span className="key-wide"><kbd>1</kbd></span><span>Hide Baymax</span></div>
+          <div><span className="key-wide"><kbd>2</kbd></span><span>Hide HUD</span></div>
           <div><span className="key-wide"><kbd>I</kbd></span><span>Field data</span></div>
-          <div><span className="key-wide"><kbd>1–9</kbd></span><span>Viewpoints</span></div>
+          <div><span className="key-wide"><kbd>3–9</kbd></span><span>Viewpoints</span></div>
         </div>
         <div className="mouse-hint"><span className="mouse-icon" aria-hidden="true">◉</span> Drag to look around <kbd>ESC</kbd> release</div>
       </aside>

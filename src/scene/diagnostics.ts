@@ -3,6 +3,7 @@ import type { Camera, Scene } from 'three';
 import { Mesh, Vector3 } from 'three';
 import { readReadiness } from '../rendering/renderReadiness';
 import { assetStats } from './assets/assetStats';
+import { moversFor } from '../world/movers';
 
 export function readPerformance(engine:SimulationEngine) {
   const frames=engine.performance.frames;
@@ -27,6 +28,8 @@ function createDiagnosticApi(engine:SimulationEngine,camera:Camera,scene:Scene) 
       connections:engine.network.getConnections(engine.clock.time),nearby:engine.explorer.nearby(engine.clock.time),
       local:engine.sampleField(engine.explorer.referencePosition,engine.clock.time),
       debris:engine.debris.states.map(s=>({...s})),debrisTick:engine.debris.tick,
+      /** Ground truth of the moving objects (engineering/test readout only; ATLAS never receives this). */
+      movers:moversFor(engine).states().map(m=>({id:m.id,position:m.position,quaternion:m.quaternion})),
       renderedIslands:engine.world.islands.map(i=>({id:i.id,referencePosition:i.referencePosition,position:scene.getObjectByName(i.id)?.getWorldPosition(new Vector3()).toArray()})),
       render:{...readReadiness(),terrainMeshes:engine.world.islands.map(i=>{
         const mesh=scene.getObjectByName(`${i.id}-terrain`);

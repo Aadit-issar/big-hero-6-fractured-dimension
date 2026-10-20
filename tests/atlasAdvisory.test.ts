@@ -3,7 +3,7 @@ import { ADVISORY_STALE_MS, bearingTo, isFresh, parseAdvisory } from '../src/bri
 import { LINK_CHANNEL } from '../src/bridge/atlasLinkProtocol';
 
 const base = () => ({
-  channel: LINK_CHANNEL, v: 1, type: 'advisory', advisoryVersion: 1, session: 'S1', seq: 5, status: 'route', episode: 1, simTime: 12.5,
+  channel: LINK_CHANNEL, v: 2, type: 'advisory', advisoryVersion: 1, session: 'S1', seq: 5, status: 'route', episode: 1, simTime: 12.5,
   goal: { id: 'ISLAND A', label: 'ISLAND A' }, title: 'Candidate route to ISLAND A', detail: '1 segment, about 36 units.', action: 'follow-route', target: [1, 2, 3],
   waypoints: [[0, 0, 0], [1, 2, 3]], segments: [{ kind: 'approach', caution: false, remembered: false }], limitations: ['No safe path is claimed.'], goals: [{ id: 'ISLAND A', label: 'ISLAND A' }],
 });

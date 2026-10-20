@@ -1,0 +1,68 @@
+/* Navigation HUD. The route itself is drawn in the 3D scene; this layer holds labels, indicators and one card (top right, clear of the
+   telemetry card on the left, the advisor at top centre, the control dock at the bottom and the help panel at bottom right). */
+.nav-hud { position: absolute; inset: 0; z-index: 4; pointer-events: none; font-family: 'Segoe UI', system-ui, sans-serif; color: #f1e6ff; overflow: hidden; }
+.nav-hud[data-on='0'] { visibility: hidden; }
+
+.nav-marker, .nav-edge, .nav-end, .nav-ghost, .nav-goal, .nav-goal-edge { position: absolute; left: 0; top: 0; opacity: 0; will-change: transform; transition: opacity .25s; }
+.nav-marker { width: 30px; height: 30px; }
+.nav-marker-label { position: absolute; left: 50%; top: calc(100% + 6px); transform: translateX(-50%); display: grid; justify-items: center; gap: 1px; white-space: nowrap; text-shadow: 0 1px 8px rgb(8 6 28 / 95%); }
+.nav-marker-label b { font: 700 14px 'Segoe UI', system-ui, sans-serif; }
+.nav-marker-label em { font-style: normal; font: 600 12px 'Segoe UI', system-ui, sans-serif; color: #e8dcff; }
+.nav-reticle { position: absolute; inset: 0; opacity: 0; transition: opacity .2s; }
+.nav-reticle i { position: absolute; width: 9px; height: 9px; border: 0 solid #f3ebff; }
+.nav-reticle i:nth-child(1) { left: 0; top: 0; border-left-width: 2px; border-top-width: 2px; }
+.nav-reticle i:nth-child(2) { right: 0; top: 0; border-right-width: 2px; border-top-width: 2px; }
+.nav-reticle i:nth-child(3) { left: 0; bottom: 0; border-left-width: 2px; border-bottom-width: 2px; }
+.nav-reticle i:nth-child(4) { right: 0; bottom: 0; border-right-width: 2px; border-bottom-width: 2px; }
+
+.nav-edge { display: grid; justify-items: center; gap: 4px; }
+.nav-edge-arrow { width: 26px; height: 26px; background: radial-gradient(circle at 35% 50%, #fff, #c9b4ff 72%); clip-path: polygon(0 24%, 60% 24%, 60% 0, 100% 50%, 60% 100%, 60% 76%, 0 76%); filter: drop-shadow(0 0 6px #a98aff); }
+.nav-edge span { font: 700 12px 'Segoe UI', system-ui, sans-serif; text-shadow: 0 1px 8px rgb(8 6 28 / 95%); }
+
+/* Label under the rendezvous / approach reticle drawn in the scene. */
+.nav-end { display: grid; justify-items: center; gap: 1px; white-space: nowrap; text-shadow: 0 1px 8px rgb(8 6 28 / 95%); }
+.nav-end strong { font: 600 10.5px 'Cascadia Mono', 'Consolas', monospace; letter-spacing: .14em; color: #e4d8ff; }
+.nav-end span { font: 600 13px 'Segoe UI', system-ui, sans-serif; color: #fff; }
+
+.nav-ghost span { font: 600 10px 'Cascadia Mono', 'Consolas', monospace; letter-spacing: .12em; text-transform: uppercase; color: #b9aaff; white-space: nowrap; text-shadow: 0 1px 8px rgb(8 6 28 / 95%); }
+
+/* The real target is drawn solid (bracketed in white); the projected one is translucent lavender. */
+.nav-goal { display: grid; justify-items: center; gap: 4px; }
+.nav-goal-bracket { position: relative; width: 36px; height: 36px; }
+.nav-goal-bracket i { position: absolute; width: 10px; height: 10px; border: 0 solid #fff; filter: drop-shadow(0 0 4px rgb(255 255 255 / 50%)); }
+.nav-goal-bracket i:nth-child(1) { left: 0; top: 0; border-left-width: 2px; border-top-width: 2px; }
+.nav-goal-bracket i:nth-child(2) { right: 0; top: 0; border-right-width: 2px; border-top-width: 2px; }
+.nav-goal-bracket i:nth-child(3) { left: 0; bottom: 0; border-left-width: 2px; border-bottom-width: 2px; }
+.nav-goal-bracket i:nth-child(4) { right: 0; bottom: 0; border-right-width: 2px; border-bottom-width: 2px; }
+.nav-goal span { font: 600 12px 'Segoe UI', system-ui, sans-serif; white-space: nowrap; text-shadow: 0 1px 8px rgb(8 6 28 / 95%); color: #fff; }
+.nav-goal-edge { display: grid; justify-items: center; gap: 4px; }
+.nav-goal-edge-arrow { width: 20px; height: 20px; background: #fff; clip-path: polygon(0 30%, 55% 30%, 55% 0, 100% 50%, 55% 100%, 55% 70%, 0 70%); filter: drop-shadow(0 0 6px rgb(255 255 255 / 60%)); }
+.nav-goal-edge span { font: 600 12px 'Segoe UI', system-ui, sans-serif; white-space: nowrap; color: #fff; text-shadow: 0 1px 8px rgb(8 6 28 / 95%); }
+
+.nav-card { position: absolute; right: 38px; top: 118px; width: min(300px, 80vw); padding: 12px 14px 10px; border: 1px solid rgb(201 167 255 / 28%); border-radius: 8px; background: rgb(8 10 34 / 66%); backdrop-filter: blur(12px); pointer-events: auto; }
+.nav-card[data-outcome='success'] { border-color: rgb(176 240 206 / 55%); box-shadow: 0 0 26px rgb(120 220 170 / 14%); }
+.nav-card[data-outcome='miss'] { border-color: rgb(255 176 160 / 55%); box-shadow: 0 0 26px rgb(255 140 120 / 12%); }
+.nav-card header { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+.nav-card header strong { flex: 1; font: 600 15px 'Segoe UI', system-ui, sans-serif; color: #fff2ff; }
+.nav-mode { font: 700 9px 'Cascadia Mono', 'Consolas', monospace; letter-spacing: .16em; padding: 3px 7px; border-radius: 99px; background: rgb(169 138 255 / 20%); color: #e4d8ff; border: 1px solid rgb(169 138 255 / 50%); }
+.nav-clear { all: unset; cursor: pointer; width: 22px; height: 22px; text-align: center; line-height: 22px; border-radius: 6px; color: #cdbaf0; }
+.nav-clear:hover { background: rgb(255 255 255 / 12%); }
+.nav-readout { display: grid; grid-template-columns: 1fr 1.25fr .8fr; gap: 8px; margin-bottom: 6px; }
+.nav-readout b { display: block; font: 700 17px 'Segoe UI', system-ui, sans-serif; color: #fff; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.nav-readout small { font: 500 9px 'Cascadia Mono', 'Consolas', monospace; letter-spacing: .12em; text-transform: uppercase; color: #a99bd0; }
+.nav-line { display: flex; justify-content: space-between; margin: 3px 0; font-size: 12px; color: #e3d6f7; }
+.nav-line b { font-variant-numeric: tabular-nums; color: #fff; }
+.nav-elev { margin: 2px 0; font-size: 11px; color: #a99bd0; }
+.nav-reason { margin: 6px 0 2px; font-size: 11.5px; line-height: 1.4; color: #bfaee6; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.nav-updated { margin: 4px 0 0; font: 600 11px 'Segoe UI', system-ui, sans-serif; color: #d9c8ff; opacity: 0; transition: opacity .4s; }
+.nav-lost { margin: 6px 0 0; font: 600 11.5px 'Segoe UI', system-ui, sans-serif; color: #ffcf8a; }
+.nav-card footer { margin-top: 8px; font: 10px 'Cascadia Mono', 'Consolas', monospace; letter-spacing: .06em; color: #8b98ae; }
+
+.nav-result-title { display: block; margin: 2px 0 8px; font: 800 17px 'Segoe UI', system-ui, sans-serif; letter-spacing: .18em; color: #c9f5de; }
+.nav-card[data-outcome='miss'] .nav-result-title { color: #ffd0c6; }
+.nav-result dl { display: grid; grid-template-columns: auto 1fr; gap: 4px 12px; margin: 0; }
+.nav-result dt { font: 500 10px 'Cascadia Mono', 'Consolas', monospace; letter-spacing: .1em; text-transform: uppercase; color: #a99bd0; align-self: center; }
+.nav-result dd { margin: 0; text-align: right; font: 600 13px 'Segoe UI', system-ui, sans-serif; color: #fff; font-variant-numeric: tabular-nums; }
+.nav-result dd small { font-weight: 500; color: #a99bd0; }
+.nav-note { margin: 8px 0 0; font-size: 10.5px; color: #8f9ec0; }
+@media (max-width: 720px) { .nav-card { top: auto; bottom: 90px; left: 12px; right: 12px; width: auto; } }

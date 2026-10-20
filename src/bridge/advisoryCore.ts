@@ -3,7 +3,7 @@
  * An advisory is DATA from a linked ATLAS window (a recommendation, a target position, a few waypoints and short strings). It is
  * validated field by field, bounded in size and tied to this Dimension's session; it can never be a command and nothing here
  * touches the simulation. */
-export const ADVISORY_VERSION = 1;
+export const ADVISORY_VERSION = 1; // advisory payload schema; the link itself is protocol v2
 export const ADVISORY_STALE_MS = 6000;
 
 export type Vec3 = readonly [number, number, number];
@@ -35,7 +35,7 @@ const isObject = (v: unknown): v is Record<string, unknown> => typeof v === 'obj
 
 /** Returns the advisory if `data` is a well-formed v1 advisory for `session` with a sequence above `lastSeq`; otherwise null. */
 export function parseAdvisory(data: unknown, session: string, lastSeq: number, channel: string): Advisory | null {
-  if (!isObject(data) || data.channel !== channel || data.v !== 1 || data.type !== 'advisory' || data.advisoryVersion !== ADVISORY_VERSION) return null;
+  if (!isObject(data) || data.channel !== channel || data.v !== 2 || data.type !== 'advisory' || data.advisoryVersion !== ADVISORY_VERSION) return null;
   if (data.session !== session || !Number.isInteger(data.seq) || (data.seq as number) <= lastSeq) return null;
   if (!STATUSES.includes(String(data.status)) || !ACTIONS.includes(String(data.action)) || !Number.isInteger(data.episode)) return null;
   if (!(data.simTime === null || finite(data.simTime))) return null;

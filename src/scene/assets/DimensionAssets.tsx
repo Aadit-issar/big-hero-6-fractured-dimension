@@ -7,9 +7,12 @@ import { textureStats, textureTierFor, useAssets } from './assetLoader';
 import { ASSET_SIZES } from './assetSizes';
 import { assetStats } from './assetStats';
 import { DebrisField } from './DebrisField';
+import { MoverField } from './MoverField';
+import { isSuppressedStatic } from '../../bridge/bridgeCore';
 import { PlacementProbe } from './PlacementProbe';
 import { MICROBOT_LOD_IDS, MicrobotSwarms } from './MicrobotSwarms';
 import { layoutDimension, placementInputs } from './placement';
+import { MOVER_DEFS } from '../../world/movers';
 import type { DimensionLayout, PlacementInputs } from './placement';
 
 const SIZES = Object.fromEntries(Object.entries(ASSET_SIZES).map(([id, a]) => [id, a.size]));
@@ -36,10 +39,10 @@ export function cachedLayout(engine: SimulationEngine): DimensionLayout {
 }
 
 /** Physical objects in the dimension: wreckage, the landmark and microbot formations. */
-export function DimensionAssets({ engine, quality, atmosphere, maps, debris = true, microbots = true }: {
+export function DimensionAssets({ engine, quality, atmosphere, maps, debris = true, microbots = true, movers = true }: {
   readonly engine: SimulationEngine; readonly quality: AssetQuality; readonly atmosphere: AtmosphereUniforms; readonly maps: SurfaceMaps;
   /** Profiling toggles (rendering only). */
-  readonly debris?: boolean; readonly microbots?: boolean;
+  readonly debris?: boolean; readonly microbots?: boolean; readonly movers?: boolean;
 }) {
   const layout = useMemo(() => {
     const result = cachedLayout(engine);
@@ -57,11 +60,13 @@ export function DimensionAssets({ engine, quality, atmosphere, maps, debris = tr
     return result;
   }, [engine]);
   const tier = textureTierFor(quality.lodScale);
-  const ids = useMemo(() => [...new Set([...MICROBOT_LOD_IDS, ...(debris ? layout.debris.map((d) => d.asset) : [])])].sort(), [layout, debris]);
+  const visibleDebris = useMemo(() => layout.debris.filter((d) => !isSuppressedStatic(d)), [layout]);
+  const ids = useMemo(() => [...new Set([...MICROBOT_LOD_IDS, ...MOVER_DEFS.map((m) => m.assetId), ...(debris ? visibleDebris.map((d) => d.asset) : [])])].sort(), [visibleDebris, debris]);
   const assets = useAssets(ids, tier);
   return <>
     <PlacementProbe />
-    {assets && debris && <DebrisField engine={engine} debris={layout.debris} assets={assets} atmosphere={atmosphere} maps={maps} lodScale={quality.lodScale} />}
+    {assets && debris && <DebrisField engine={engine} debris={visibleDebris} assets={assets} atmosphere={atmosphere} maps={maps} lodScale={quality.lodScale} />}
+    {assets && movers && <MoverField engine={engine} assets={assets} atmosphere={atmosphere} maps={maps} lodScale={quality.lodScale} />}
     {assets && microbots && <MicrobotSwarms engine={engine} formations={layout.formations} assets={assets} atmosphere={atmosphere} quality={quality} />}
   </>;
 }

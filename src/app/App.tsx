@@ -11,6 +11,10 @@ import { initialQuality, QUALITY_PRESETS, rememberQuality } from '../rendering/q
 import type { QualityLevel } from '../rendering/qualitySettings';
 import { attachAtlasBridge } from '../bridge/atlasBridge';
 import { AtlasAdvisor } from '../ui/AtlasAdvisor';
+import { NavHud } from '../ui/NavHud';
+import { toggleBaymaxHidden } from '../scene/viewMode';
+import { AtlasScanLayer } from '../ui/AtlasScanLayer';
+import { toggleScanTags } from '../bridge/scanStore';
 import { isRenderReady, readReadiness, subscribeReadiness } from '../rendering/renderReadiness';
 
 function initialHudVisible(): boolean {
@@ -81,22 +85,23 @@ export function App() {
   const [hudVisible, setHudVisible] = useState(initialHudVisible);
   const readiness = useSyncExternalStore(subscribeReadiness, readReadiness);
 
-  // H toggles a presentation mode that hides the HUD; P pauses/resumes the simulation (works with the HUD hidden); controls stay bound.
+  // H toggles a presentation mode that hides the HUD; controls stay bound.
   useEffect(() => {
     const onKey = (event: KeyboardEvent) => {
       const target = event.target;
       if (target instanceof HTMLElement && target.closest('input, select, textarea')) return;
-      if (event.repeat) return;
+      if (event.repeat || event.ctrlKey || event.metaKey) return;
       if (event.code === 'KeyH') setHudVisible((visible) => !visible);
-      else if (event.code === 'KeyP') {
-        if (engine.clock.isRunning) engine.clock.pause();
-        else engine.clock.resume();
-        refreshControls();
+      if (event.code === 'KeyT') toggleScanTags();
+      // Clean renders: 1 hides Baymax, 2 hides the HUD (Alt/Shift + digit keep the viewpoint framings).
+      if (!event.altKey && !event.shiftKey) {
+        if (event.code === 'Digit2') setHudVisible((visible) => !visible);
+        if (event.code === 'Digit1') toggleBaymaxHidden();
       }
     };
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);
-  }, [engine, refreshControls]);
+  }, []);
 
   // Read-only ATLAS live link (publishes observations to origin-validated ATLAS windows; no effect without a peer).
   useEffect(() => attachAtlasBridge(engine), [engine]);
@@ -140,6 +145,8 @@ export function App() {
         quality={qualityLevel}
         onQualityChange={chooseQuality}
       />
+      <AtlasScanLayer visible={hudVisible} />
+      <NavHud engine={engine} visible={hudVisible} />
       <AtlasAdvisor visible={hudVisible} />
     </main>
   );

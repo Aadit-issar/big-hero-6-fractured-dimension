@@ -2,6 +2,8 @@ import type { SimulationEngine } from '../../simulation/simulationEngine';
 import type { Vec3 } from '../../simulation/types';
 import { cross, multiply, normalize, scale, sub } from '../../simulation/linearAlgebra';
 import { MAX_FOLDS, MAX_HAZARDS, MAX_SHEARS } from './GasVolumePass';
+import { disturbanceIntensity, moversFor, sheetSlip, swirlAxis } from '../../world/movers';
+import type { DisturbanceDef } from '../../world/movers';
 
 /** How strongly a connection state opens the surrounding gas (rendering only). */
 export const FOLD_OPENING: Readonly<Record<string, number>> = { open: 1, unstable: 0.85, forming: 0.45, closing: 0.35, inactive: 0, closed: 0 };
@@ -22,6 +24,31 @@ export const FOLD_SHEAR_GAIN = 24;
 /** Strain shear offset (m) at σ_min = 0, falling linearly to 0 at σ_min = 1. */
 export const STRAIN_SHEAR_SCALE = 40;
 export const STRAIN_SHEAR_RADIUS = 45;
+/** Gas response to the movers' disturbances (src/world/movers.ts): at most this many shears are reserved for them. */
+export const DISTURBANCE_SHEARS = 2;
+/** Shear offset (m) at full intensity: a fracture sheet slips the cloud along its own slip direction; a swirl shears the layer normal to its axis. */
+export const DISTURBANCE_SHEAR_OFFSET = 14;
+/** Shear radius per unit of the disturbance's width (m per reference-unit sigma). */
+export const DISTURBANCE_SHEAR_RADIUS_PER_SIGMA = 52;
+
+const MAT_VEC = (m: readonly number[], v: Vec3): Vec3 => [m[0]! * v[0] + m[1]! * v[1] + m[2]! * v[2], m[3]! * v[0] + m[4]! * v[1] + m[5]! * v[2], m[6]! * v[0] + m[7]! * v[1] + m[8]! * v[2]];
+
+/** Gas shear of one disturbance, from its real state: the reference-space slip/tangent direction and plane are pushed through the local Jacobian
+ * of the same spatial map, so the cloud is cut and slipped exactly where and along what the objects feel. Wells have no shear (they act radially). */
+function disturbanceShear(engine: SimulationEngine, d: DisturbanceDef, intensity: number, lattice: number): Shear | null {
+  const kind = d.kind ?? 'swirl';
+  if (kind === 'well' || intensity < 0.05) return null;
+  const sample = engine.sampleField(d.centre, lattice);
+  let tangent: Vec3, normalRef: Vec3;
+  if (kind === 'sheet') { tangent = sheetSlip(d); normalRef = normalize(d.axis); }
+  else { normalRef = swirlAxis(d, lattice); const helper: Vec3 = Math.abs(normalRef[1]) < 0.9 ? [0, 1, 0] : [1, 0, 0]; tangent = normalize(cross(normalRef, helper)); }
+  const binormal = normalize(cross(normalRef, tangent));
+  const jt = MAT_VEC(sample.jacobian, tangent), jb = MAT_VEC(sample.jacobian, binormal), jn = MAT_VEC(sample.jacobian, normalRef);
+  let n = normalize(cross(jt, jb));
+  if (n[0] * jn[0] + n[1] * jn[1] + n[2] * jn[2] < 0) n = scale(n, -1);
+  const offset = scale(normalize(jt), DISTURBANCE_SHEAR_OFFSET * intensity);
+  return [[...sample.worldPosition, 0.85 * intensity], [...offset, d.sigma * DISTURBANCE_SHEAR_RADIUS_PER_SIGMA], [...n, kind === 'sheet' ? 1 : 0]];
+}
 
 /** Simulation-derived shaping inputs for the gas, sampled on the 4 Hz model
  * lattice: fold endpoints (only real graph connections open passages), the
@@ -40,10 +67,18 @@ export function gasSimulationInputs(engine: SimulationEngine, time: number, came
   }
   pairs.sort((a, b) => a.d - b.d);
   const shears: Shear[] = [];
+  const foldShears: Shear[] = [];
   for (const f of pairs.slice(0, 2)) {
-    shears.push([[...f.entry, f.w], [...scale(sub(f.exit, f.entry), FOLD_SHEAR_GAIN), FOLD_SHEAR_RADIUS], [...f.entryNormal, 1]]);
-    shears.push([[...f.exit, f.w], [...scale(sub(f.entry, f.exit), FOLD_SHEAR_GAIN), FOLD_SHEAR_RADIUS], [...f.exitNormal, 1]]);
+    foldShears.push([[...f.entry, f.w], [...scale(sub(f.exit, f.entry), FOLD_SHEAR_GAIN), FOLD_SHEAR_RADIUS], [...f.entryNormal, 1]]);
+    foldShears.push([[...f.exit, f.w], [...scale(sub(f.entry, f.exit), FOLD_SHEAR_GAIN), FOLD_SHEAR_RADIUS], [...f.exitNormal, 1]]);
   }
+  // Disturbance shears (real mover-system state, nearest the camera first) take precedence over the second fold pair and the strain shears.
+  const dist: Array<{ shear: Shear; d: number }> = [];
+  for (const shear of disturbanceShearsAt(engine, lattice)) { const d = Math.sqrt(dist2([shear[0][0], shear[0][1], shear[0][2]], camera)); if (d < 170) dist.push({ shear, d }); }
+  dist.sort((a, b) => a.d - b.d);
+  shears.push(...foldShears.slice(0, 2));
+  for (const e of dist.slice(0, DISTURBANCE_SHEARS)) shears.push(e.shear);
+  shears.push(...foldShears.slice(2));
   endpoints.sort((a, b) => dist2(a.p, camera) - dist2(b.p, camera));
   const folds: Vec4[] = endpoints.slice(0, MAX_FOLDS).map((e) => [e.p[0], e.p[1], e.p[2], e.w]);
   const strained: Array<{ shear: Shear; hazard: number }> = [];
@@ -61,6 +96,17 @@ export function gasSimulationInputs(engine: SimulationEngine, time: number, came
   strained.sort((a, b) => b.hazard - a.hazard);
   for (const s of strained) if (shears.length < MAX_SHEARS && s.hazard > 0.05) shears.push(s.shear);
   return { folds, hazards, shears };
+}
+
+const shearCache = new WeakMap<SimulationEngine, { readonly key: number; readonly shears: readonly Shear[] }>();
+/** The disturbance shears at a lattice time, computed once per 4 Hz lattice step (the disturbances and the map change slowly). */
+function disturbanceShearsAt(engine: SimulationEngine, lattice: number): readonly Shear[] {
+  const hit = shearCache.get(engine);
+  if (hit && hit.key === lattice) return hit.shears;
+  const shears: Shear[] = [];
+  for (const def of moversFor(engine).disturbances) { const s = disturbanceShear(engine, def, disturbanceIntensity(def, lattice), lattice); if (s) shears.push(s); }
+  shearCache.set(engine, { key: lattice, shears });
+  return shears;
 }
 
 function dist2(a: Vec3, b: Vec3): number {

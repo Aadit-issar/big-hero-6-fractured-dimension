@@ -51,15 +51,14 @@ export function parseQuality(value: string | null | undefined): QualityLevel | n
   return value === 'performance' || value === 'balanced' || value === 'cinematic' ? value : null;
 }
 
-/** URL `?quality=` wins, then the remembered choice, then the build default (balanced locally). */
+/** URL `?quality=` wins, then the remembered choice, then balanced. */
 export function initialQuality(): QualityLevel {
-  const buildDefault = parseQuality(import.meta.env.VITE_DEFAULT_QUALITY) ?? 'balanced';
   try {
     const fromUrl = parseQuality(new URLSearchParams(window.location.search).get('quality'));
     if (fromUrl) return fromUrl;
-    return parseQuality(window.localStorage.getItem(STORAGE_KEY)) ?? buildDefault;
+    return parseQuality(window.localStorage.getItem(STORAGE_KEY)) ?? 'balanced';
   } catch {
-    return buildDefault;
+    return 'balanced';
   }
 }
 

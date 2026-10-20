@@ -1,0 +1,35 @@
+/* ATLAS scan layer: a sonar pulse when a scan is requested and refined tags on what the scan reported. Same glass, indigo and lavender as the rest of the HUD. */
+.scan-layer { position: absolute; inset: 0; z-index: 3; pointer-events: none; overflow: hidden; font-family: 'Segoe UI', system-ui, sans-serif; color: #f4ecff; }
+.scan-layer[data-on='0'] { visibility: hidden; }
+
+.scan-pulse { position: absolute; left: 50%; top: 68%; width: 0; height: 0; opacity: 0; }
+.scan-pulse i { position: absolute; left: 0; top: 0; width: 160px; height: 160px; margin: -80px 0 0 -80px; border-radius: 50%; border: 2px solid rgb(214 170 255 / 70%); box-shadow: 0 0 40px rgb(177 112 255 / 55%), inset 0 0 36px rgb(177 112 255 / 35%); transform: scale(.1); opacity: 0; }
+.scan-pulse[data-run='1'] { opacity: 1; }
+.scan-pulse[data-run='1'] i { animation: scanRing 2.1s cubic-bezier(.16, .7, .3, 1) forwards; }
+.scan-pulse[data-run='1'] i:nth-child(2) { animation-delay: .28s; }
+.scan-pulse[data-run='1'] i:nth-child(3) { animation-delay: .56s; }
+@keyframes scanRing { 0% { transform: scale(.1); opacity: .95; } 70% { opacity: .45; } 100% { transform: scale(15); opacity: 0; } }
+
+.scan-chip { position: absolute; left: 50%; top: 82px; transform: translate(-50%, -8px); display: flex; align-items: baseline; gap: 10px; padding: 7px 16px; border-radius: 999px; border: 1px solid rgb(206 170 255 / 38%); background: linear-gradient(180deg, rgb(40 24 96 / 72%), rgb(16 10 52 / 78%)); backdrop-filter: blur(14px); box-shadow: 0 10px 34px rgb(60 20 140 / 40%); opacity: 0; transition: opacity .35s, transform .35s; white-space: nowrap; }
+.scan-chip[data-on='1'] { opacity: 1; transform: translate(-50%, 0); }
+.scan-chip b { font: 700 11px 'Cascadia Mono', 'Consolas', monospace; letter-spacing: .24em; color: #f0a8ff; }
+.scan-chip span { font: 600 12.5px 'Segoe UI', system-ui, sans-serif; color: #efe6ff; }
+
+.scan-tag { position: absolute; left: 0; top: 0; will-change: transform; transition: opacity .4s; display: flex; align-items: center; }
+.scan-layer[data-tags='0'] .scan-tag { opacity: 0 !important; }
+.scan-tag-dot { position: absolute; left: 0; top: 0; width: 9px; height: 9px; margin: -4.5px 0 0 -4.5px; border-radius: 50%; background: #e9d9ff; box-shadow: 0 0 0 3px rgb(206 170 255 / 28%), 0 0 14px rgb(190 140 255 / 85%); }
+.scan-tag-stem { position: absolute; left: 0; top: 0; width: var(--len, 26px); height: 1px; background: linear-gradient(90deg, rgb(226 200 255 / 85%), rgb(226 200 255 / 55%)); transform-origin: 0 50%; transform: rotate(var(--ang, 0rad)); }
+.scan-tag-body { position: absolute; left: 26px; top: var(--off, 0px); transform: translateY(-50%); display: grid; grid-template-columns: auto auto; grid-template-rows: auto auto; column-gap: 10px; align-items: baseline; padding: 5px 11px 6px; border-radius: 10px; border: 1px solid rgb(206 170 255 / 30%); background: linear-gradient(180deg, rgb(42 26 100 / 70%), rgb(14 9 48 / 78%)); backdrop-filter: blur(12px); box-shadow: 0 8px 28px rgb(40 12 110 / 38%); white-space: nowrap; }
+.scan-tag-body b { grid-column: 1; font: 650 12.5px 'Segoe UI', system-ui, sans-serif; color: #fff; }
+.scan-tag-body em { grid-column: 2; grid-row: 1; font: 600 11px 'Cascadia Mono', 'Consolas', monospace; color: #cbb4ff; font-style: normal; text-align: right; }
+.scan-tag-body small { grid-column: 1 / span 2; font: 600 9px 'Cascadia Mono', 'Consolas', monospace; letter-spacing: .16em; text-transform: uppercase; color: #a893ee; }
+.scan-tag[data-kind='island'] .scan-tag-dot { background: #b9c4ff; box-shadow: 0 0 0 3px rgb(130 150 255 / 30%), 0 0 14px rgb(120 140 255 / 85%); }
+.scan-tag[data-kind='fold'] .scan-tag-dot { background: #ffc5f2; box-shadow: 0 0 0 3px rgb(255 120 230 / 30%), 0 0 16px rgb(255 100 225 / 90%); }
+.scan-tag[data-kind='fold'] .scan-tag-body { border-color: rgb(255 150 235 / 42%); }
+.scan-tag[data-state='unstable'] .scan-tag-dot { background: #ffd9a1; box-shadow: 0 0 0 3px rgb(255 170 80 / 34%), 0 0 16px rgb(255 160 70 / 90%); }
+.scan-tag[data-state='unstable'] .scan-tag-body { border-color: rgb(255 180 100 / 55%); }
+.scan-tag[data-state='unstable'] .scan-tag-body small { color: #ffc27a; }
+.scan-tag[data-kind='field'] .scan-tag-dot { background: #9ff3ff; box-shadow: 0 0 0 3px rgb(80 210 255 / 28%), 0 0 14px rgb(80 210 255 / 80%); }
+.scan-tag[data-kind='field'] .scan-tag-body { border-color: rgb(120 220 255 / 38%); }
+.scan-tag[data-kind='field'] .scan-tag-body small { color: #8fdcf2; }
+.scan-tag[data-kind='object'] .scan-tag-body small { color: #f0a8ff; }

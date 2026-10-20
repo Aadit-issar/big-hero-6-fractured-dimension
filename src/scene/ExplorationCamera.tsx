@@ -1,6 +1,8 @@
 import { useCallback, useEffect, useRef } from 'react';
 import { useFrame, useThree } from '@react-three/fiber';
-import { Vector3 } from 'three';
+import { PerspectiveCamera, Vector3 } from 'three';
+import { publishCameraPose } from '../bridge/poseStore';
+import { getViewMode, toggleViewMode } from './viewMode';
 import { HUD_UPDATE_INTERVAL_SECONDS } from '../simulation/constants';
 import type { SimulationEngine } from '../simulation/simulationEngine';
 import type { SimulationTelemetry } from './sceneTypes';
@@ -37,6 +39,7 @@ export function ExplorationCamera({ engine, onTelemetry, resetVersion }: Explora
   const movement = useRef(new Vector3());
   const worldUp = useRef(new Vector3(0, 1, 0));
   const enterRequested=useRef(false);
+  const viewOffset=useRef(new Vector3());
   const appliedReset=useRef(engine.resetRevision);
 
   const frame=useCallback((position:Vec3,lookTarget:Vec3)=>{
@@ -92,11 +95,14 @@ export function ExplorationCamera({ engine, onTelemetry, resetVersion }: Explora
       if (event.code === 'KeyR' && !event.repeat) {
         resetOpening();
       }
+      if(event.code==='KeyV'&&!event.repeat)toggleViewMode();
       if(event.code==='KeyE'&&!event.repeat){event.preventDefault();enterRequested.current=true;}
       // Rendering-only framings; flight continues normally from the new pose.
       const view=/^Digit([1-9])$/.exec(event.code);
       // Shift+digit frames the physical objects (microbots, wreckage, landmark, shears).
-      if(view&&!event.repeat){const k=Number(view[1])-1;const pose=event.shiftKey?assetViewPose(ASSET_VIEWS[k]!,engine):viewpointPose(VIEWPOINTS[k]!,engine);frame(pose.position,pose.target);}
+      // Plain 1 hides Baymax and plain 2 hides the HUD (App.tsx); their framings stay on Alt+1 / Alt+2 and Shift+1 / Shift+2.
+      const plainToggle=(view?.[1]==='1'||view?.[1]==='2')&&!event.altKey&&!event.shiftKey;
+      if(view&&!plainToggle&&!event.repeat){const k=Number(view[1])-1;const pose=event.shiftKey?assetViewPose(ASSET_VIEWS[k]!,engine):viewpointPose(VIEWPOINTS[k]!,engine);frame(pose.position,pose.target);}
     };
     const onKeyUp = (event: KeyboardEvent) => { keys.current.delete(event.code); };
     const onBlur = () => { keys.current.clear(); drag.current.active = false; };
@@ -134,6 +140,9 @@ export function ExplorationCamera({ engine, onTelemetry, resetVersion }: Explora
   }, [camera, gl, resetOpening, engine, frame]);
 
   useFrame((_, delta) => {
+    // Baymax view draws the camera behind the flight position; undo last frame's offset so flight maths always use the true position.
+    camera.position.sub(viewOffset.current);
+    viewOffset.current.set(0,0,0);
     engine.advance(delta);
     if(appliedReset.current!==engine.resetRevision){appliedReset.current=engine.resetRevision;resetOpening();}
     const step = Math.min(delta, 0.05);
@@ -159,6 +168,15 @@ export function ExplorationCamera({ engine, onTelemetry, resetVersion }: Explora
     }
 
     engine.explorer.updateWorld([camera.position.x,camera.position.y,camera.position.z],engine.clock.time);
+    // The single published pose: the bridge reports it to ATLAS and the navigation HUD projects through it.
+    let viewPosition:[number,number,number]=[camera.position.x,camera.position.y,camera.position.z];
+    if(getViewMode()==='baymax'){
+      camera.getWorldDirection(forward.current);
+      viewOffset.current.copy(forward.current).multiplyScalar(-7).addScaledVector(worldUp.current,1.8);
+      camera.position.add(viewOffset.current);
+      viewPosition=[camera.position.x,camera.position.y,camera.position.z];
+    }
+    if (camera instanceof PerspectiveCamera) publishCameraPose([camera.position.x-viewOffset.current.x,camera.position.y-viewOffset.current.y,camera.position.z-viewOffset.current.z],[camera.quaternion.x,camera.quaternion.y,camera.quaternion.z,camera.quaternion.w],camera.fov,camera.aspect,engine.clock.time,performance.now()/1000,viewPosition,pressed.has('ShiftLeft')||pressed.has('ShiftRight'));
     if(enterRequested.current) {
       enterRequested.current=false;
       const traversal=engine.explorer.traverse(engine.clock.time);

@@ -10,11 +10,15 @@ import { CosmicSky } from './environment/CosmicSky';
 import { Vortex } from './dimension/Vortex';
 import { MirrorFloor } from './dimension/MirrorFloor';
 import { DimensionAssets } from './assets/DimensionAssets';
+import { BaymaxBody } from './BaymaxBody';
+import { DisturbanceField } from './dimension/DisturbanceField';
+import { PhysicsVisuals } from './dimension/PhysicsVisuals';
 import { GasWorld } from './gas/GasWorld';
 import { GasMotes } from './gas/GasMotes';
 import { createOverlay } from './gas/overlay';
 import { SpaceFractures } from './dimension/SpaceFractures';
 import { SpatialTears } from './dimension/SpatialTears';
+import { RouteScene } from './nav/RouteScene';
 import { archetypeFor, isHero } from './terrain/archetypes';
 import { cellSizeFor } from './terrain/terrainGenerator';
 import type { TerrainMeshData } from './terrain/terrainGenerator';
@@ -67,7 +71,7 @@ function useIslandTerrain(engine: SimulationEngine, quality: QualitySettings) {
   return terrain;
 }
 
-/** Profiling aid: `?disable=gas,bloom,shears,floor,debris,microbots,motes,vortex,fractures,tears,overlay` removes decorative layers
+/** Profiling aid: `?disable=gas,bloom,shears,floor,debris,microbots,motes,vortex,fractures,tears,overlay,movers,disturbance,trails,fieldlines,glow` removes decorative layers
  * (rendering only) so their individual cost can be measured. */
 function disabledLayers(): Set<string> {
   try { return new Set((new URLSearchParams(window.location.search).get('disable') ?? '').split(',').filter(Boolean)); } catch { return new Set(); }
@@ -104,11 +108,15 @@ function World({ engine, quality }: { readonly engine: SimulationEngine; readonl
           model-time driven. */}
       {!off.has('floor') && <MirrorFloor />}
       {!off.has('vortex') && <Vortex engine={engine} />}
-      <DimensionAssets engine={engine} quality={quality.assets} atmosphere={atmosphere} maps={surfaceMaps} debris={!off.has('debris')} microbots={!off.has('microbots')} />
+      <BaymaxBody engine={engine} />
+      {!off.has('disturbance') && <DisturbanceField engine={engine} />}
+      <PhysicsVisuals engine={engine} trails={!off.has('trails')} fieldLines={!off.has('fieldlines')} glow={!off.has('glow')} />
+      <DimensionAssets engine={engine} quality={quality.assets} atmosphere={atmosphere} maps={surfaceMaps} debris={!off.has('debris')} microbots={!off.has('microbots')} movers={!off.has('movers')} />
       {!off.has('motes') && <GasMotes engine={engine} count={quality.motes} />}
       <SpatialEffects engine={engine} atmosphere={atmosphere} maps={surfaceMaps} overlay={overlay}/>
       {overlay && !off.has('fractures') && <SpaceFractures engine={engine} overlay={overlay} />}
       {overlay && !off.has('tears') && <SpatialTears engine={engine} overlay={overlay} />}
+      <RouteScene engine={engine} overlay={off.has('route') ? null : overlay} />
       <GasWorld engine={engine} gas={off.has('gas') ? null : quality.gas} bloom={off.has('bloom') ? null : quality.bloom} shears={!off.has('shears')} overlay={overlay} />
     </>
   );

@@ -3,9 +3,9 @@ dist/
 coverage/
 test-results/
 playwright-report/
+.serena/
+.gitnexus/
 *.tsbuildinfo
 .DS_Store
 __pycache__/
 *.pyc
-.fresh-clone-verify/
-.serena/
