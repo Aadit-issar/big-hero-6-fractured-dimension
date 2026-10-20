@@ -1,7 +1,7 @@
 /** First person (the camera is Baymax's eye) or Baymax view (the camera trails Baymax, who is drawn). Rendering only: flight, the explorer
- * and everything ATLAS reports use the flight position in both modes. Toggled with V; `?view=baymax` starts in Baymax view. */
+ * and everything ATLAS reports use the flight position in both modes. Toggled with V; Baymax view is the default; `?view=first` starts in first person. */
 export type ViewMode = 'first' | 'baymax';
-let mode: ViewMode = (() => { try { return new URLSearchParams(window.location.search).get('view') === 'baymax' ? 'baymax' : 'first'; } catch { return 'first'; } })();
+let mode: ViewMode = (() => { try { return new URLSearchParams(window.location.search).get('view') === 'first' ? 'first' : 'baymax'; } catch { return 'baymax'; } })();
 const listeners = new Set<() => void>();
 export const getViewMode = (): ViewMode => mode;
 export const subscribeViewMode = (l: () => void): (() => void) => { listeners.add(l); return () => { listeners.delete(l); }; };

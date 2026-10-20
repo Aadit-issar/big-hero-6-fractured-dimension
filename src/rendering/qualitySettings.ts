@@ -51,14 +51,14 @@ export function parseQuality(value: string | null | undefined): QualityLevel | n
   return value === 'performance' || value === 'balanced' || value === 'cinematic' ? value : null;
 }
 
-/** URL `?quality=` wins, then the remembered choice, then balanced. */
+/** URL `?quality=` wins, then the remembered choice, then cinematic. */
 export function initialQuality(): QualityLevel {
   try {
     const fromUrl = parseQuality(new URLSearchParams(window.location.search).get('quality'));
     if (fromUrl) return fromUrl;
-    return parseQuality(window.localStorage.getItem(STORAGE_KEY)) ?? 'balanced';
+    return parseQuality(window.localStorage.getItem(STORAGE_KEY)) ?? 'cinematic';
   } catch {
-    return 'balanced';
+    return 'cinematic';
   }
 }
 

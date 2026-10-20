@@ -60,7 +60,7 @@ powershell -ExecutionPolicy Bypass -File scripts\start-live-demo.ps1
 Or manually, in two PowerShell windows: `npm run serve` in each repository. Then open
 `http://127.0.0.1:4183/?quality=cinematic&view=baymax&atlas=http://127.0.0.1:5184/` and press **L** to open ATLAS linked to that Dimension. Full walkthrough: **[docs/JUDGE_GUIDE.md](docs/JUDGE_GUIDE.md)**.
 
-URL options: `?quality=performance|balanced|cinematic`, `?view=baymax`, `?hud=0`, `?atlas=<ATLAS url>` (what **L** opens; default `http://127.0.0.1:5184/?experience=command`).
+URL options: `?quality=performance|balanced|cinematic` (default `cinematic`), `?view=first` (default is Baymax view), `?hud=0`, `?atlas=<ATLAS url>` (what **L** opens; default `http://127.0.0.1:5184/?experience=command`).
 
 ## Controls
 
@@ -70,7 +70,7 @@ URL options: `?quality=performance|balanced|cinematic`, `?view=baymax`, `?hud=0`
 | Space / Ctrl | Ascend / descend |
 | Shift | Boost (3x) |
 | Click and drag | Look around (no pointer lock); Esc releases the drag |
-| V | Toggle Baymax view (camera trails Baymax) / first person |
+| V | Toggle between Baymax view (default; camera trails Baymax) and first person |
 | E | Enter a nearby open **fold** (prompt appears within 5 units) |
 | R | Return to the opening view |
 | L | Open ATLAS linked to this Dimension |
