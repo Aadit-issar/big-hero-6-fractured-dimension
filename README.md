@@ -1,6 +1,6 @@
 # Big Hero 6: Fractured — Dimension
 
-**[▶ Play online (Chrome or Edge, desktop)](https://aadit-issar.github.io/big-hero-6-fractured-dimension/)** · **Companion app: [ATLAS Command](https://github.com/Aadit-issar/big-hero-6-fractured-atlas)** · **[Judge guide](docs/JUDGE_GUIDE.md)**
+**Companion app: [ATLAS Command](https://github.com/Aadit-issar/big-hero-6-fractured-atlas)** · **[Judge guide](docs/JUDGE_GUIDE.md)**
 
 An equation-governed, browser-based fictional dimension inspired by the *Big Hero 6* portal realm. Fourteen floating islands drift through a gaseous violet-cobalt void around a golden vortex, among concrete, steel, capsule and armour wreckage. Everything that moves is driven by one seeded nonlinear scalar field, and the temporary **folds** you can fly into are real consequences of that mathematics. You fly Baymax through it in real time.
 

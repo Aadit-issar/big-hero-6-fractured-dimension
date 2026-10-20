@@ -97,17 +97,17 @@ button { font: inherit; }
 .camera-control span:first-child { font-size: 15px; }
 button:focus-visible { outline: 2px solid var(--cyan); outline-offset: 2px; }
 
-.help-panel { position: absolute; right: 38px; bottom: 113px; width: 230px; padding: 15px 16px 12px; pointer-events: auto; }
+.help-panel { position: absolute; right: 38px; bottom: 113px; width: 310px; box-sizing: border-box; padding: 15px 16px 12px; pointer-events: auto; }
 .help-tag { margin-left: auto; padding: 3px 5px; border: 1px solid rgb(128 167 205 / 18%); color: #7e90a8; font-size: 10px; }
-.control-list { display: grid; grid-template-columns: 1fr 1fr; gap: 9px 12px; margin-top: 15px; }
-.control-list > div { display: flex; align-items: center; gap: 7px; color: #9ba9bd; font-size: 10.5px; white-space: nowrap; }
+.control-list { display: grid; grid-template-columns: 1fr 1fr; gap: 9px 10px; margin-top: 15px; }
+.control-list > div { display: flex; align-items: center; gap: 7px; color: #9ba9bd; font-size: 10.5px; white-space: nowrap; min-width: 0; }
 kbd { min-width: 18px; height: 17px; display: inline-grid; place-items: center; padding: 0 4px; border: 1px solid rgb(140 164 198 / 25%); border-radius: 2px; color: #c4d0e0; background: rgb(86 105 133 / 12%); font: 400 7px var(--mono); }
 .key-cluster { display: grid; grid-template-columns: repeat(3, 18px); gap: 2px; }
 .key-cluster kbd:first-child { grid-column: 2; }
 .key-cluster kbd:nth-child(2) { grid-column: 1; }
 .key-cluster kbd:nth-child(3) { grid-column: 2; }
 .key-cluster kbd:nth-child(4) { grid-column: 3; grid-row: 2; }
-.key-wide kbd { min-width: 41px; }
+.key-wide kbd { min-width: 38px; }
 .mouse-hint { display: flex; align-items: center; gap: 6px; margin-top: 13px; padding-top: 10px; border-top: 1px solid rgb(143 166 197 / 11%); color: #76869e; font-size: 10.5px; }
 .mouse-icon { color: var(--cyan); font-size: 12px; }
 .mouse-hint kbd { margin-left: auto; min-width: 30px; }
@@ -133,7 +133,7 @@ kbd { min-width: 18px; height: 17px; display: inline-grid; place-items: center; 
 @media (max-width: 900px) {
   .topbar { height: 82px; padding: 0 22px; }
   .telemetry-panel { left: 22px; top: 99px; width: min(325px, calc(100vw - 44px)); }
-  .help-panel { right: 22px; bottom: 102px; width: 213px; }
+  .help-panel { right: 22px; bottom: 102px; width: 290px; box-sizing: border-box; }
   .bottom-caption { left: 22px; bottom: 30px; }
   .control-dock { bottom: 20px; }
   .scene-hint { top: 95px; left: auto; right: 22px; transform: none; }
@@ -147,7 +147,7 @@ kbd { min-width: 18px; height: 17px; display: inline-grid; place-items: center; 
   .status-subtitle { display: none; }
   .live-status { font-size: 10.5px; }
   .telemetry-panel { left: 14px; top: 84px; width: min(308px, calc(100vw - 28px)); padding: 13px 14px 10px; }
-  .help-panel { right: 14px; bottom: 97px; width: 188px; padding: 12px; }
+  .help-panel { right: 14px; bottom: 97px; width: 262px; box-sizing: border-box; padding: 12px; }
   .control-list { gap: 8px 5px; }
   .control-list > div { gap: 5px; font-size: 10px; }
   .control-dock { bottom: 15px; gap: 5px; min-height: 48px; padding: 5px; }
