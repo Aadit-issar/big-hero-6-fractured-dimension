@@ -141,4 +141,4 @@ Developer commands: `npm run typecheck`, `npm test`, `npm run build`.
 
 ## Start-up notice
 
-On first launch a small, dismissible card reminds you that the Dimension and ATLAS Command are meant to be installed together from GitHub. **Got it** hides it for this visit, **Don't show again** remembers the choice in the browser, and `?pairNotice=0` suppresses it (useful for automated tests). It never blocks flight or any other control.
+Every launch begins with a centred notice that the Fractured Dimension and ATLAS Command are meant to be installed together from GitHub. The application does not load until you press **OK**; a reload in the same tab does not ask again, and a new window or tab does. `?pairNotice=0` skips it (used by automated tests). When one app opens the other (**L**, or ATLAS's connect button) the opened window shows its own notice; press **OK** there to let the link proceed.
