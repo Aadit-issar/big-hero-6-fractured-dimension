@@ -138,3 +138,7 @@ Developer commands: `npm run typecheck`, `npm test`, `npm run build`.
 - Models and procedural textures were generated for this project with the generators in `assets-src/`; some shapes were guided by AI-generated concept sheets.
 - *Big Hero 6*, Baymax, Hiro and related names and characters belong to Disney. This is an independent, non-commercial fan project made for a competition; it is not affiliated with or endorsed by Disney. No licence is granted over those properties, and no open-source licence has been applied to this repository.
 - Open-source dependencies keep their own licences (see `package-lock.json`).
+
+## Start-up notice
+
+On first launch a small, dismissible card reminds you that the Dimension and ATLAS Command are meant to be installed together from GitHub. **Got it** hides it for this visit, **Don't show again** remembers the choice in the browser, and `?pairNotice=0` suppresses it (useful for automated tests). It never blocks flight or any other control.

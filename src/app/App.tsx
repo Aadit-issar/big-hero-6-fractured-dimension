@@ -14,6 +14,7 @@ import { AtlasAdvisor } from '../ui/AtlasAdvisor';
 import { NavHud } from '../ui/NavHud';
 import { toggleBaymaxHidden } from '../scene/viewMode';
 import { AtlasScanLayer } from '../ui/AtlasScanLayer';
+import { PairNotice } from '../ui/PairNotice';
 import { toggleScanTags } from '../bridge/scanStore';
 import { isRenderReady, readReadiness, subscribeReadiness } from '../rendering/renderReadiness';
 
@@ -148,6 +149,7 @@ export function App() {
       <AtlasScanLayer visible={hudVisible} />
       <NavHud engine={engine} visible={hudVisible} />
       <AtlasAdvisor visible={hudVisible} />
+      <PairNotice which="dimension" />
     </main>
   );
 }
